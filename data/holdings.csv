@@ -1,4 +1,4 @@
-symbol,quantity,avg_buy_price
+symbol,amount,cost_basis
 
 bitcoin,0.25,20000
 ethereum,1.5,2500

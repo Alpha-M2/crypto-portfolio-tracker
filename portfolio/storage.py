@@ -16,8 +16,8 @@ def load_holdings(filepath: str) -> list[Holding]:
                 holdings.append(
                     Holding(
                         symbol=row["symbol"],
-                        quantity=float(row["quantity"]),
-                        avg_buy_price=float(row["avg_buy_price"]),
+                        amount=float(row["amount"]),
+                        cost_basis=float(row["cost_basis"]),
                     )
                 )
 

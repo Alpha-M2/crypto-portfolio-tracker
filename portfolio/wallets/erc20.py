@@ -39,7 +39,14 @@ def fetch_erc20_holdings(address: str) -> list[Holding]:
             quantity = raw_balance / (10**decimals)
 
             holdings.append(
-                Holding(symbol=symbol.lower(), quantity=quantity, avg_buy_price=0.0)
+                Holding(
+                    symbol=symbol.lower(),
+                    amount=quantity,
+                    cost_basis=0.0,
+                    contract_address=token["contractAddress"].lower(),
+                    decimals=decimals,
+                    is_erc20=True,
+                )
             )
 
         logger.info("Fetched %d ERC-20 tokens", len(holdings))

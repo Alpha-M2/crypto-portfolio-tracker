@@ -1,6 +1,6 @@
 import os
 
-COINGECKO_API_URL = "https://api.coingecko.com/api/v3/simple/price"
+COINGECKO_API_URL = "https://api.coingecko.com/api/v3"
 BASE_CURRENCY = "usd"
 
 DATA_DIR = "data/"
