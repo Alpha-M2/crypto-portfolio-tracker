@@ -2,6 +2,9 @@ from flask import Flask, render_template
 import logging
 
 from logger import setup_logger
+
+from portfolio.wallets.evm import fetch_eth_balance
+from portfolio.wallets.utils import eth_balance_to_holding
 from portfolio.storage import load_holdings
 from portfolio.prices import fetch_prices
 from portfolio.calculator import calculate_position
@@ -17,7 +20,14 @@ app = Flask(__name__)
 def dashboard():
     try:
         holdings = load_holdings(HOLDINGS_FILE)
-        symbols = [h.symbol for h in holdings]
+
+        wallet_address = "0x8A3E96EB73BF6939AC6090BA43FFDF76170BB877"
+
+        if wallet_address:
+            eth_balance = fetch_eth_balance(wallet_address)
+            holdings.append(eth_balance_to_holding(eth_balance))
+
+        symbols = list({h.symbol for h in holdings})
         prices = fetch_prices(symbols)
 
         portfolio = []
