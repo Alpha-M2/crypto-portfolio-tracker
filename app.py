@@ -8,6 +8,8 @@ from portfolio.wallets.utils import eth_balance_to_holding
 from portfolio.storage import load_holdings
 from portfolio.prices import fetch_prices
 from portfolio.calculator import calculate_position
+from portfolio.wallets.erc20 import fetch_erc20_holdings
+
 from config import HOLDINGS_FILE, BASE_CURRENCY
 
 setup_logger()
@@ -21,11 +23,16 @@ def dashboard():
     try:
         holdings = load_holdings(HOLDINGS_FILE)
 
-        wallet_address = "0x8A3E96EB73BF6939AC6090BA43FFDF76170BB877"
+        wallet_address = "0x2b09197141080f9dcfd2976cfdcf4e2a7d9cf483"
 
         if wallet_address:
-            eth_balance = fetch_eth_balance(wallet_address)
-            holdings.append(eth_balance_to_holding(eth_balance))
+            try:
+                eth_balance = fetch_eth_balance(wallet_address)
+                holdings.append(eth_balance_to_holding(eth_balance))
+                erc20_holdings = fetch_erc20_holdings(wallet_address)
+                holdings.extend(erc20_holdings)
+            except Exception:
+                logger.exception("Failed to fetch wallet balances")
 
         symbols = list({h.symbol for h in holdings})
         prices = fetch_prices(symbols)
@@ -35,7 +42,12 @@ def dashboard():
         total_invested = 0
 
         for h in holdings:
-            price = prices[h.symbol][BASE_CURRENCY]
+            try:
+                price = prices[h.symbol][BASE_CURRENCY]
+            except KeyError:
+                logger.warning("No price data for token: %s", h.symbol)
+                continue
+
             position = calculate_position(h, price)
             portfolio.append(position)
             total_value += position["current_value"]
