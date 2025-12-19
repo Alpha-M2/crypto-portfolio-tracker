@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Portfolio Tracker</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<h1>Portfolio Overview</h1>
+
+<table>
+    <tr>
+        <th>Asset</th>
+        <th>Quantity</th>
+        <th>Invested ($)</th>
+        <th>Value ($)</th>
+        <th>P/L ($)</th>
+        <th>P/L (%)</th>
+    </tr>
+
+    {% for item in portfolio %}
+    <tr>
+        <td>{{ item.symbol }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ "%.2f"|format(item.invested) }}</td>
+        <td>{{ "%.2f"|format(item.current_value) }}</td>
+        <td class="{{ 'profit' if item.pnl >= 0 else 'loss' }}">
+            {{ "%.2f"|format(item.pnl) }}
+        </td>
+        <td>{{ "%.2f"|format(item.pnl_pct) }}%</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2>Total Portfolio Value: ${{ "%.2f"|format(total_value) }}</h2>
+<h2>Total P/L: ${{ "%.2f"|format(total_pnl) }}</h2>
+
+</body>
+</html>
