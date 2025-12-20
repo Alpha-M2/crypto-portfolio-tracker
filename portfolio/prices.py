@@ -21,13 +21,11 @@ def fetch_native_prices(symbols: list[str]) -> dict:
 
     ids = []
     for s in symbols:
-        s = s.lower()
-
-        if s == "solana":
+        if s.lower() == "solana":
             logger.info("Skipping non-EVM native asset: solana")
             continue
 
-        cg_id = symbol_to_id.get(s)
+        cg_id = symbol_to_id.get(s.lower())
         if cg_id:
             ids.append(cg_id)
         else:

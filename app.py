@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template, send_file
+import os
 import logging
 
 from logger import setup_logger
@@ -7,7 +8,7 @@ from portfolio.wallets.evm import fetch_eth_balance
 from portfolio.wallets.utils import eth_balance_to_holding
 from portfolio.wallets.erc20 import fetch_erc20_holdings
 
-from portfolio.storage import load_holdings
+from portfolio.storage import load_holdings, save_snapshot
 from portfolio.prices import fetch_native_prices, fetch_erc20_prices
 from portfolio.calculator import calculate_position
 
@@ -19,12 +20,14 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def dashboard():
     try:
-        holdings = load_holdings(HOLDINGS_FILE)
+        wallet_address = request.args.get("wallet") or request.form.get("wallet")
+        if not wallet_address:
+            return render_template("wallet_input.html")
 
-        wallet_address = "0x2b09197141080f9dcfd2976cfdcf4e2a7d9cf483"
+        holdings = load_holdings(HOLDINGS_FILE)
 
         if wallet_address:
             try:
@@ -69,6 +72,8 @@ def dashboard():
             total_value += position["current_value"]
             total_invested += position["invested"]
 
+        save_snapshot(wallet_address, portfolio)
+
         logger.info("Dashboard rendered successfully")
 
         return render_template(
@@ -85,3 +90,22 @@ def dashboard():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+@app.route("/export")
+def export_snapshot():
+    wallet_address = request.args.get("wallet")
+    if not wallet_address:
+        return "Wallet address required", 400
+
+    snapshot_dir = "data/snapshots"
+    if not os.path.exists(snapshot_dir):
+        return "No snapshot directory found", 404
+
+    # Find the latest snapshot for this wallet
+    snapshots = sorted(os.listdir(snapshot_dir), reverse=True)
+    for f in snapshots:
+        if f.startswith(wallet_address):
+            return send_file(f"{snapshot_dir}/{f}", as_attachment=True)
+
+    return "No snapshot available", 404
