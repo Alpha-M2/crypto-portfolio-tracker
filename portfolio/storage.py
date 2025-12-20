@@ -62,3 +62,32 @@ def save_snapshot(wallet_address: str, positions: list[dict]):
 
     except Exception:
         logger.exception("Failed to save snapshot")
+
+
+def list_snapshots(wallet_address: str) -> list[dict]:
+    snapshot_dir = "data/snapshots"
+    snapshots = []
+
+    if not os.path.exists(snapshot_dir):
+        return snapshots
+
+    for filename in os.listdir(snapshot_dir):
+        if not filename.startswith(wallet_address):
+            continue
+
+        try:
+            _, timestamp = filename.rsplit("_", 1)
+            timestamp = timestamp.replace(".csv", "")
+            dt = datetime.strptime(timestamp, "%Y%m%d_%H%M%S")
+        except Exception:
+            continue
+
+        snapshots.append(
+            {
+                "filename": filename,
+                "timestamp": dt,
+            }
+        )
+
+    snapshots.sort(key=lambda x: x["timestamp"], reverse=True)
+    return snapshots

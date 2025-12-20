@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snapshot History</title>
+</head>
+<body>
+
+<h2>Snapshot History</h2>
+
+<a href="/snapshots?wallet={{ wallet }}">View Snapshot History</a>
+
+<a href="/?wallet={{ wallet }}">← Back to Dashboard</a>
+
+<table>
+    <tr>
+        <th>Timestamp (UTC)</th>
+        <th>Action</th>
+    </tr>
+
+    {% for snap in snapshots %}
+    <tr>
+        <td>{{ snap.timestamp }}</td>
+        <td>
+            <a href="/export/{{ snap.filename }}">Download</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

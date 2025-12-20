@@ -8,32 +8,63 @@
 
 <h1>Portfolio Overview</h1>
 
+<form method="post" action="/">
+    <input type="hidden" name="wallet" value="{{ wallet }}">
+    <button type="submit">Save Snapshot</button>
+</form>
+
+<br>
+
+<a href="/export?wallet={{ wallet }}">Download Latest Snapshot</a>
+&nbsp;|&nbsp;
+<a href="/snapshots?wallet={{ wallet }}">View Snapshot History</a>
+&nbsp;|&nbsp;
+<a href="/change-wallet">Change Wallet</a>
+
+<form method="get" action="/reset-wallet" style="margin: 16px 0;">
+    <button type="submit">Change Wallet</button>
+</form>
+
 <table>
     <tr>
         <th>Asset</th>
-        <th>Quantity</th>
+        <th>Amount</th>
         <th>Invested ($)</th>
-        <th>Value ($)</th>
-        <th>P/L ($)</th>
+        <th>Value</th>
+        <th>P/L</th>
         <th>P/L (%)</th>
     </tr>
 
     {% for item in portfolio %}
-    <tr>
+    <tr class="{{ 'muted' if not item.price_available else '' }}">
         <td>{{ item.symbol }}</td>
-        <td>{{ item.quantity }}</td>
+
+        <td>{{ item.amount }}</td>
+
         <td>{{ "%.2f"|format(item.invested) }}</td>
-        <td>{{ "%.2f"|format(item.current_value) }}</td>
-        <td class="{{ 'profit' if item.pnl >= 0 else 'loss' }}">
-            {{ "%.2f"|format(item.pnl) }}
-        </td>
-        <td>{{ "%.2f"|format(item.pnl_pct) }}%</td>
+
+        {% if item.price_available %}
+            <td>{{ "%.2f"|format(item.current_value) }}</td>
+
+            <td class="{{ 'profit' if item.pnl >= 0 else 'loss' }}">
+                {{ "%.2f"|format(item.pnl) }}
+            </td>
+
+            <td>{{ "%.2f"|format(item.pnl_pct) }}%</td>
+        {% else %}
+            <td title="Price unavailable">—</td>
+            <td title="Excluded from totals">N/A</td>
+            <td>N/A</td>
+        {% endif %}
     </tr>
     {% endfor %}
 </table>
+
+<br>
 
 <h2>Total Portfolio Value: ${{ "%.2f"|format(total_value) }}</h2>
 <h2>Total P/L: ${{ "%.2f"|format(total_pnl) }}</h2>
 
 </body>
 </html>
+
