@@ -10,61 +10,44 @@
 
 <form method="post" action="/">
     <input type="hidden" name="wallet" value="{{ wallet }}">
+    <label for="chain">Chain:</label>
+    <select name="chain" id="chain">
+        {% for chain in chains %}
+            <option value="{{ chain.symbol }}" {% if chain.symbol == selected_chain %}selected{% endif %}>{{ chain.name }}</option>
+        {% endfor %}
+    </select>
     <button type="submit">Save Snapshot</button>
 </form>
 
-<br>
-
+<a href="/change-wallet">Change wallet</a>
 <a href="/export?wallet={{ wallet }}">Download Latest Snapshot</a>
-&nbsp;|&nbsp;
-<a href="/snapshots?wallet={{ wallet }}">View Snapshot History</a>
-&nbsp;|&nbsp;
-<a href="/change-wallet">Change Wallet</a>
-
-<form method="get" action="/reset-wallet" style="margin: 16px 0;">
-    <button type="submit">Change Wallet</button>
-</form>
 
 <table>
     <tr>
         <th>Asset</th>
-        <th>Amount</th>
+        <th>Quantity</th>
         <th>Invested ($)</th>
-        <th>Value</th>
-        <th>P/L</th>
+        <th>Value ($)</th>
+        <th>P/L ($)</th>
         <th>P/L (%)</th>
     </tr>
 
     {% for item in portfolio %}
-    <tr class="{{ 'muted' if not item.price_available else '' }}">
+    <tr>
         <td>{{ item.symbol }}</td>
-
         <td>{{ item.amount }}</td>
-
         <td>{{ "%.2f"|format(item.invested) }}</td>
-
-        {% if item.price_available %}
-            <td>{{ "%.2f"|format(item.current_value) }}</td>
-
-            <td class="{{ 'profit' if item.pnl >= 0 else 'loss' }}">
-                {{ "%.2f"|format(item.pnl) }}
-            </td>
-
-            <td>{{ "%.2f"|format(item.pnl_pct) }}%</td>
-        {% else %}
-            <td title="Price unavailable">—</td>
-            <td title="Excluded from totals">N/A</td>
-            <td>N/A</td>
-        {% endif %}
+        <td>{{ "%.2f"|format(item.current_value) }}</td>
+        <td class="{{ 'profit' if item.pnl >= 0 else 'loss' }}">
+            {{ "%.2f"|format(item.pnl) }}
+        </td>
+        <td>{{ "%.2f"|format(item.pnl_pct) }}%</td>
     </tr>
     {% endfor %}
 </table>
-
-<br>
 
 <h2>Total Portfolio Value: ${{ "%.2f"|format(total_value) }}</h2>
 <h2>Total P/L: ${{ "%.2f"|format(total_pnl) }}</h2>
 
 </body>
 </html>
-

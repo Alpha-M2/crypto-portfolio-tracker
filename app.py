@@ -12,16 +12,14 @@ import logging
 
 from logger import setup_logger
 
-from portfolio.wallets.evm import fetch_eth_balance
+from portfolio.wallets.evm import fetch_native_balance, fetch_erc20_holdings
 from portfolio.wallets.utils import eth_balance_to_holding
-from portfolio.wallets.erc20 import fetch_erc20_holdings
-
 from portfolio.storage import save_snapshot, list_snapshots
 from portfolio.prices import fetch_native_prices, fetch_erc20_prices
 from portfolio.calculator import calculate_position
-
 from portfolio.filters.scam import is_scam_token
 from portfolio.filters.stablecoins import is_stablecoin
+from portfolio.chains.registry import CHAINS, get_chain_by_symbol
 
 from config import BASE_CURRENCY
 
@@ -39,21 +37,29 @@ def dashboard():
             or request.form.get("wallet")
             or request.cookies.get("wallet")
         )
+        chain_symbol = request.args.get("chain") or request.form.get("chain") or "ETH"
+
+        chain = get_chain_by_symbol(chain_symbol)
+        if not chain:
+            return f"Unsupported chain: {chain_symbol}", 400
 
         if not wallet_address:
-            return render_template("wallet_input.html")
+            return render_template("wallet_input.html", chains=CHAINS)
 
-        # Wallet is now the ONLY source of holdings
         holdings = []
 
         try:
-            eth_balance = fetch_eth_balance(wallet_address)
-            holdings.append(eth_balance_to_holding(eth_balance))
+            native_balance = fetch_native_balance(wallet_address, chain_symbol)
+            holdings.append(eth_balance_to_holding(native_balance))
 
-            erc20_holdings = fetch_erc20_holdings(wallet_address)
+            erc20_holdings = fetch_erc20_holdings(wallet_address, chain_symbol)
             holdings.extend(erc20_holdings)
         except Exception:
-            logger.exception("Failed to fetch wallet balances")
+            logger.exception(
+                "Failed to fetch wallet balances for %s on %s",
+                wallet_address,
+                chain_symbol,
+            )
 
         native_symbols = []
         erc20_contracts = []
@@ -64,14 +70,10 @@ def dashboard():
             is_scam, reason = is_scam_token(h)
             if is_scam:
                 logger.warning(
-                    "Suppressed scam token: %s (reason=%s)",
-                    h.symbol,
-                    reason,
+                    "Suppressed scam token: %s (reason=%s)", h.symbol, reason
                 )
                 continue
-
             filtered_holdings.append(h)
-
             if getattr(h, "is_erc20", False):
                 erc20_contracts.append(h.contract_address)
             else:
@@ -89,7 +91,7 @@ def dashboard():
 
             if is_stablecoin(h.symbol):
                 price = 1.0
-            elif h.is_erc20:
+            elif getattr(h, "is_erc20", False):
                 price_data = erc20_prices.get(h.contract_address)
                 if price_data:
                     price = price_data.get(BASE_CURRENCY)
@@ -113,7 +115,9 @@ def dashboard():
         # Save snapshot ONLY on explicit user action
         if request.method == "POST":
             save_snapshot(wallet_address, portfolio)
-            logger.info("Snapshot saved for wallet %s", wallet_address)
+            logger.info(
+                "Snapshot saved for wallet %s on chain %s", wallet_address, chain_symbol
+            )
 
         response = make_response(
             render_template(
@@ -122,18 +126,19 @@ def dashboard():
                 total_value=total_value,
                 total_pnl=total_value - total_invested,
                 wallet=wallet_address,
+                chains=CHAINS,
+                selected_chain=chain_symbol,
             )
         )
 
         response.set_cookie(
             "wallet",
             wallet_address,
-            max_age=60 * 60 * 24 * 30,  # 30 days
+            max_age=60 * 60 * 24 * 30,
             httponly=True,
             samesite="Lax",
         )
 
-        logger.info("Dashboard rendered successfully")
         return response
 
     except Exception:
