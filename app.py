@@ -16,14 +16,14 @@ from portfolio.wallets.evm import fetch_eth_balance
 from portfolio.wallets.utils import eth_balance_to_holding
 from portfolio.wallets.erc20 import fetch_erc20_holdings
 
-from portfolio.storage import load_holdings, save_snapshot, list_snapshots
+from portfolio.storage import save_snapshot, list_snapshots
 from portfolio.prices import fetch_native_prices, fetch_erc20_prices
 from portfolio.calculator import calculate_position
 
 from portfolio.filters.scam import is_scam_token
 from portfolio.filters.stablecoins import is_stablecoin
 
-from config import HOLDINGS_FILE, BASE_CURRENCY
+from config import BASE_CURRENCY
 
 setup_logger()
 logger = logging.getLogger(__name__)
@@ -43,7 +43,8 @@ def dashboard():
         if not wallet_address:
             return render_template("wallet_input.html")
 
-        holdings = load_holdings(HOLDINGS_FILE)
+        # Wallet is now the ONLY source of holdings
+        holdings = []
 
         try:
             eth_balance = fetch_eth_balance(wallet_address)
@@ -88,7 +89,6 @@ def dashboard():
 
             if is_stablecoin(h.symbol):
                 price = 1.0
-
             elif h.is_erc20:
                 price_data = erc20_prices.get(h.contract_address)
                 if price_data:
