@@ -1,46 +1,76 @@
-from dataclasses import dataclass
 import os
+from typing import List, Optional
+from portfolio.chains.evm import EVMChain
 
-
-@dataclass(frozen=True)
-class Chain:
-    name: str
-    symbol: str
-    rpc_env_var: str
-    coingecko_id: str
-
-
-# Add your RPC environment variable names here
-CHAINS = [
-    Chain(
+CHAINS: List[EVMChain] = [
+    EVMChain(
         name="Ethereum",
-        symbol="ETH",
-        rpc_env_var="ALCHEMY_ETH_RPC_URL",
-        coingecko_id="ethereum",
+        symbol="ethereum",
+        rpc_env_key="ETH_RPC_URL",
+        native_symbol="ETH",
     ),
-    Chain(
+    EVMChain(
         name="Arbitrum",
-        symbol="ARB",
-        rpc_env_var="ALCHEMY_ARB_RPC_URL",
-        coingecko_id="arbitrum-one",
+        symbol="arbitrum",
+        rpc_env_key="ARB_RPC_URL",
+        native_symbol="ETH",
     ),
-    Chain(
+    EVMChain(
         name="Binance Smart Chain",
-        symbol="BSC",
-        rpc_env_var="BSC_RPC_URL",
-        coingecko_id="binance-smart-chain",
+        symbol="bsc",
+        rpc_env_key="BSC_RPC_URL",
+        native_symbol="BNB",
     ),
-    Chain(
+    EVMChain(
         name="Polygon",
-        symbol="MATIC",
-        rpc_env_var="POLYGON_RPC_URL",
-        coingecko_id="polygon",
+        symbol="polygon",
+        rpc_env_key="POLYGON_RPC_URL",
+        native_symbol="MATIC",
+    ),
+    EVMChain(
+        name="Optimism",
+        symbol="optimism",
+        rpc_env_key="OPTIMISM_RPC_URL",
+        native_symbol="ETH",
+    ),
+    EVMChain(
+        name="Base",
+        symbol="base",
+        rpc_env_key="BASE_RPC_URL",
+        native_symbol="ETH",
+    ),
+    EVMChain(
+        name="Sonic",
+        symbol="sonic",
+        rpc_env_key="SONIC_RPC_URL",
+        native_symbol="S",
+    ),
+    EVMChain(
+        name="Avalanche",
+        symbol="avalanche",
+        rpc_env_key="AVALANCHE_RPC_URL",
+        native_symbol="AVAX",
     ),
 ]
 
 
-def get_chain_by_symbol(symbol: str):
-    for c in CHAINS:
-        if c.symbol.lower() == symbol.lower():
-            return c
+def get_enabled_chains():
+    enabled = os.getenv("ENABLED_CHAINS")
+    if not enabled:
+        return [chain for chain in CHAINS if chain.is_enabled()]
+
+    enabled_names = {name.strip().lower() for name in enabled.split(",")}
+
+    return [
+        chain
+        for chain in CHAINS
+        if chain.name.lower() in enabled_names and chain.is_enabled()
+    ]
+
+
+def get_chain_by_symbol(symbol: str) -> Optional[EVMChain]:
+    symbol = symbol.lower()
+    for chain in CHAINS:
+        if chain.symbol == symbol:
+            return chain
     return None

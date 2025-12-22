@@ -5,7 +5,7 @@ from web3 import Web3
 logger = logging.getLogger(__name__)
 
 
-class AbstractChainProvider:
+class ChainProvider:
     def __init__(self, chain):
         self.chain = chain
         self.rpc_url = os.getenv(chain.rpc_env_var)
