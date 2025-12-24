@@ -2,7 +2,7 @@ import logging
 import os
 
 from portfolio.wallets.evm import fetch_eth_balance
-from portfolio.wallets.erc20 import fetch_erc20_holdings
+from portfolio.wallets.erc20_legacy import fetch_erc20_holdings
 from portfolio.wallets.utils import eth_balance_to_holding
 from portfolio.chains.registry import CHAINS
 

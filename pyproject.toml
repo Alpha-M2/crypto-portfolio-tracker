@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "covalent-api-sdk>=1.0.2",
+    "fastapi>=0.127.0",
     "flask>=3.1.2",
     "ipykernel>=7.1.0",
     "matplotlib>=3.10.8",
@@ -13,6 +15,7 @@ dependencies = [
     "pytest>=9.0.2",
     "python-dotenv>=1.2.1",
     "requests>=2.32.5",
+    "uvicorn>=0.40.0",
     "web3>=7.14.0",
 ]
 

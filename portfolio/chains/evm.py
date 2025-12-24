@@ -60,6 +60,7 @@ class EVMChain:
 
         holdings: List[Holding] = []
 
+        # Native balance
         try:
             native_balance = fetch_eth_balance(wallet_address, self.rpc_url)
             if native_balance > 0:
@@ -77,6 +78,15 @@ class EVMChain:
                 "Failed fetching native balance on %s",
                 self.symbol,
             )
+
+        if self.symbol == "ETH":
+            try:
+                from portfolio.wallets.ethereum_erc20 import fetch_eth_erc20_balances
+
+                eth_erc20_holdings = fetch_eth_erc20_balances(wallet_address)
+                holdings.extend(eth_erc20_holdings)
+            except Exception:
+                logger.exception("Failed fetching deterministic ETH ERC-20 holdings")
 
         # Covalent (primary)
         erc20_holdings = fetch_covalent_erc20_holdings(

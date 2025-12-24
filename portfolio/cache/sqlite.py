@@ -3,6 +3,8 @@ import json
 import os
 import time
 from typing import Optional, List
+from contextlib import closing
+from datetime import datetime
 
 from portfolio.models import Holding
 
@@ -40,7 +42,7 @@ def init_db():
             updated_at INTEGER NOT NULL,
             PRIMARY KEY (asset_key, currency)
         )
-        """
+    """
     )
 
     cur.execute(
@@ -50,16 +52,38 @@ def init_db():
             payload TEXT NOT NULL,
             updated_at INTEGER NOT NULL
         )
+    """
+    )
+
+    cur.execute(
+        """
+        CREATE TABLE IF NOT EXISTS portfolio_snapshots (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            wallet_address TEXT NOT NULL,
+            snapshot_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            total_value REAL,
+            total_pnl REAL
+        )
+        """
+    )
+
+    cur.execute(
+        """
+        CREATE TABLE IF NOT EXISTS portfolio_positions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            snapshot_id INTEGER NOT NULL,
+            symbol TEXT NOT NULL,
+            chain TEXT,
+            amount REAL,
+            cost_basis REAL,
+            current_value REAL,
+            FOREIGN KEY(snapshot_id) REFERENCES portfolio_snapshots(id)
+        )
         """
     )
 
     conn.commit()
     conn.close()
-
-
-# -------------------------
-# Holdings cache
-# -------------------------
 
 
 def _holding_key(h: Holding) -> str:
@@ -122,3 +146,38 @@ def set_cached_holdings(wallet: str, chain: str, holdings: List[Holding]):
 
     conn.commit()
     conn.close()
+
+
+def persist_portfolio_snapshot(
+    wallet_address: str, summary: dict, positions: list[dict]
+):
+    with closing(_get_conn()) as conn:
+        c = conn.cursor()
+        c.execute(
+            """
+            INSERT INTO portfolio_snapshots(wallet_address, total_value, total_pnl)
+            VALUES (?, ?, ?)
+            """,
+            (wallet_address, summary["total_value"], summary["total_pnl"]),
+        )
+        snapshot_id = c.lastrowid
+
+        for p in positions:
+            c.execute(
+                """
+                INSERT INTO portfolio_positions(
+                    snapshot_id, symbol, chain, amount, cost_basis, current_value
+                ) VALUES (?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    snapshot_id,
+                    p.get("symbol"),
+                    p.get("chain"),
+                    p.get("amount"),
+                    p.get("invested"),
+                    p.get("current_value"),
+                ),
+            )
+
+        conn.commit()
+        return snapshot_id

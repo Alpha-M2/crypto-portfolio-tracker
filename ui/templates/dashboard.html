@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Dashboard</title>
+</head>
+<body>
+    <h1>Portfolio Overview</h1>
+    <pre id="output">Loading...</pre>
+
+    <script>
+        fetch("/portfolio?wallet=YOUR_WALLET_ADDRESS")
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById("output").innerText =
+                    JSON.stringify(data, null, 2);
+            });
+    </script>
+</body>
+</html>
