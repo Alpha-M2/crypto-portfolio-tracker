@@ -11,11 +11,6 @@ ALCHEMY_RPC_URL = os.getenv("ALCHEMY_ETH_RPC")
 
 
 def fetch_eth_erc20_balances(wallet_address: str) -> List[Holding]:
-    """
-    Fetch ERC-20 balances using Alchemy's `alchemy_getTokenBalances`.
-    This is the ONLY supported ERC-20 discovery path.
-    """
-
     if not ALCHEMY_RPC_URL:
         logger.warning("ALCHEMY_ETH_RPC not configured")
         return []
