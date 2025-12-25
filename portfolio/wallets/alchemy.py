@@ -7,27 +7,28 @@ from portfolio.models import Holding
 
 logger = logging.getLogger(__name__)
 
+ALCHEMY_API_KEY = os.getenv("ALCHEMY_API_KEY")
 
-def fetch_alchemy_erc20_holdings(
-    wallet_address: str,
-    chain: str,
-) -> List[Holding]:
-    api_key = os.getenv("ALCHEMY_API_KEY")
-    if not api_key:
-        logger.warning("Alchemy API key not set")
+CHAIN_TO_URL = {
+    "ethereum": "https://eth-mainnet.g.alchemy.com/v2/",
+    "polygon": "https://polygon-mainnet.g.alchemy.com/v2/",
+    "arbitrum": "https://arb-mainnet.g.alchemy.com/v2/",
+    "optimism": "https://opt-mainnet.g.alchemy.com/v2/",
+    "base": "https://base-mainnet.g.alchemy.com/v2/",
+}
+
+
+def fetch_erc20_holdings(wallet_address: str, chain: str) -> List[Holding]:
+    if not ALCHEMY_API_KEY:
+        logger.warning("ALCHEMY_API_KEY not set")
         return []
 
-    base_urls = {
-        "ethereum": f"https://eth-mainnet.g.alchemy.com/v2/{api_key}",
-        "polygon": f"https://polygon-mainnet.g.alchemy.com/v2/{api_key}",
-        "arbitrum": f"https://arb-mainnet.g.alchemy.com/v2/{api_key}",
-        "optimism": f"https://opt-mainnet.g.alchemy.com/v2/{api_key}",
-        "base": f"https://base-mainnet.g.alchemy.com/v2/{api_key}",
-    }
-
-    url = base_urls.get(chain.lower())
-    if not url:
+    base_url = CHAIN_TO_URL.get(chain)
+    if not base_url:
+        logger.warning("Alchemy unsupported chain: %s", chain)
         return []
+
+    url = f"{base_url}{ALCHEMY_API_KEY}"
 
     payload = {
         "jsonrpc": "2.0",
@@ -37,29 +38,28 @@ def fetch_alchemy_erc20_holdings(
     }
 
     try:
-        resp = requests.post(url, json=payload, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
+        r = requests.post(url, json=payload, timeout=20)
+        r.raise_for_status()
+        data = r.json()
     except Exception:
-        logger.exception("Alchemy request failed for %s", chain)
+        logger.exception("Alchemy request failed")
         return []
 
     balances = data.get("result", {}).get("tokenBalances", [])
     holdings: List[Holding] = []
 
-    for item in balances:
-        raw_balance = int(item.get("tokenBalance", "0"), 16)
-        if raw_balance == 0:
+    for token in balances:
+        raw = int(token.get("tokenBalance", "0"), 16)
+        if raw == 0:
             continue
 
         holdings.append(
             Holding(
-                symbol=None,
-                amount=raw_balance,
-                cost_basis=0.0,
-                is_erc20=True,
+                symbol=None,  # resolved later
+                amount=raw,
                 chain=chain,
-                contract_address=item.get("contractAddress"),
+                is_erc20=True,
+                contract_address=token["contractAddress"],
                 source="alchemy",
             )
         )
