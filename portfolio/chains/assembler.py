@@ -13,7 +13,8 @@ def build_holdings_for_wallet(wallet_address: str):
 
         try:
             chain_holdings = chain.fetch_holdings(wallet_address)
-            holdings.extend(chain_holdings)
+            if chain_holdings:
+                holdings.extend(chain_holdings)
         except Exception:
             logger.exception("Chain failed: %s", chain.name)
 

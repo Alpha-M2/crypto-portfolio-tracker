@@ -1,35 +1,40 @@
-import sqlite3
-from datetime import datetime
 from typing import List, Dict
+from datetime import datetime
+import sqlite3
+
 from portfolio.cache.sqlite import DB_PATH
 
 
 def get_portfolio_history(wallet_address: str) -> List[Dict]:
+    """
+    Fetch historical portfolio snapshots for a wallet.
+    """
     conn = sqlite3.connect(DB_PATH)
     cur = conn.cursor()
 
-    # Fetch snapshots
     cur.execute(
         """
         SELECT id, snapshot_time, total_value, total_pnl
         FROM portfolio_snapshots
         WHERE wallet_address = ?
         ORDER BY snapshot_time ASC
-    """,
+        """,
         (wallet_address,),
     )
-    snapshots = cur.fetchall()
 
+    rows = cur.fetchall()
     history = []
-    for snap_id, snap_time, total_value, total_pnl in snapshots:
+
+    for snap_id, snap_time, total_value, total_pnl in rows:
         cur.execute(
             """
             SELECT symbol, chain, amount, cost_basis, current_value
             FROM portfolio_positions
             WHERE snapshot_id = ?
-        """,
+            """,
             (snap_id,),
         )
+
         positions = [
             {
                 "symbol": r[0],
@@ -43,7 +48,7 @@ def get_portfolio_history(wallet_address: str) -> List[Dict]:
 
         history.append(
             {
-                "snapshot_time": datetime.fromisoformat(snap_time),
+                "snapshot_time": snap_time,
                 "total_value": total_value,
                 "total_pnl": total_pnl,
                 "positions": positions,
@@ -55,44 +60,36 @@ def get_portfolio_history(wallet_address: str) -> List[Dict]:
 
 
 def compute_performance_metrics(history: List[Dict]) -> Dict:
+    """
+    This function is intentionally lightweight and defensive.
+    It exists to keep backward compatibility with earlier pipeline stages.
+    """
+
     if not history:
         return {}
 
-    metrics = []
-    initial_value = history[0]["total_value"] or 1.0
+    initial_value = history[0].get("total_value") or 1.0
+    latest = history[-1]
+
+    performance_timeline = []
 
     for h in history:
-        total_value = h["total_value"]
-        total_pnl = h["total_pnl"]
-        roi = (total_value - initial_value) / initial_value
-        metrics.append(
+        total_value = h.get("total_value", 0.0)
+        pnl = h.get("total_pnl", 0.0)
+        roi = (total_value - initial_value) / initial_value if initial_value else 0.0
+
+        performance_timeline.append(
             {
-                "snapshot_time": h["snapshot_time"],
+                "snapshot_time": h.get("snapshot_time"),
                 "total_value": total_value,
-                "total_pnl": total_pnl,
+                "total_pnl": pnl,
                 "roi": roi,
             }
         )
 
     return {
         "initial_value": initial_value,
-        "latest_value": history[-1]["total_value"],
-        "total_pnl": history[-1]["total_pnl"],
-        "history": metrics,
+        "latest_value": latest.get("total_value", 0.0),
+        "total_pnl": latest.get("total_pnl", 0.0),
+        "history": performance_timeline,
     }
-
-
-def print_performance_summary(performance: Dict):
-    if not performance:
-        print("No performance data available.")
-        return
-
-    print(f"Initial Value: {performance['initial_value']:.2f}")
-    print(f"Latest Value: {performance['latest_value']:.2f}")
-    print(f"Total PnL: {performance['total_pnl']:.2f}")
-    print("Time-series snapshots:")
-    for h in performance["history"]:
-        time_str = h["snapshot_time"].strftime("%Y-%m-%d %H:%M:%S")
-        print(
-            f"{time_str} | Value: {h['total_value']:.2f} | PnL: {h['total_pnl']:.2f} | ROI: {h['roi']:.2%}"
-        )

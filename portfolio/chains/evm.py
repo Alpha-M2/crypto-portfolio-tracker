@@ -2,8 +2,8 @@ import os
 import logging
 from typing import List
 
-from portfolio.wallets.evm import fetch_eth_balance
 from portfolio.wallets.alchemy import fetch_erc20_holdings
+from portfolio.wallets.evm import fetch_eth_balance
 from portfolio.models import Holding
 from portfolio.cache.sqlite import init_db, get_cached_holdings, set_cached_holdings
 
@@ -23,10 +23,6 @@ class EVMChain:
     def is_enabled(self):
         return bool(os.getenv(self.rpc_env_key))
 
-    @property
-    def rpc_url(self):
-        return os.getenv(self.rpc_env_key)
-
     def fetch_holdings(self, wallet_address: str) -> List[Holding]:
         cached = get_cached_holdings(wallet_address, self.symbol, CACHE_TTL_SECONDS)
         if cached:
@@ -34,25 +30,27 @@ class EVMChain:
 
         holdings: List[Holding] = []
 
+        # Native balance
         try:
-            native = fetch_eth_balance(wallet_address, self.rpc_url)
-            if native > 0:
+            native_amount = fetch_eth_balance(wallet_address, self.symbol)
+            if native_amount > 0:
                 holdings.append(
                     Holding(
                         symbol=self.native_symbol,
-                        amount=native,
+                        amount=native_amount,
                         chain=self.symbol,
                         is_erc20=False,
                     )
                 )
         except Exception:
-            logger.exception("Native balance failed")
+            logger.exception("Native balance fetch failed")
 
+        # ERC-20 tokens
         try:
             erc20s = fetch_erc20_holdings(wallet_address, self.symbol)
             holdings.extend(erc20s)
         except Exception:
-            logger.exception("ERC20 discovery failed")
+            logger.exception("ERC20 fetch failed")
 
         set_cached_holdings(wallet_address, self.symbol, holdings)
         return holdings

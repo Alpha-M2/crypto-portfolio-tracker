@@ -4,7 +4,6 @@ import os
 import time
 from typing import Optional, List
 from contextlib import closing
-from datetime import datetime
 
 from portfolio.models import Holding
 
@@ -17,11 +16,10 @@ def _get_conn():
 
 
 def init_db():
-    conn = _get_conn()
-    cur = conn.cursor()
+    with _get_conn() as conn:
+        cur = conn.cursor()
 
-    cur.execute(
-        """
+        cur.execute("""
         CREATE TABLE IF NOT EXISTS holdings_cache (
             wallet TEXT NOT NULL,
             chain TEXT NOT NULL,
@@ -30,11 +28,9 @@ def init_db():
             updated_at INTEGER NOT NULL,
             PRIMARY KEY (wallet, chain, asset_key)
         )
-        """
-    )
+        """)
 
-    cur.execute(
-        """
+        cur.execute("""
         CREATE TABLE IF NOT EXISTS prices_cache (
             asset_key TEXT NOT NULL,
             currency TEXT NOT NULL,
@@ -42,132 +38,101 @@ def init_db():
             updated_at INTEGER NOT NULL,
             PRIMARY KEY (asset_key, currency)
         )
-    """
-    )
+        """)
 
-    cur.execute(
-        """
-        CREATE TABLE IF NOT EXISTS portfolio_cache (
-            wallet TEXT NOT NULL,
-            payload TEXT NOT NULL,
-            updated_at INTEGER NOT NULL
-        )
-    """
-    )
-
-    cur.execute(
-        """
+        cur.execute("""
         CREATE TABLE IF NOT EXISTS portfolio_snapshots (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             wallet_address TEXT NOT NULL,
-            snapshot_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             total_value REAL,
-            total_pnl REAL
+            total_pnl REAL,
+            created_at INTEGER DEFAULT (strftime('%s','now'))
         )
-        """
-    )
+        """)
 
-    cur.execute(
-        """
+        cur.execute("""
         CREATE TABLE IF NOT EXISTS portfolio_positions (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             snapshot_id INTEGER NOT NULL,
-            symbol TEXT NOT NULL,
+            symbol TEXT,
             chain TEXT,
             amount REAL,
             cost_basis REAL,
-            current_value REAL,
-            FOREIGN KEY(snapshot_id) REFERENCES portfolio_snapshots(id)
+            current_value REAL
         )
-        """
-    )
-
-    conn.commit()
-    conn.close()
+        """)
 
 
 def _holding_key(h: Holding) -> str:
-    if h.is_erc20:
-        return f"{h.chain}:{h.contract_address}"
-    return f"{h.chain}:{h.symbol}"
+    return f"{h.chain}:{h.contract_address or h.symbol}"
 
 
-def get_cached_holdings(
-    wallet: str, chain: str, max_age_seconds: int
-) -> Optional[List[Holding]]:
-    conn = _get_conn()
-    cur = conn.cursor()
+def get_cached_holdings(wallet: str, chain: str, max_age_seconds: int):
+    with _get_conn() as conn:
+        cur = conn.cursor()
+        cutoff = int(time.time()) - max_age_seconds
 
-    cutoff = int(time.time()) - max_age_seconds
+        cur.execute(
+            """
+            SELECT payload FROM holdings_cache
+            WHERE wallet=? AND chain=? AND updated_at >= ?
+            """,
+            (wallet, chain, cutoff),
+        )
 
-    cur.execute(
-        """
-        SELECT payload FROM holdings_cache
-        WHERE wallet=? AND chain=? AND updated_at >= ?
-        """,
-        (wallet, chain, cutoff),
-    )
-
-    rows = cur.fetchall()
-    conn.close()
+        rows = cur.fetchall()
 
     if not rows:
         return None
 
-    holdings = []
-    for (payload,) in rows:
-        data = json.loads(payload)
-        holdings.append(Holding(**data))
-
-    return holdings
+    return [Holding(**json.loads(r[0])) for r in rows]
 
 
 def set_cached_holdings(wallet: str, chain: str, holdings: List[Holding]):
-    conn = _get_conn()
-    cur = conn.cursor()
     now = int(time.time())
-
-    for h in holdings:
-        key = _holding_key(h)
-        cur.execute(
-            """
-            INSERT OR REPLACE INTO holdings_cache
-            (wallet, chain, asset_key, payload, updated_at)
-            VALUES (?, ?, ?, ?, ?)
-            """,
-            (
-                wallet,
-                chain,
-                key,
-                json.dumps(h.__dict__),
-                now,
-            ),
-        )
-
-    conn.commit()
-    conn.close()
+    with _get_conn() as conn:
+        cur = conn.cursor()
+        for h in holdings:
+            cur.execute(
+                """
+                INSERT OR REPLACE INTO holdings_cache
+                (wallet, chain, asset_key, payload, updated_at)
+                VALUES (?, ?, ?, ?, ?)
+                """,
+                (
+                    wallet,
+                    chain,
+                    _holding_key(h),
+                    json.dumps(h.__dict__),
+                    now,
+                ),
+            )
 
 
 def persist_portfolio_snapshot(
     wallet_address: str, summary: dict, positions: list[dict]
 ):
-    with closing(_get_conn()) as conn:
-        c = conn.cursor()
-        c.execute(
+    with _get_conn() as conn:
+        cur = conn.cursor()
+        cur.execute(
             """
             INSERT INTO portfolio_snapshots(wallet_address, total_value, total_pnl)
             VALUES (?, ?, ?)
             """,
-            (wallet_address, summary["total_value"], summary["total_pnl"]),
+            (
+                wallet_address,
+                summary.get("total_value", 0.0),
+                summary.get("total_pnl", 0.0),
+            ),
         )
-        snapshot_id = c.lastrowid
+        snapshot_id = cur.lastrowid
 
         for p in positions:
-            c.execute(
+            cur.execute(
                 """
-                INSERT INTO portfolio_positions(
-                    snapshot_id, symbol, chain, amount, cost_basis, current_value
-                ) VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO portfolio_positions
+                (snapshot_id, symbol, chain, amount, cost_basis, current_value)
+                VALUES (?, ?, ?, ?, ?, ?)
                 """,
                 (
                     snapshot_id,
@@ -179,5 +144,4 @@ def persist_portfolio_snapshot(
                 ),
             )
 
-        conn.commit()
         return snapshot_id

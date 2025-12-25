@@ -1,6 +1,5 @@
 import logging
-from typing import List, Dict, Any
-
+from typing import Dict, List, Any
 
 from portfolio.chains.registry import get_enabled_chains
 from portfolio.filters.scam import is_scam_token
@@ -14,16 +13,13 @@ from portfolio.analytics.performance import (
     get_portfolio_history,
     compute_performance_metrics,
 )
-from portfolio.cache.sqlite import persist_portfolio_snapshot, init_db
+from portfolio.cache.sqlite import persist_portfolio_snapshot
 from config import BASE_CURRENCY
 
 logger = logging.getLogger(__name__)
 
-init_db()
-
 
 def _safe_position(position: Dict[str, Any]) -> Dict[str, Any]:
-    # Prevents KeyError explosions downstream.
     position.setdefault("chain", "unknown")
     position.setdefault("symbol", "UNKNOWN")
     position.setdefault("amount", 0.0)
@@ -33,26 +29,25 @@ def _safe_position(position: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def fetch_multi_chain_portfolio(wallet_address: str) -> dict:
+    if not wallet_address:
+        raise ValueError("Wallet address is required")
+
     wallet_address = normalize_evm_address(wallet_address)
 
     all_holdings = []
 
-    # Fetch holdings per enabled chain
+    # Fetch holdings from all enabled chains
     for chain in get_enabled_chains():
         try:
-            logger.info(
-                "Fetching holdings for wallet %s on chain %s",
-                wallet_address,
-                chain.name,
-            )
+            logger.info("Fetching holdings for %s on %s", wallet_address, chain.name)
             holdings = chain.fetch_holdings(wallet_address)
             if holdings:
                 all_holdings.extend(holdings)
         except Exception:
-            logger.exception("Chain fetch failed: %s", chain.name)
+            logger.exception("Failed fetching holdings for chain %s", chain.name)
 
     if not all_holdings:
-        logger.warning("No holdings discovered for wallet %s", wallet_address)
+        logger.warning("No holdings found for wallet %s", wallet_address)
         return {
             "portfolio": [],
             "total_value": 0.0,
@@ -61,26 +56,24 @@ def fetch_multi_chain_portfolio(wallet_address: str) -> dict:
             "performance": {},
         }
 
-    # Scam filtering
-    native_symbols = set()
-    erc20_contracts = set()
+    # Filter scams & collect pricing inputs
     filtered = []
+    native_symbols = set()
+    erc20_by_chain: dict[str, set[str]] = {}
 
     for h in all_holdings:
-        is_scam, reason = is_scam_token(h)
+        is_scam, _ = is_scam_token(h)
         if is_scam:
-            logger.warning("Scam token suppressed: %s (%s)", h.symbol, reason)
             continue
 
         filtered.append(h)
 
-        if h.is_erc20 and h.contract_address:
-            erc20_contracts.add(h.contract_address)
+        if h.is_erc20:
+            erc20_by_chain.setdefault(h.chain, set()).add(h.contract_address)
         else:
             native_symbols.add(h.symbol)
 
     if not filtered:
-        logger.warning("All holdings filtered out for wallet %s", wallet_address)
         return {
             "portfolio": [],
             "total_value": 0.0,
@@ -89,36 +82,31 @@ def fetch_multi_chain_portfolio(wallet_address: str) -> dict:
             "performance": {},
         }
 
+    # Fetch prices
     native_prices = fetch_native_prices(list(native_symbols))
-    erc20_prices = fetch_erc20_prices(list(erc20_contracts))
 
-    positions: List[Dict[str, Any]] = []
+    erc20_prices: dict[str, dict] = {}
+    for chain, contracts in erc20_by_chain.items():
+        try:
+            prices = fetch_erc20_prices(chain, list(contracts))
+            erc20_prices.update(prices)
+        except Exception:
+            logger.exception("Failed ERC-20 pricing for chain %s", chain)
+
+    positions = []
 
     for h in filtered:
         price = 0.0
 
         try:
             if is_stablecoin(h.symbol):
-                price_data = (
-                    erc20_prices.get(h.contract_address)
-                    if h.is_erc20
-                    else native_prices.get(h.symbol)
-                )
-                if price_data and BASE_CURRENCY in price_data:
-                    raw = price_data[BASE_CURRENCY]
-                    price = max(0.996, min(1.003, raw))
-                else:
-                    price = 1.0
+                price = 1.0
 
             elif h.is_erc20:
-                price_data = erc20_prices.get(h.contract_address)
-                if price_data:
-                    price = price_data.get(BASE_CURRENCY, 0.0)
+                price = erc20_prices.get(h.contract_address, {}).get(BASE_CURRENCY, 0.0)
 
             else:
-                price_data = native_prices.get(h.symbol)
-                if price_data:
-                    price = price_data.get(BASE_CURRENCY, 0.0)
+                price = native_prices.get(h.symbol, {}).get(BASE_CURRENCY, 0.0)
 
         except Exception:
             logger.exception("Price resolution failed for %s", h.symbol)
@@ -129,7 +117,6 @@ def fetch_multi_chain_portfolio(wallet_address: str) -> dict:
             positions.append(_safe_position(position))
 
     if not positions:
-        logger.warning("No priced positions for wallet %s", wallet_address)
         return {
             "portfolio": [],
             "total_value": 0.0,
@@ -140,11 +127,10 @@ def fetch_multi_chain_portfolio(wallet_address: str) -> dict:
 
     merged = [_safe_position(p) for p in deduplicate_positions(positions)]
 
-    # Portfolio Summary
     try:
         summary = build_portfolio_summary(merged)
     except Exception:
-        logger.exception("Portfolio summary build failed")
+        logger.exception("Summary calculation failed")
         summary = {}
 
     try:
@@ -156,12 +142,14 @@ def fetch_multi_chain_portfolio(wallet_address: str) -> dict:
         history = get_portfolio_history(wallet_address)
         performance = compute_performance_metrics(history) if history else {}
     except Exception:
-        logger.exception("Performance analytics failed")
+        logger.exception("Performance calculation failed")
         performance = {}
 
     total_value = summary.get(
-        "total_value", sum(p.get("current_value", 0.0) for p in merged)
+        "total_value",
+        sum(p.get("current_value", 0.0) for p in merged),
     )
+
     total_pnl = summary.get(
         "total_pnl",
         sum(p.get("current_value", 0.0) - p.get("invested", 0.0) for p in merged),

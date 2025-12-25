@@ -1,5 +1,7 @@
 import os
 import logging
+import time
+import random
 import requests
 from typing import List
 
@@ -7,9 +9,9 @@ from portfolio.models import Holding
 
 logger = logging.getLogger(__name__)
 
-ALCHEMY_API_KEY = os.getenv("ALCHEMY_API_KEY")
+ALCHEMY_KEY = os.getenv("ALCHEMY_API_KEY")
 
-CHAIN_TO_URL = {
+CHAIN_URLS = {
     "ethereum": "https://eth-mainnet.g.alchemy.com/v2/",
     "polygon": "https://polygon-mainnet.g.alchemy.com/v2/",
     "arbitrum": "https://arb-mainnet.g.alchemy.com/v2/",
@@ -18,50 +20,51 @@ CHAIN_TO_URL = {
 }
 
 
-def fetch_erc20_holdings(wallet_address: str, chain: str) -> List[Holding]:
-    if not ALCHEMY_API_KEY:
+def fetch_erc20_holdings(wallet: str, chain: str) -> List[Holding]:
+    if not ALCHEMY_KEY:
         logger.warning("ALCHEMY_API_KEY not set")
         return []
 
-    base_url = CHAIN_TO_URL.get(chain)
-    if not base_url:
-        logger.warning("Alchemy unsupported chain: %s", chain)
+    base = CHAIN_URLS.get(chain)
+    if not base:
         return []
 
-    url = f"{base_url}{ALCHEMY_API_KEY}"
-
+    url = f"{base}{ALCHEMY_KEY}"
     payload = {
         "jsonrpc": "2.0",
         "id": 1,
         "method": "alchemy_getTokenBalances",
-        "params": [wallet_address],
+        "params": [wallet],
     }
 
-    try:
-        r = requests.post(url, json=payload, timeout=20)
-        r.raise_for_status()
-        data = r.json()
-    except Exception:
-        logger.exception("Alchemy request failed")
-        return []
+    for attempt in range(3):
+        try:
+            r = requests.post(url, json=payload, timeout=20)
+            r.raise_for_status()
+            data = r.json()
+            break
+        except Exception as e:
+            if attempt == 2:
+                logger.exception("Alchemy request failed")
+                return []
+            time.sleep(2**attempt + random.random())
 
     balances = data.get("result", {}).get("tokenBalances", [])
-    holdings: List[Holding] = []
+    results = []
 
     for token in balances:
         raw = int(token.get("tokenBalance", "0"), 16)
         if raw == 0:
             continue
 
-        holdings.append(
+        results.append(
             Holding(
-                symbol=None,  # resolved later
+                symbol=None,
                 amount=raw,
                 chain=chain,
                 is_erc20=True,
                 contract_address=token["contractAddress"],
-                source="alchemy",
             )
         )
 
-    return holdings
+    return results

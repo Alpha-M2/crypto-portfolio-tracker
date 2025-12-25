@@ -1,27 +1,23 @@
 from collections import defaultdict
-from typing import Dict, List
-
-from portfolio.filters.stablecoins import is_stablecoin
+from typing import Dict
 
 
-def asset_class_exposure(positions: List[dict]) -> Dict[str, float]:
+def asset_class_exposure(positions: list[dict]) -> Dict[str, float]:
     totals = defaultdict(float)
-    portfolio_value = 0.0
+    total_value = 0.0
 
     for p in positions:
-        value = p["current_value"]
-        portfolio_value += value
+        value = p.get("current_value", 0)
+        total_value += value
 
         if not p.get("is_erc20"):
             totals["native"] += value
-        elif is_stablecoin(p["symbol"]):
+        elif p.get("symbol", "").upper() in {"USDC", "USDT", "DAI"}:
             totals["stablecoin"] += value
         else:
             totals["erc20"] += value
 
-    if portfolio_value == 0:
+    if total_value == 0:
         return {}
 
-    return {
-        cls: round((value / portfolio_value) * 100, 2) for cls, value in totals.items()
-    }
+    return {k: round(v / total_value * 100, 2) for k, v in totals.items()}
