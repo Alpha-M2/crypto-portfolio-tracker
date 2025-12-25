@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 BASE_CURRENCY = "usd"
@@ -18,5 +21,4 @@ POLYGON_RPC_URL = os.getenv("POLYGON_RPC_URL")
 AVALANCHE_RPC_URL = os.getenv("AVALANCHE_RPC_URL")
 
 
-ENABLE_COVALENT = bool(os.getenv("COVALENT_API_KEY"))
 ENABLE_ALCHEMY = bool(os.getenv("ALCHEMY_API_KEY"))

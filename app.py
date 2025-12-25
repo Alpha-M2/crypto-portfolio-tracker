@@ -8,6 +8,7 @@ from flask import (
     url_for,
 )
 import os
+from dotenv import load_dotenv
 import logging
 
 from portfolio.multi_chain import fetch_multi_chain_portfolio
@@ -15,6 +16,8 @@ from portfolio.storage import save_snapshot
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+load_dotenv()
 
 app = Flask(__name__)
 

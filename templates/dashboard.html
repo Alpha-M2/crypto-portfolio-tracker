@@ -36,12 +36,12 @@
     <tr>
         <td>{{ item.symbol }}</td>
         <td>{{ item.amount }}</td>
-        <td>{{ "%.2f"|format(item.invested) }}</td>
-        <td>{{ "%.2f"|format(item.current_value) }}</td>
+        <td>{{ "%.2f"|format(item.invested or 0) }}</td>
+        <td>{{ "%.2f"|format(item.current_value or 0) }}</td>
         <td class="{{ 'profit' if item.pnl >= 0 else 'loss' }}">
-            {{ "%.2f"|format(item.pnl) }}
+            {{ "%.2f"|format(item.pnl or 0) }}
         </td>
-        <td>{{ "%.2f"|format(item.pnl_pct) }}%</td>
+        <td>{{ "%.2f"|format(item.pnl_pct or 0) }}%</td>
     </tr>
     {% endfor %}
 </table>
