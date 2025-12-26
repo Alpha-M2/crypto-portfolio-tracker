@@ -1,81 +1,61 @@
-import logging
-import requests
+"""
+DEPRECATED MODULE — DO NOT USE DIRECTLY
+
+This file exists for backward compatibility only.
+
+All pricing logic has been migrated to:
+    portfolio/pricing.py
+
+Any new code MUST import from `portfolio.pricing`.
+"""
+
+import warnings
 from typing import Dict, List
 
-from config import BASE_CURRENCY
+from portfolio.pricing import get_native_prices, get_erc20_prices
 
-logger = logging.getLogger(__name__)
-
-COINGECKO_API = "https://api.coingecko.com/api/v3"
-
-CHAIN_TO_PLATFORM = {
-    "ethereum": "ethereum",
-    "polygon": "polygon-pos",
-    "arbitrum": "arbitrum-one",
-    "optimism": "optimistic-ethereum",
-    "base": "base",
-}
+warnings.warn(
+    "portfolio.prices is deprecated. Use portfolio.pricing instead.",
+    DeprecationWarning,
+    stacklevel=2,
+)
 
 
 def fetch_native_prices(symbols: List[str]) -> Dict[str, Dict[str, float]]:
-    if not symbols:
-        return {}
+    """
+    Backward-compatible wrapper.
 
-    symbol_to_id = {
+    OLD behavior:
+        symbols = ["ETH", "MATIC"]
+
+    NEW behavior:
+        We infer chains from symbols where possible.
+    """
+
+    # Minimal compatibility mapping
+    symbol_to_chain = {
         "ETH": "ethereum",
-        "BNB": "binancecoin",
         "MATIC": "polygon",
-        "AVAX": "avalanche-2",
-        "WETH": "ethereum",
+        "BNB": "bsc",
+        "AVAX": "avalanche",
     }
 
-    ids = [symbol_to_id[s] for s in symbols if s in symbol_to_id]
-    if not ids:
-        return {}
+    chains = [symbol_to_chain[s] for s in symbols if s in symbol_to_chain]
+    prices = get_native_prices(chains)
 
-    try:
-        r = requests.get(
-            f"{COINGECKO_API}/simple/price",
-            params={"ids": ",".join(ids), "vs_currencies": BASE_CURRENCY},
-            timeout=10,
-        )
-        r.raise_for_status()
-        data = r.json()
-    except Exception:
-        logger.exception("Failed to fetch native prices")
-        return {}
-
+    # Re-shape into old format
     return {
-        sym: data.get(symbol_to_id[sym], {}) for sym in symbols if sym in symbol_to_id
+        sym: {"usd": prices.get(chain)}
+        for sym, chain in symbol_to_chain.items()
+        if sym in symbols
     }
 
 
 def fetch_erc20_prices(
     chain: str, contract_addresses: List[str]
 ) -> Dict[str, Dict[str, float]]:
-    if not contract_addresses:
-        return {}
-
-    platform = CHAIN_TO_PLATFORM.get(chain)
-    if not platform:
-        return {}
-
-    prices: Dict[str, Dict[str, float]] = {}
-
-    for i in range(0, len(contract_addresses), 50):
-        batch = contract_addresses[i : i + 50]
-        try:
-            r = requests.get(
-                f"{COINGECKO_API}/simple/token_price/{platform}",
-                params={
-                    "contract_addresses": ",".join(batch),
-                    "vs_currencies": BASE_CURRENCY,
-                },
-                timeout=10,
-            )
-            r.raise_for_status()
-            prices.update(r.json())
-        except Exception:
-            logger.warning("ERC-20 price batch failed for %s", batch)
-
-    return prices
+    """
+    Backward-compatible ERC-20 pricing wrapper.
+    """
+    prices = get_erc20_prices(chain, contract_addresses)
+    return {addr: {"usd": price} for addr, price in prices.items()}
