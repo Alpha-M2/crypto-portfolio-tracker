@@ -48,12 +48,10 @@ class EVMChain:
         if os.getenv(self.rpc_env_key):
             return os.getenv(self.rpc_env_key)
 
-        # Alchemy
         alchemy_key = os.getenv("ALCHEMY_API_KEY")
         if alchemy_key and self.symbol in ALCHEMY_BASE:
             return f"{ALCHEMY_BASE[self.symbol]}{alchemy_key}"
 
-        # Public fallback
         return FALLBACK_RPCS.get(self.symbol)
 
     def fetch_holdings(self, wallet_address: str) -> List[Holding]:
@@ -63,6 +61,12 @@ class EVMChain:
             CACHE_TTL_SECONDS,
         )
         if cached:
+            logger.info(
+                "Cache hit for %s on %s (%d holdings)",
+                wallet_address[:8],
+                self.symbol,
+                len(cached),
+            )
             return cached
 
         holdings: List[Holding] = []
@@ -75,6 +79,12 @@ class EVMChain:
         # Native token
         try:
             native_amount = fetch_eth_balance(wallet_address, rpc_url)
+            logger.info(
+                "Native balance on %s: %.6f %s",
+                self.symbol,
+                native_amount,
+                self.native_symbol,
+            )
             if native_amount > 0:
                 holdings.append(
                     Holding(
@@ -90,9 +100,16 @@ class EVMChain:
         # ERC-20 tokens
         try:
             erc20s = fetch_erc20_holdings(wallet_address, self.symbol)
+            logger.info("Fetched %d ERC20 holdings on %s", len(erc20s), self.symbol)
             holdings.extend(erc20s)
         except Exception:
             logger.exception("ERC20 fetch failed for %s", self.symbol)
 
         set_cached_holdings(wallet_address, self.symbol, holdings)
+        logger.info(
+            "Total holdings cached for %s on %s: %d",
+            wallet_address[:8],
+            self.symbol,
+            len(holdings),
+        )
         return holdings

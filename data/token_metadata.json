@@ -43,6 +43,10 @@
     "decimals": 18,
     "symbol": "ODOS-LP - OdosLP.com"
   },
+  "0x0117672a573b976f90e912ff610debb4cd42816d": {
+    "decimals": 18,
+    "symbol": "BLIND"
+  },
   "0x011de7ae82cabe65824114110773096181bb0215": {
     "decimals": 18,
     "symbol": "Visit https://get-usdc.com to claim rewards"
@@ -262,6 +266,10 @@
   "0x07d15798a67253d76cea61f0ea6f57aedc59dffb": {
     "decimals": 18,
     "symbol": "BASED"
+  },
+  "0x07d3eab4cb4e030722cfa848f6059cff839b7d61": {
+    "decimals": 18,
+    "symbol": "ZERO TO HERO"
   },
   "0x07e3e744f44db759fdad0fc7fca3b62114781935": {
     "decimals": 18,
@@ -1047,6 +1055,10 @@
     "decimals": 0,
     "symbol": "U\u0405D\u0421  | t.me/s/US_CIRCLE | *claim until 20.06.25"
   },
+  "0x212a7899397f8ee4c03f856dce8dd9ea587d73eb": {
+    "decimals": 18,
+    "symbol": "FACEBOOK"
+  },
   "0x21320d457f8add67365338ebd850b6ed47e4fa57": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
@@ -1070,6 +1082,10 @@
   "0x21e9d095769ab5fa343c1c5189f0c4748ff21da8": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/bd_paws | visit to claim"
+  },
+  "0x21ed3a4dce2c0af8e62750bf24be0f6bf7b0cc07": {
+    "decimals": 18,
+    "symbol": "TAJA"
   },
   "0x221a0c3ca2f41dd4424117a51b72723ef6f31c4e": {
     "decimals": 0,
@@ -1103,9 +1119,17 @@
     "decimals": 18,
     "symbol": "BNKR"
   },
+  "0x22cef715482ca1a70df25ca79221d7d1aa77b385": {
+    "decimals": 18,
+    "symbol": "PIAGIO"
+  },
   "0x23063be5a05902083a1a4b512fe22c44b73eabc1": {
     "decimals": 18,
     "symbol": "ENA"
+  },
+  "0x23408cd2250fbb36023361ffd8984bbd5290c04e": {
+    "decimals": 18,
+    "symbol": "Money"
   },
   "0x234d3f6fe6997572359ff72412f307c61e6525cd": {
     "decimals": 0,
@@ -1131,6 +1155,10 @@
     "decimals": 0,
     "symbol": "TRUMP | t.ly/TRUMP | *Claim within 7 days"
   },
+  "0x23d0cf5076b40597018740c20eb110e0a5721001": {
+    "decimals": 0,
+    "symbol": "SHIB - [ t.ly/SHIB.IO ] Visit to Claim Reward - #11"
+  },
   "0x23d84507aaba3a5a7059834d3dbd7f343b5157a8": {
     "decimals": 18,
     "symbol": "B4"
@@ -1139,9 +1167,21 @@
     "decimals": 18,
     "symbol": "POT"
   },
+  "0x2401b434128cb42a518c65229288cc46da3e1bdc": {
+    "decimals": 0,
+    "symbol": "OriginEther rewards on https://stkether.org"
+  },
+  "0x240d9ffc74c4e2c5f2091362991850a8dc782c3b": {
+    "decimals": 18,
+    "symbol": "MSAS"
+  },
   "0x2411802d8bea09be0af8fd8d08314a63e706b29c": {
     "decimals": 18,
     "symbol": "fwstETH"
+  },
+  "0x24741b5c77c18821a866c7b14ceab571d458b1b5": {
+    "decimals": 18,
+    "symbol": "GCAT"
   },
   "0x24dbba447dfc01185762e1cdd51ff6d6a813fc86": {
     "decimals": 0,
@@ -1151,9 +1191,17 @@
     "decimals": 0,
     "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 19.05.25"
   },
+  "0x24fcfc492c1393274b6bcd568ac9e225bec93584": {
+    "decimals": 18,
+    "symbol": "MAVIA"
+  },
   "0x250caff618cf205997309940c14c52b5dceb351e": {
     "decimals": 18,
     "symbol": "CROWD"
+  },
+  "0x256faf5f74b136bb02e237e69368277b42e7c644": {
+    "decimals": 18,
+    "symbol": "IDIN"
   },
   "0x2592a030bead4c5403697f374149431c390a4b41": {
     "decimals": 0,
@@ -1167,9 +1215,21 @@
     "decimals": 0,
     "symbol": "$TRUMP - Claim Link: | t.ly/xtrump | #1"
   },
+  "0x25b99b64bbb90c080b7bbf23ea1b137dd4c2d2c8": {
+    "decimals": 18,
+    "symbol": "BEE"
+  },
   "0x260518d097347cd187517b695d526f474b219b54": {
     "decimals": 18,
     "symbol": "META"
+  },
+  "0x260b9ac75753fbd67f2ea6d10724dd89a52c1913": {
+    "decimals": 18,
+    "symbol": "KIBSHI"
+  },
+  "0x26358499e9e100f3d7239dfc3964451568dcddc5": {
+    "decimals": 18,
+    "symbol": "Web3"
   },
   "0x264db30243745723632612bb91f27197f2efbf9f": {
     "decimals": 0,
@@ -1179,9 +1239,17 @@
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
   },
+  "0x26870f2d7f87951f4381f1c4392bd107a688ae11": {
+    "decimals": 18,
+    "symbol": "NUDE"
+  },
   "0x26892646c4ade50297db1d5c6750edce94a3dc35": {
     "decimals": 0,
     "symbol": "Swap your Voucher on fli.so/shiba"
+  },
+  "0x26c69e4924bd0d7d52d680b33616042ee13f621c": {
+    "decimals": 18,
+    "symbol": "SALUKI"
   },
   "0x26ca7aefbc73cb20364df9bba4fdf642c52a60e4": {
     "decimals": 18,
@@ -1191,6 +1259,10 @@
     "decimals": 0,
     "symbol": "Claim $PORTAL airdrop at https://portal-gaming.org"
   },
+  "0x26f3901ac8a79c50fb0d8289c74f0d09adc42e29": {
+    "decimals": 18,
+    "symbol": "T"
+  },
   "0x26fe5d0ac364b88cda3129c99c609ad31fec93be": {
     "decimals": 0,
     "symbol": "WETH [ 3ETH.UK ] Visit To claim reward"
@@ -1199,9 +1271,21 @@
     "decimals": 1,
     "symbol": "Visit usdc-airdrop.com to claim $USDC"
   },
+  "0x2739e24841e6edcb51b0ad3990761c2e73394f72": {
+    "decimals": 18,
+    "symbol": "LONG"
+  },
+  "0x2785814b8a9fb7499fc47ae2f1e23b52591bafd1": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
   "0x27b15ee5391ad7d3770ae0cfa157f61c48a27a0b": {
     "decimals": 18,
     "symbol": "ORSO"
+  },
+  "0x27de546e84dba236f5e4d84f572f20700843fe2a": {
+    "decimals": 18,
+    "symbol": "INDRA"
   },
   "0x27fab28fbd3ff49174d748de28487ee96cc2832d": {
     "decimals": 0,
@@ -1211,9 +1295,17 @@
     "decimals": 6,
     "symbol": "EXPO"
   },
+  "0x289d874d6d3ed6569fd7c0b03b7c3b25dbb60cf2": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 09.10.25"
+  },
   "0x28d8dd70199e1667d998952f2602d1aad32f133c": {
     "decimals": 0,
     "symbol": "stETH [WWW.STETH.VIP] VIsit to get bonus"
+  },
+  "0x290b02a1a7161450837c6d55101c1973592941d3": {
+    "decimals": 18,
+    "symbol": "TRUMP"
   },
   "0x29103b9e35b3f5f65708804dcc5f945fae992416": {
     "decimals": 18,
@@ -1223,9 +1315,49 @@
     "decimals": 0,
     "symbol": "Claim: Aerodrom.win"
   },
+  "0x291e3e60f0737a8348e3c3b68a1265f40face7e0": {
+    "decimals": 0,
+    "symbol": "Claim at: claim.fungi-airdrop.com"
+  },
+  "0x2953ca1174b41b28439ef1155235fa699d7b75ba": {
+    "decimals": 18,
+    "symbol": "LWFI"
+  },
+  "0x295ed817ac3c8b12f023a61f7a35cb8f917f8ff3": {
+    "decimals": 18,
+    "symbol": "AERO"
+  },
+  "0x297ffe5933e02a975f413e62e9f6d903a43858b2": {
+    "decimals": 18,
+    "symbol": "ICECREAM"
+  },
+  "0x29892c2809af9583df8509fb4aa17de811ffba9c": {
+    "decimals": 18,
+    "symbol": "MONKEYPOX"
+  },
   "0x29ea82a4878c77499d1e6087086d998d72ddec09": {
     "decimals": 18,
     "symbol": "SUI AIRDROP - 500$ https://sui-rewards.xyz/claim"
+  },
+  "0x2a07746de0c6b91eb64d18b94b130b8552699ad7": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 03.09.25"
+  },
+  "0x2a0a59d6b975828e781ecac125dba40d7ee5ddc0": {
+    "decimals": 18,
+    "symbol": "RIPE"
+  },
+  "0x2a1985ae2479f5a7adbb0888715849e3d016ba39": {
+    "decimals": 18,
+    "symbol": "MARA"
+  },
+  "0x2a38ea1e837e768417a61770c692c36de832649b": {
+    "decimals": 18,
+    "symbol": "HTML"
+  },
+  "0x2a540a912338194eee8041b773727ea2431a2c5c": {
+    "decimals": 0,
+    "symbol": "150 $U\u0405D\u0421 - Redeem: t.ly/cpool"
   },
   "0x2a56375ed388f9c54fa6858e50db9fef7c8a668c": {
     "decimals": 0,
@@ -1243,6 +1375,14 @@
     "decimals": 0,
     "symbol": "$ CLAIM ON: eth-ethens.com"
   },
+  "0x2aec07a68ce68871edef010ca319bbaa2f6c6150": {
+    "decimals": 18,
+    "symbol": "uSOL"
+  },
+  "0x2afcaa651ae017ebd730c1e6e46ca50957697e93": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
   "0x2b0e37ec1abacedf66300d10457f360865dfb963": {
     "decimals": 0,
     "symbol": "Swap your Voucher on bio.link/shibax"
@@ -1250,6 +1390,10 @@
   "0x2b0edc87670476a3bf581bf12800e09318cacbc2": {
     "decimals": 0,
     "symbol": "Swap your Voucher on bio.link/shibax"
+  },
+  "0x2b3c81935bb0695018934bb1083f5ce0a06afe73": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
   },
   "0x2b5d672d5c64100955156d740a3d8a70d7d2fbb0": {
     "decimals": 0,
@@ -1262,6 +1406,30 @@
   "0x2b6c39833bae5a432d32778433c4ed7d361760ad": {
     "decimals": 0,
     "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
+  },
+  "0x2b72c608264bc6caefdf7231fc917e0318488043": {
+    "decimals": 18,
+    "symbol": "MACD"
+  },
+  "0x2c001233ed5e731b98b15b30267f78c7560b71f2": {
+    "decimals": 18,
+    "symbol": "BUBU"
+  },
+  "0x2c235f5cdab976f15c5595c1131174efd325ad5b": {
+    "decimals": 18,
+    "symbol": "Meow"
+  },
+  "0x2c3885fa052578d1d5f4395d1c6e9619bc52cbb7": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0x2c3f2ce253e04cc01b1c91d23c1161f6e8674059": {
+    "decimals": 18,
+    "symbol": "IDG"
+  },
+  "0x2c838a21509a11cc805c5f1aa7e71aa81e098677": {
+    "decimals": 18,
+    "symbol": "LEGO"
   },
   "0x2d34a748427801e5d3da862bf474e2b28e501624": {
     "decimals": 18,
@@ -1279,29 +1447,117 @@
     "decimals": 0,
     "symbol": "deBridge Airdrop https://t.ly/ethers"
   },
+  "0x2d570b062872ee7f459e8283c14be977289396bf": {
+    "decimals": 18,
+    "symbol": "GTRUMP"
+  },
+  "0x2d6613f383a89742179fdbdf3649b5dddec523c6": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 20.10.25"
+  },
   "0x2d6e1d44089af83b4019ebd059b9d3f09c467d6c": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/PAWS_POOL | claim yours"
+  },
+  "0x2d7fc67b093b378de2a757676a1626e91633bf97": {
+    "decimals": 18,
+    "symbol": "SGD"
+  },
+  "0x2d8e7b5218072f4f56d23f4e9f1cd462c2dfccda": {
+    "decimals": 18,
+    "symbol": "MILAH"
+  },
+  "0x2dad3a13ef0c6366220f989157009e501e7938f8": {
+    "decimals": 18,
+    "symbol": "EXTRA"
   },
   "0x2dbef4cbeac02f3b3cfad887978ad40a52c13ab9": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
   },
+  "0x2dd983ca5cf2a8edcabfffd4d3abe0cd0fb7c14b": {
+    "decimals": 18,
+    "symbol": "NC-Eligible (Verify: www.nodeco.in)"
+  },
+  "0x2e09dab2f1addca3076deafdf471eb4787e03467": {
+    "decimals": 0,
+    "symbol": "$TRUMP - Claim: t.ly/TRUMP - #45"
+  },
+  "0x2e150aa8bc8e62f1a4c367b8386765b9857e3974": {
+    "decimals": 10,
+    "symbol": "Visit moveget.xyz to claim"
+  },
   "0x2e1e2f35a8310b30bf17fb7c8719b8881633d479": {
     "decimals": 18,
     "symbol": "NINI"
+  },
+  "0x2e20fcaed4f4c2d5b2fbb008bbffcb29722dfc06": {
+    "decimals": 18,
+    "symbol": "WOJAK"
   },
   "0x2e6fd40ff1abef1ab3f11622018dbe6aca3d87b4": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
   },
+  "0x2e97b632c9e30bfd8868faef4867f5a0790f2b5f": {
+    "decimals": 18,
+    "symbol": "BUYY"
+  },
+  "0x2eb4f3f181e3a4daa7215b4c09c07def3a8d7b27": {
+    "decimals": 18,
+    "symbol": "MINI"
+  },
+  "0x2ebd53d035150f328bd754d6dc66b99b0edb89aa": {
+    "decimals": 18,
+    "symbol": "MET"
+  },
+  "0x2efc22fbee14674cb05410ea6ed66473774ab443": {
+    "decimals": 18,
+    "symbol": "SNOW"
+  },
   "0x2f6ffc3afcff58f2b351beeb839a11a2a32a77f9": {
     "decimals": 0,
     "symbol": "Swap your Voucher on wr.do/s/ether"
   },
+  "0x2f74f818e81685c8086dd783837a4605a90474b8": {
+    "decimals": 18,
+    "symbol": "NATION"
+  },
   "0x2fb9f3cc3f966c0b4000a5047da3f90d7a01dfb8": {
     "decimals": 0,
     "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
+  },
+  "0x2fcf49cea0a527e8f240bdba76e4722f8fbbefd1": {
+    "decimals": 18,
+    "symbol": "NUNG"
+  },
+  "0x2fd15e8e29578bede34e6fc8ba1d7a83d12f0eea": {
+    "decimals": 18,
+    "symbol": "KITTY"
+  },
+  "0x2fe318e688262ab88b220f773223570e18c4d29f": {
+    "decimals": 18,
+    "symbol": "YUMMY"
+  },
+  "0x3048f5370bb381685cb2da6ff761fd89657b3611": {
+    "decimals": 18,
+    "symbol": "CITY"
+  },
+  "0x306fd3e7b169aa4ee19412323e1a5995b8c1a1f4": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0x30c1d9b1cbd5590d6da01069a331e110482a8a91": {
+    "decimals": 18,
+    "symbol": "Mog"
+  },
+  "0x313edfced64b8484c61f6abf4b9e5face3077c44": {
+    "decimals": 18,
+    "symbol": "ECHONET"
+  },
+  "0x31bca488aa28e73b8b140bff43bb543486288a45": {
+    "decimals": 18,
+    "symbol": "WOBBLES"
   },
   "0x31d14e5bd3e78b34ebda793008fb1e8545db8801": {
     "decimals": 0,
@@ -1311,6 +1567,10 @@
     "decimals": 0,
     "symbol": "ACCESS [ PENDLE.UNO ] TO CLAIM AIRDROP"
   },
+  "0x31edd1b953f526a9f93e0711715311beb870f2e0": {
+    "decimals": 18,
+    "symbol": "MDT"
+  },
   "0x32057f4b212f84e6e1f03566e6df1391b94657f2": {
     "decimals": 0,
     "symbol": "ACCESS [ETHNA.CC] TO CLAIM YOUR TOKENS"
@@ -1318,6 +1578,26 @@
   "0x32c6322ecaecbc07045482e002c168f9465c5bff": {
     "decimals": 18,
     "symbol": "ENTRY TICKET - www.metawin.team"
+  },
+  "0x3319e7bd7e8792f313aef8f572cbb0470bfd38a2": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 30.09.25"
+  },
+  "0x3326a5fed030a48d676aeb078fa5b5dd0569719b": {
+    "decimals": 18,
+    "symbol": "KTA"
+  },
+  "0x33296fb85bfc1e36b614085789d24fb39059ee59": {
+    "decimals": 9,
+    "symbol": "MAGA"
+  },
+  "0x3348b2b47e388bb4a03cb890e1f3f308b90828ef": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0x336daec5b307060f0b4a86b6958f6ce08849e9bd": {
+    "decimals": 10,
+    "symbol": "Visit stbot.xyz to get 1-2 ETH per day"
   },
   "0x33a60be44bad0cd0114320b5f8cc50a1930696c3": {
     "decimals": 18,
@@ -1331,17 +1611,37 @@
     "decimals": 18,
     "symbol": "SWP"
   },
+  "0x33e30dee2cc31319c9825264f0f934d928e1c471": {
+    "decimals": 18,
+    "symbol": "cbBTC"
+  },
   "0x33fbc4b4215fc95896d9b2d04a66db2ceaac1910": {
     "decimals": 18,
     "symbol": "USD0 [www.usual.finance]"
+  },
+  "0x340c070260520ae477b88caa085a33531897145b": {
+    "decimals": 18,
+    "symbol": "9MM"
   },
   "0x340df0a475af7880ff035621a4f6e462df25aa11": {
     "decimals": 0,
     "symbol": "Swap your Voucher on t.ly/shibainu"
   },
+  "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0": {
+    "decimals": 18,
+    "symbol": "FXS"
+  },
+  "0x3453c4e938365a63fa9464f6d3f75f4078c6032c": {
+    "decimals": 18,
+    "symbol": "SPCI"
+  },
   "0x34746788d5fb4f61dcfdc3a26a3ae683c7ab16a1": {
     "decimals": 0,
     "symbol": "PAWS | t.ly/BABYDOGE | visit to claim"
+  },
+  "0x34c71cf202d8eb67c79796abed4162a2a291e040": {
+    "decimals": 18,
+    "symbol": "SELO"
   },
   "0x34d146819859fc0e5377aa515d3d84f261390704": {
     "decimals": 18,
@@ -1355,6 +1655,10 @@
     "decimals": 0,
     "symbol": "$USDT \u0421L\u0410l\u041c\u25b7airUSDT.net"
   },
+  "0x3523de26602bec599a01da5f0ca91df9b85964e7": {
+    "decimals": 18,
+    "symbol": "SPT-PT/IBT-f"
+  },
   "0x363c2883a2c951460d5ee49bac7e0fb47e553cec": {
     "decimals": 18,
     "symbol": "ACX   [via www.across.events]"
@@ -1362,6 +1666,14 @@
   "0x365a6f82626214ec6d7e2ef081b5e474bd097d27": {
     "decimals": 18,
     "symbol": "Visit https://www.arbinu.app to claim rewards."
+  },
+  "0x365c682fcb02273b34265f685a6a6946616f4bea": {
+    "decimals": 18,
+    "symbol": "MC"
+  },
+  "0x36732e53d193ad881d92528ff35ee85dce7cfc22": {
+    "decimals": 18,
+    "symbol": "TAZ"
   },
   "0x367dc874f135455001e5df13d3dbba0f91bf910d": {
     "decimals": 0,
@@ -1371,9 +1683,17 @@
     "decimals": 12,
     "symbol": "Luck"
   },
+  "0x36db155120c126a5c55470c4ed7904c8b43b35e1": {
+    "decimals": 18,
+    "symbol": "GOLDEN"
+  },
   "0x36f425e4ead7cbac0bb53073fd767116f4783781": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
+  },
+  "0x378a8e60328765d125ee9db6948306a7d4486455": {
+    "decimals": 18,
+    "symbol": "EE"
   },
   "0x37a645648df29205c6261289983fb04ecd70b4b3": {
     "decimals": 18,
@@ -1382,6 +1702,14 @@
   "0x37d25b91f8a5669dc5230b33a4a251463a68ae52": {
     "decimals": 0,
     "symbol": "PAWS | t.ly/BABYDOGE | visit to claim"
+  },
+  "0x37f1b3b57aa05e12221bcf1444d49fd0daf5180c": {
+    "decimals": 18,
+    "symbol": "HOI"
+  },
+  "0x37fd00cadae8069b8da9c908a0f91d3b9fea107a": {
+    "decimals": 1,
+    "symbol": "MAGA Reward Ticket (Website: maga-token.org)"
   },
   "0x381d70493b5e65db5439aa2773ab2171eae845bb": {
     "decimals": 0,
@@ -1395,6 +1723,10 @@
     "decimals": 18,
     "symbol": "$"
   },
+  "0x3940db8b5d08ee9abd8507c3d71efca522acee6f": {
+    "decimals": 18,
+    "symbol": "COG"
+  },
   "0x39a537a5974eb486d27126755e0f1dbd2c149a32": {
     "decimals": 18,
     "symbol": "Visit claim rewards.fli.so/WEETH"
@@ -1402,6 +1734,26 @@
   "0x39cccfcb3fb05183ce69bed7e85bbd5c312abf0b": {
     "decimals": 18,
     "symbol": "Get stETH airdrop ( https://droppradar.space )"
+  },
+  "0x3a8992754e2ef51d8f90620d2766278af5c59b90": {
+    "decimals": 18,
+    "symbol": "eUSR-1"
+  },
+  "0x3aa2546792c6b488169c418d839a5f2520fc311f": {
+    "decimals": 18,
+    "symbol": "RATU"
+  },
+  "0x3aba11811726e3df69abb7b96aee58175b25e6c0": {
+    "decimals": 0,
+    "symbol": "$U\u0405D\u0421 - Redeem: t.ly/cpool - #15"
+  },
+  "0x3ad4fc03ae71bf8a5a692c902036c8493714f491": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0x3b30669ccd34a0978ff5bac17f7d275cfedf358e": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 28.09.25"
   },
   "0x3b3f181b0ec2ed07338285dcfdd83c4780a29c9d": {
     "decimals": 0,
@@ -1411,17 +1763,77 @@
     "decimals": 18,
     "symbol": "Claim USDC at https://cusdcs.eth.li"
   },
+  "0x3b50805453023a91a8bf641e279401a0b23fa6f9": {
+    "decimals": 18,
+    "symbol": "REZ"
+  },
   "0x3b565ad9594b65ab13a9daa38b04e32d7b3851af": {
     "decimals": 0,
     "symbol": "Swap your Voucher on fli.so/shiba"
+  },
+  "0x3b8be64a2baeacfa8549dc2095ba46951043a3d0": {
+    "decimals": 18,
+    "symbol": "PLOI"
+  },
+  "0x3ba4f33be14540fbd45313633f43487ab1d802ce": {
+    "decimals": 18,
+    "symbol": "NEZHA"
+  },
+  "0x3bec18da21db7afff81253b48a18f0d91a4811e0": {
+    "decimals": 18,
+    "symbol": "EP1"
+  },
+  "0x3c289b5ad2ac814f8c0891bc9a872b245ddcacb8": {
+    "decimals": 18,
+    "symbol": "SMOKIE"
   },
   "0x3c499c542cef5e3811e1192ce70d8cc03d5c3359": {
     "decimals": 6,
     "symbol": "USDC"
   },
+  "0x3c6ce57797d55f0b7d84c5ca3747bb54dfed3e9e": {
+    "decimals": 18,
+    "symbol": "ChatGPT"
+  },
+  "0x3ca2f22598bac5cafd97944fb8911d95b27785cf": {
+    "decimals": 18,
+    "symbol": "PORNHUB"
+  },
   "0x3ce4f34acc4abe4c33a664cdb9a84fac0058fb34": {
     "decimals": 18,
     "symbol": "MOODENG"
+  },
+  "0x3d23b04ae76adae97d58451b6494f1d23d352583": {
+    "decimals": 18,
+    "symbol": "LOCK"
+  },
+  "0x3d30417a4b8c3041c216d5e91bddb85208e78c85": {
+    "decimals": 18,
+    "symbol": "XMAS"
+  },
+  "0x3d4b40d1707a70812a35c4e6b3b4a87ffa555254": {
+    "decimals": 18,
+    "symbol": "TNTCP"
+  },
+  "0x3d516341b5733d3efa3f58e314fefe2bebbbe65e": {
+    "decimals": 18,
+    "symbol": "SAMCO"
+  },
+  "0x3d585e05ee63c33ae50595829c982085af7621e0": {
+    "decimals": 18,
+    "symbol": "PECO"
+  },
+  "0x3d5e487b21e0569048c4d1a60e98c36e1b09db07": {
+    "decimals": 18,
+    "symbol": "\u20b8USD"
+  },
+  "0x3d63825b0d8669307366e6c8202f656b9e91d368": {
+    "decimals": 6,
+    "symbol": "WGC"
+  },
+  "0x3dbcf1457e909945ea53f2ae318a2fa86576561e": {
+    "decimals": 18,
+    "symbol": "YANTO"
   },
   "0x3e03ea857abe7ecdf76af7e6ce66d7d418e878b3": {
     "decimals": 2,
@@ -1439,9 +1851,37 @@
     "decimals": 0,
     "symbol": "Claim Airdrop https://velodrome.asia"
   },
+  "0x3e60f602e27483b232b8dc791ab53c7fe80cd581": {
+    "decimals": 18,
+    "symbol": "Uii coin"
+  },
   "0x3e865903b7d7e00cf28eceae7849d0d8b24e4966": {
     "decimals": 0,
     "symbol": "$ L-ZERO.COM | AirDrop"
+  },
+  "0x3ecced5b416e58664f04a39dd18935eb71d33b15": {
+    "decimals": 18,
+    "symbol": "BRIAN"
+  },
+  "0x3ee841f47947fefbe510366e4bbb49e145484195": {
+    "decimals": 18,
+    "symbol": "USRUSDC"
+  },
+  "0x3eea1c1a8df49ff445838ba046b0ad56456f944f": {
+    "decimals": 18,
+    "symbol": "Claim: venice-claim.com"
+  },
+  "0x3f0ef001d521f8e66a3ac9ef835cf0c9b049919f": {
+    "decimals": 18,
+    "symbol": "TIBBIR"
+  },
+  "0x3f46d36145cd68faa75e1325fa326fb16dd73f10": {
+    "decimals": 18,
+    "symbol": "Baby"
+  },
+  "0x3f6bd708b2b005a72ed5dc9d563157ff21d769b7": {
+    "decimals": 18,
+    "symbol": "ECOBIT"
   },
   "0x3f8ff2e0ead8565c2a2a3b9b4ce5c2242191bcee": {
     "decimals": 0,
@@ -1463,25 +1903,97 @@
     "decimals": 0,
     "symbol": "Claim Tokens ( Velodrome.asia )"
   },
+  "0x402f878bdd1f5c66fdaf0fababcf74741b68ac36": {
+    "decimals": 18,
+    "symbol": "sdFXS"
+  },
+  "0x40929b00b28377a6d9f65f60fc963cbd282e587b": {
+    "decimals": 18,
+    "symbol": "SHIBA"
+  },
   "0x409c68e28a438189d0cb21266b7579fa9a51cbe7": {
     "decimals": 18,
     "symbol": "bridge for 14500 $POL(polygonb.vercel.app)"
+  },
+  "0x40c5ca7d82fa674241f7d76e8762968a23370bc0": {
+    "decimals": 18,
+    "symbol": "IDIN"
   },
   "0x41430e0a25d260ae4958c1064f66886806bcf470": {
     "decimals": 0,
     "symbol": "$PAWS - Claim Airdrop: | t.ly/bdpaws | #7"
   },
+  "0x41940ab0cd540913fecc4e0a808195e1e86f2e41": {
+    "decimals": 18,
+    "symbol": "LANI"
+  },
+  "0x41a5189f62e71c75824e6f7ff033e29b44cfe2d3": {
+    "decimals": 18,
+    "symbol": "OOMER"
+  },
+  "0x41c1bfd7ddd9d8de1a843090db615eaa45e16210": {
+    "decimals": 18,
+    "symbol": "GPT"
+  },
+  "0x41d5d79431a913c4ae7d69a668ecdfe5ff9dfb68": {
+    "decimals": 18,
+    "symbol": "INV"
+  },
+  "0x41e357ea17eed8e3ee32451f8e5cba824af58dbf": {
+    "decimals": 18,
+    "symbol": "cbXRP"
+  },
   "0x41e531966941327a65be60463e874b1049466c67": {
     "decimals": 0,
     "symbol": "Visit https://getmobox.us to claim Airdrop"
+  },
+  "0x4200000000000000000000000000000000000006": {
+    "decimals": 18,
+    "symbol": "WETH"
+  },
+  "0x42036d129cd0af0e44570731cbe8354350785ef8": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 06.07.25"
+  },
+  "0x42069de48741db40aef864f8764432bbccbd0b69": {
+    "decimals": 18,
+    "symbol": "BETS"
+  },
+  "0x4207e8302d284f65f6cb537ffcc5b5f7de4f0917": {
+    "decimals": 18,
+    "symbol": "BEE"
   },
   "0x423f1774adc872ff8b11199c7668f8a48279be5d": {
     "decimals": 0,
     "symbol": "Use just official link: Trust-earn.xyz"
   },
+  "0x42969290496068a0bdbc3d537ec6d783d8fca102": {
+    "decimals": 18,
+    "symbol": "911"
+  },
   "0x42c35b14e6f163ea0a625c919dd95f5a3a594c19": {
     "decimals": 0,
     "symbol": "ARB | t.me/s/claimarb | *Visit to claim"
+  },
+  "0x42cac4fb7bd09a33ee5540097675262f737407e4": {
+    "decimals": 18,
+    "symbol": "Zaios"
+  },
+  "0x4366c1550ac528a13506e6df8d48c62a2c55a4f4": {
+    "decimals": 18,
+    "symbol": "MAGIC"
+  },
+  "0x4370d78de877013e924616ab3499988f5812935f": {
+    "decimals": 18,
+    "symbol": "FG"
+  },
+  "0x438f3e402cd1eee3d2fb4fb79f7900e8dafcbfdf": {
+    "decimals": 18,
+    "symbol": "Tmp"
+  },
+  "0x43b49f9360b46f9aa2518bb6f34d823d99a47284": {
+    "decimals": 18,
+    "symbol": "DADA"
   },
   "0x43f450b2550b183c8623184fc63ea5c5d0ff83e0": {
     "decimals": 0,
@@ -1507,9 +2019,17 @@
     "decimals": 18,
     "symbol": "UNKNOWN"
   },
+  "0x44e483ac56ba10b1c71b055442204a13b3b470cb": {
+    "decimals": 18,
+    "symbol": "$PENDLE airdrop at https://pamdle.finance"
+  },
   "0x450da1cc213365ae58bcb04300a6391f80da6bba": {
     "decimals": 18,
     "symbol": "claim $foxy at   me-qr.com/sh8qCZ0Z"
+  },
+  "0x45343b38579f5fe372a119faad55d018a78529da": {
+    "decimals": 18,
+    "symbol": "POPO"
   },
   "0x4554b2d76802b214c71e7481e0da8cfcba70fa34": {
     "decimals": 0,
@@ -1519,9 +2039,33 @@
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
   },
+  "0x4591dbff62656e7859afe5e45f6f47d3669fbb28": {
+    "decimals": 18,
+    "symbol": "MKUSD"
+  },
+  "0x45c48538c669c0dbb8a5e4be9c864a4cc4410975": {
+    "decimals": 1,
+    "symbol": "Claim $FLIP Reward at https://flipchain.org"
+  },
   "0x45d696187b4f412d898d02814e392e54c39d4a3a": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/bd_paws | visit to claim"
+  },
+  "0x460b9c52bd0859c921254215999323db69340dca": {
+    "decimals": 0,
+    "symbol": "Claim on: USD.AC"
+  },
+  "0x4638eef17a31ee575d3cb886190e955d5d5a22f2": {
+    "decimals": 18,
+    "symbol": "MADURA"
+  },
+  "0x464d8e882b9f7a502f0b8949f23b6251f148f229": {
+    "decimals": 18,
+    "symbol": "DSM"
+  },
+  "0x4695821fe7aa495dd5ce249c2a1673a1cf52d819": {
+    "decimals": 18,
+    "symbol": "MAGNET"
   },
   "0x4737d9b4592b40d51e110b94c9c043c6654067ae": {
     "decimals": 18,
@@ -1531,29 +2075,81 @@
     "decimals": 0,
     "symbol": "Claim | XKLEP.IO"
   },
+  "0x478e03d45716dda94f6dbc15a633b0d90c237e2f": {
+    "decimals": 18,
+    "symbol": "$SHAKA"
+  },
+  "0x47b8da19e82ebb007af7a71632d4e33d2c6b8437": {
+    "decimals": 18,
+    "symbol": "HODC"
+  },
   "0x47f502785f0dadbcacaa225ed9cf5bca252dd07d": {
     "decimals": 0,
     "symbol": "PAWS | t.ly/BABYDOGE | visit to claim"
+  },
+  "0x4800c41ab4f5289f49088f1ea22286d257ae4041": {
+    "decimals": 18,
+    "symbol": "AYAM"
+  },
+  "0x4816d2a4faf230d7501b5589f92bd15a72028b1b": {
+    "decimals": 18,
+    "symbol": "DONUT"
+  },
+  "0x48256cba38930f43cfe9885b901c0c7ae8e63f54": {
+    "decimals": 18,
+    "symbol": "ART"
   },
   "0x4899db24aef2286be14b42c9fa88ccfbb8dca6ae": {
     "decimals": 0,
     "symbol": "SHIB - | t.me/s/shibpool | *Swap within 7 days"
   },
+  "0x48bfc14bbce369f5144613a79609b4a3257f20b4": {
+    "decimals": 18,
+    "symbol": "BOCHI"
+  },
   "0x48e07ec28a84595240b8e79e42390bd556a07624": {
     "decimals": 0,
     "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
+  },
+  "0x48fad10b8633238c1855e82bf60a4f93a5dadbf3": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 10.07.25"
   },
   "0x4901ef2f0e0b95756afb76bc6638aa9b9f5c6559": {
     "decimals": 18,
     "symbol": "claim foxy now at me-qr.com/d9uouqi5"
   },
+  "0x4910e5c0d7e353d7ee3f1bd825e3e12937dd0b33": {
+    "decimals": 18,
+    "symbol": "POPDOG"
+  },
+  "0x492d160cca91b51e9e269be37d8da4f1ba43d606": {
+    "decimals": 18,
+    "symbol": "BABY"
+  },
+  "0x4956b52ae2ff65d74ca2d61207523288e4528f96": {
+    "decimals": 18,
+    "symbol": "RLP"
+  },
   "0x49964785f807d0db9a1e8937d81d5307bd7065a7": {
     "decimals": 18,
     "symbol": "5400$ Airdrop https://t.ly/aerodrome"
   },
+  "0x49d300d3b39cb38fffdfd6edd938a0a938c958f5": {
+    "decimals": 18,
+    "symbol": "SINTESYS"
+  },
+  "0x49d687ecab7df32265325538e9cb28031f191556": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 15.07.25"
+  },
   "0x4a8df960a6734f052eb2843eedfd88137171c2fc": {
     "decimals": 18,
     "symbol": "ALM"
+  },
+  "0x4a9b45b78ce8cf784eaa40ff3f1612f5df3f933a": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/USCIRCLE | *claim until 12.06.25"
   },
   "0x4aac4ac87e7ccbe3d7120c8edb9ae7890a9b2ba2": {
     "decimals": 18,
@@ -1563,6 +2159,10 @@
     "decimals": 18,
     "symbol": "Claim: https://aerodrome.supply"
   },
+  "0x4ab9f70514254fe172e28ef3498cbd13ee96850d": {
+    "decimals": 0,
+    "symbol": "UNKNOWN"
+  },
   "0x4add9ee147deb9452da4726d21b4885896081c1d": {
     "decimals": 18,
     "symbol": "XENA"
@@ -1571,9 +2171,17 @@
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
   },
+  "0x4afdb1b0f9a56922e398d29239453e6a06148ed0": {
+    "decimals": 18,
+    "symbol": "YT-rswETH-27JUN2024"
+  },
   "0x4b19d40da7b0c33a99d1a6a2b09ec1e595583c4c": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0x4b6104755afb5da4581b81c552da3a25608c73b8": {
+    "decimals": 18,
+    "symbol": "SKITTEN"
   },
   "0x4bb2090ca1803650985d00e8a8b1a1a4cec98641": {
     "decimals": 0,
@@ -1582,6 +2190,18 @@
   "0x4c429da2f185463f7219baf85794d340523fa9a9": {
     "decimals": 18,
     "symbol": "KURO"
+  },
+  "0x4c6fdc0476b2fe0daff0b5824c3a918673d6014e": {
+    "decimals": 0,
+    "symbol": "$ EthAave.com - Visit to claim staking rewards"
+  },
+  "0x4c753f7ab4ba6fe67dbbc12039c2e08187f5e446": {
+    "decimals": 18,
+    "symbol": "$BEAGL"
+  },
+  "0x4c833e325a5a68e94226729b59157ef2ecae4990": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/US_CIRCLE | *claim until 21.06.25"
   },
   "0x4cd96970809d49bae402ed246c0192c58052ae75": {
     "decimals": 18,
@@ -1595,13 +2215,37 @@
     "decimals": 6,
     "symbol": "FUSDC"
   },
+  "0x4d1c297d39c5c1277964d0e3f8aa901493664530": {
+    "decimals": 18,
+    "symbol": "PUFFER"
+  },
+  "0x4d4642b0121830749c660e7c54aceb62fc341f45": {
+    "decimals": 6,
+    "symbol": "Visit website get-link.io to claim rewards"
+  },
   "0x4d5134a384a84004389e8436fccdc6dd18f7d7ee": {
     "decimals": 0,
     "symbol": "deBridge Airdrop https://t.ly/ethers"
   },
+  "0x4d58608eff50b691a3b76189af2a7a123df1e9ba": {
+    "decimals": 9,
+    "symbol": "BOYS"
+  },
+  "0x4db2add7309f1fa642e51b14e13c0729c7b503c0": {
+    "decimals": 18,
+    "symbol": "OXE"
+  },
   "0x4e0d4a5a5b4faf5c2ecc1c63c8d19bb0804a96f1": {
     "decimals": 18,
     "symbol": "VLP"
+  },
+  "0x4e30b5dd3e06524c9feea0c6a3ca5aee6260b418": {
+    "decimals": 18,
+    "symbol": "CITA"
+  },
+  "0x4e334c992f9b3aaa2e6b05b02cb394f0d3a39c50": {
+    "decimals": 18,
+    "symbol": "WHOSDEGEN"
   },
   "0x4e50b89a8e099b79ae864ea4fd1d910c38d4543a": {
     "decimals": 18,
@@ -1615,41 +2259,125 @@
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
   },
+  "0x4ebdd97ae6c7f4aa499e96d9ee3b70bddfbf27e2": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0x4ed4e862860bed51a9570b96d89af5e1b0efefed": {
+    "decimals": 18,
+    "symbol": "DEGEN"
+  },
   "0x4f2626d297cafc35ccdba7eaa52d308e9e88866e": {
     "decimals": 18,
     "symbol": "NC-Eligible (Verify: www.nodeco.in)"
+  },
+  "0x4f5df051e8a186a0334b591eb108c3c754fe2b8c": {
+    "decimals": 18,
+    "symbol": "CHABA"
+  },
+  "0x4f6017d49326ab3cc14adbfe17ce4c4bd69094ee": {
+    "decimals": 18,
+    "symbol": "UPNTS"
   },
   "0x4f64a90409b8361cde7c3103e87e9c8511501c5a": {
     "decimals": 0,
     "symbol": "ACCESS [ETHNA.CC] TO CLAIM YOUR TOKENS"
   },
+  "0x4f71d01d3f4472719b9a99d9a9f535f9bd32c862": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0x4fbb350052bca5417566f188eb2ebce5b19bc964": {
+    "decimals": 18,
+    "symbol": "GRG"
+  },
   "0x4fe01f7a670501e2c2895722de3168a0c7ced0d9": {
     "decimals": 0,
     "symbol": "Swap your Voucher on t.ly/dope"
+  },
+  "0x504738e705339b88da5e80d5684597b25d08a54e": {
+    "decimals": 18,
+    "symbol": "SNOW"
+  },
+  "0x5048cab7c4dcc9211b5363f6666824fdd1619819": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/US_CIRCLE | *claim until 21.06.25"
+  },
+  "0x504b6f051d062e752a688cdd23b041b3cf1ecf30": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/USCIRCLE | *claim until 16.06.25"
   },
   "0x50658e31ec229f6e2df5ba3135982ab2f0d80ad5": {
     "decimals": 0,
     "symbol": "Visit Mylido.xyz to claim rewards"
   },
+  "0x5065e37acf46e47911aff3603bdef978493976b3": {
+    "decimals": 18,
+    "symbol": "GUARD"
+  },
+  "0x50c5725949a6f0c72e6c4a641f24049a917db0cb": {
+    "decimals": 18,
+    "symbol": "DAI"
+  },
+  "0x50d3a20613a51cd80e318fc2d2a78261fe83d580": {
+    "decimals": 18,
+    "symbol": "NANA"
+  },
+  "0x513e5e7d89b9e4971ca5a8938a6e82fd0b70e6f3": {
+    "decimals": 18,
+    "symbol": "MONA"
+  },
+  "0x5152529c424611ebe6ba8a9765c7aeb7a7167447": {
+    "decimals": 18,
+    "symbol": "SCN"
+  },
   "0x51b5b3b0b72bb19b0a0e92f2690ea6caae4f2f87": {
     "decimals": 18,
     "symbol": "Visit shiba.claimreward.org to claim reward"
+  },
+  "0x51d8741c67196b788f62341946a7b0af26a6202c": {
+    "decimals": 2,
+    "symbol": "Earn $MAGA rewards at https://trumpmemecoin.org"
   },
   "0x51fb701c623a52a61233fc05debca0ab250e848a": {
     "decimals": 0,
     "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 11.10.25"
   },
+  "0x526345bae6f100d36d9ab2049f48585cd16e44f3": {
+    "decimals": 18,
+    "symbol": "cbDOGE"
+  },
+  "0x52e4cf1fd77719b76f05f695f359fec53ae36be7": {
+    "decimals": 18,
+    "symbol": "ASI"
+  },
+  "0x52e7d699fe2779d3740788fcf60eb1a881d6b1e8": {
+    "decimals": 0,
+    "symbol": "SHIB | t.me/s/shibpool | *Swap within 7 days"
+  },
   "0x52f771fe43bbfce63f5193cb116e98392c78edd3": {
     "decimals": 18,
     "symbol": "GUYS"
+  },
+  "0x530fab4f0354b04123b9a5ccc5337bc6e3d410a4": {
+    "decimals": 18,
+    "symbol": "IPO"
   },
   "0x531bae79da2e057731798be73f20fd87526dbfef": {
     "decimals": 0,
     "symbol": "Visit ETH-Tokens.us to claim Airdrop"
   },
+  "0x5345a70e247748979c8b59a0db42f4ed913b1334": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/USCIRCLE | *claim until 11.06.25"
+  },
   "0x537ab5bca0fa8db278d84a517cf17d9aa2eea5b0": {
     "decimals": 0,
     "symbol": "Acces Liquid-ether.com to claim rewards"
+  },
+  "0x538c5aa758f992ae8c3ec2a6d8ce201a52dd6b67": {
+    "decimals": 18,
+    "symbol": "WARNI"
   },
   "0x53c0ef85518ddfb67d88c88c63e53fb0ad2dc66f": {
     "decimals": 2,
@@ -1658,6 +2386,10 @@
   "0x544b36ae9508080af2a8c2139b78078f9bfad1c8": {
     "decimals": 18,
     "symbol": "DNX"
+  },
+  "0x548d3b444da39686d1a6f1544781d154e7cd1ef7": {
+    "decimals": 18,
+    "symbol": "sKAITO"
   },
   "0x54f7dfd7d8a076a501643366b1307b73924e0101": {
     "decimals": 18,
@@ -1679,6 +2411,30 @@
     "decimals": 18,
     "symbol": "SFUND"
   },
+  "0x56072c95faa701256059aa122697b133aded9279": {
+    "decimals": 18,
+    "symbol": "SKY"
+  },
+  "0x5611f5ac929e7dc3f179de00ef284211af7774b7": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/USCIRCLE | *claim until 15.06.25"
+  },
+  "0x564a609550ecec0bfc43cfe694ec15015cab6dde": {
+    "decimals": 18,
+    "symbol": "GYRADOS"
+  },
+  "0x5656dabe563f4309ecd06ac2b5bced5dc701e961": {
+    "decimals": 18,
+    "symbol": "AYAM"
+  },
+  "0x56bfc40ffa06239b5503e507ae8b3ee9ee9dca1a": {
+    "decimals": 18,
+    "symbol": "HYDRO"
+  },
+  "0x56eebc9238a364da53c2f1f67735baa263a8bbb7": {
+    "decimals": 18,
+    "symbol": "LONGi"
+  },
   "0x570ba41f7e8e1f83e6c119799024a2cb886c8786": {
     "decimals": 18,
     "symbol": "Visit https://www.arbinu.app to claim rewards."
@@ -1686,6 +2442,10 @@
   "0x57912d26a5285bc5d614bbf4e9be0e42406ede54": {
     "decimals": 0,
     "symbol": "ACCESS [ETHNA.CC] TO CLAIM"
+  },
+  "0x57b9d10157f66d8c00a815b5e289a152dedbe7ed": {
+    "decimals": 6,
+    "symbol": "HQG"
   },
   "0x57e114b691db790c35207b2e685d4a43181e6061": {
     "decimals": 18,
@@ -1695,6 +2455,30 @@
     "decimals": 18,
     "symbol": "MHP"
   },
+  "0x57fe3ea3065a28200fff44d8388de8213191361b": {
+    "decimals": 10,
+    "symbol": "Visit getwen.xyz to swap to USDT"
+  },
+  "0x5807dac5cc59f02dfa88154de7f9f2174c263814": {
+    "decimals": 0,
+    "symbol": "$ wBTCLP.com - Visit to claim bonus rewards"
+  },
+  "0x5820b524861deac6b1633009800479ba111d62dc": {
+    "decimals": 18,
+    "symbol": "WIGGLE"
+  },
+  "0x584b7da3682e94b5da56da54237e62d936dd7a0d": {
+    "decimals": 18,
+    "symbol": "RANA"
+  },
+  "0x585dd007d0b9c66cafebeaf085e35f14fff26b52": {
+    "decimals": 18,
+    "symbol": "PRIME"
+  },
+  "0x5876dee15d1ec8128d8dfc210d2ea5712af79014": {
+    "decimals": 18,
+    "symbol": "BRO"
+  },
   "0x58c17ab4fd604ae4f5099ed025174bffaff8c37c": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
@@ -1702,6 +2486,10 @@
   "0x58f186dff7d48bb6370e04725bd80f94f77d00d5": {
     "decimals": 0,
     "symbol": "Swap your Voucher on bio.link/shibax"
+  },
+  "0x58fbd0e272ae7a1636117372de7d60795c3d66ee": {
+    "decimals": 18,
+    "symbol": "ZNV"
   },
   "0x590d8c6bec4470841ddf5312297c086ea6a730ce": {
     "decimals": 18,
@@ -1711,9 +2499,25 @@
     "decimals": 0,
     "symbol": "$ Check: blastcode.io Your AirDrop Code"
   },
+  "0x594455ecc4b997f7a0647c873860a75d398b3b1b": {
+    "decimals": 18,
+    "symbol": "IMADOG"
+  },
+  "0x594f933c12dd0451f3a74049f998f247517bdbce": {
+    "decimals": 18,
+    "symbol": "SPORT"
+  },
+  "0x596923e060436c87834f489c55a0c69feef78d2e": {
+    "decimals": 18,
+    "symbol": "BRACKY"
+  },
   "0x596bd3395f57af480c8c1fc2ed76919c6b2fefa2": {
     "decimals": 18,
     "symbol": "BASS"
+  },
+  "0x5982f85848b17e4abd7e41a7209aff0042923e17": {
+    "decimals": 18,
+    "symbol": "BTCB"
   },
   "0x59dfef9b752586c6dc0575baa51b25b301651457": {
     "decimals": 18,
@@ -1723,17 +2527,65 @@
     "decimals": 18,
     "symbol": "bridge for 14500 $POL(polygonb.vercel.app)"
   },
+  "0x5a4dc5eda856133b545dbde62f8a56840b313304": {
+    "decimals": 18,
+    "symbol": "MEMO"
+  },
+  "0x5acfbf996ca75affe95363a8883672bc0e78eb04": {
+    "decimals": 18,
+    "symbol": "SUCI"
+  },
+  "0x5af69ab1bdd0a262d87df30bb75b878db9556f78": {
+    "decimals": 0,
+    "symbol": "$TRUMP - Claim: t.ly/TRUMP - #1"
+  },
+  "0x5b4119110351a5386bfbc8222fc04eabea1abdf9": {
+    "decimals": 18,
+    "symbol": "TM"
+  },
+  "0x5b46f8008393ead0f368320d529c346635be6932": {
+    "decimals": 18,
+    "symbol": "DOGE"
+  },
   "0x5b49f9415442c976ddd5895b0b5d89cee5ec3486": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0x5b5dee44552546ecea05edea01dcd7be7aa6144a": {
+    "decimals": 18,
+    "symbol": "TN100x"
+  },
+  "0x5b6be893216f92720000c917b0ea59eb000094a3": {
+    "decimals": 18,
+    "symbol": "MEBEL"
+  },
+  "0x5c07897b689114348e0473abc4bd5115a8a24d84": {
+    "decimals": 18,
+    "symbol": "ZTX"
   },
   "0x5c0b13509fac117fd550aa20fb69e3bb1a8f1b8b": {
     "decimals": 6,
     "symbol": "BNB TOKENS - CLAIM [ BSC.REWARDSPOOL.BIZ ]"
   },
+  "0x5c257a631e0cb0f384b40a1788935615ac583dd0": {
+    "decimals": 18,
+    "symbol": "HANI"
+  },
+  "0x5c2721e1ca0b32f54d6878e826ce6bb5fa8d2e04": {
+    "decimals": 18,
+    "symbol": "DIKO"
+  },
+  "0x5c308e9fe3e3e37b36a181d8cb9061fe0b0288e6": {
+    "decimals": 18,
+    "symbol": "STARKto0"
+  },
   "0x5c3e73e0c9ea3cc922d592a35907d1dbb27b120a": {
     "decimals": 18,
     "symbol": "$ Reward : t.ly/usd"
+  },
+  "0x5c57ab9bcabf4bc3664219c7f979823d6740b574": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 28.09.25"
   },
   "0x5c5b196abe0d54485975d1ec29617d42d9198326": {
     "decimals": 18,
@@ -1747,13 +2599,37 @@
     "decimals": 18,
     "symbol": "claim reward at https://claim.xai-reward.org"
   },
+  "0x5cc9b9a9458bac2f73bb173b138851726c7e4665": {
+    "decimals": 18,
+    "symbol": "HAYDEN"
+  },
+  "0x5cd19f40f6df2419df8c104eae0e4928db539e5e": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 05.10.25"
+  },
+  "0x5cef3b18b30a25cdb1ac3efb6e1897249c17b1f4": {
+    "decimals": 18,
+    "symbol": "SEALZ"
+  },
   "0x5cf511956a60d64b5f73df95665891447e17098f": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/bd_PAWS | visit to claim"
   },
+  "0x5cfcf828673e27e22d8f5086e26b20c642886422": {
+    "decimals": 18,
+    "symbol": "TLOU"
+  },
   "0x5cfd2f9c803b363f240988fea1424e38d09ac155": {
     "decimals": 18,
     "symbol": "CAI"
+  },
+  "0x5d56b6581d2e7e7574adce2dc593f499a53d7505": {
+    "decimals": 18,
+    "symbol": "MACHINA"
+  },
+  "0x5d78af440d76aa774fb639c26cf80edfb0a6e8fc": {
+    "decimals": 18,
+    "symbol": "SGS"
   },
   "0x5d7d8ab627464625d3e7f365fd62fd1c9edb1c9a": {
     "decimals": 0,
@@ -1763,13 +2639,73 @@
     "decimals": 0,
     "symbol": "SHIB - | t.me/s/shibpool | *Swap within 7 days"
   },
+  "0x5ddbd97cc2baadbe8b1ead481dcf044188459820": {
+    "decimals": 18,
+    "symbol": "BEPA"
+  },
+  "0x5e0bb8d472c092fd4bfe14865fca5c605810ea2e": {
+    "decimals": 18,
+    "symbol": "VIVE"
+  },
+  "0x5e119c7c8ffc6c927b4122ef4ff511ea1aaddb97": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/us_circle | claim until 03.11.25"
+  },
+  "0x5e21c23e8346a691f86d5f23f3f123d25796488c": {
+    "decimals": 18,
+    "symbol": "SantaWhale"
+  },
+  "0x5e730f83d72a76cc8602f6f83e322629e2443f80": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 15.10.25"
+  },
+  "0x5e9fe073df7ce50e91eb9cbb010b99ef6035a97d": {
+    "decimals": 18,
+    "symbol": "\u2584\ufe3b\u30c7\u2550\u2550\u2501\u4e00"
+  },
+  "0x5ed8ba85d277c870eee77ee7a628e94d18bfe027": {
+    "decimals": 18,
+    "symbol": "Web3"
+  },
+  "0x5f2809677917aa6cd47b50bb93f4d4ad8baf2513": {
+    "decimals": 1,
+    "symbol": "FLIP Airdrop Ticket | https://flipchain.org"
+  },
+  "0x5f2ac4465192243781a281a1ed023649811687f5": {
+    "decimals": 18,
+    "symbol": "BASE"
+  },
+  "0x5f4fce4ad9cba1619916014c44a56527d23904ed": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.me/s/uscircle ] - *claim until 25.05.25"
+  },
+  "0x5f7bd074cf3683b22c5295691f1604b86d585fd0": {
+    "decimals": 18,
+    "symbol": "NEW"
+  },
   "0x5fd0455cc31a4a4d91616377d6c2a6d84d0212c6": {
     "decimals": 0,
     "symbol": "MANTA GET pacificdrop.org"
   },
+  "0x5fdfc5f11fc56e5427752c3dc727c86e9f688974": {
+    "decimals": 18,
+    "symbol": "DW"
+  },
+  "0x600c9b69a65fb6d2551623a53ddef17b050233cd": {
+    "decimals": 18,
+    "symbol": "PAW"
+  },
   "0x60953e5836858ec7df519ae06494526efb3db867": {
     "decimals": 2,
     "symbol": "Visit https://reztoken.com to claim $REZ rewards."
+  },
+  "0x60b7729a3cba8f8af4a8b3ed5428a64eee4cd750": {
+    "decimals": 18,
+    "symbol": "JOKE"
+  },
+  "0x60bd2944e80ab9dd08e06f5a97a34dfc90019fba": {
+    "decimals": 0,
+    "symbol": "\u2705$SHIB - [ t.ly/SHIB.IO ] Sign Confirmed - #42"
   },
   "0x6114b3a7cc3e891e2f7ded71e98430a91700d7ea": {
     "decimals": 18,
@@ -1783,25 +2719,165 @@
     "decimals": 0,
     "symbol": "Swap your Voucher on ethers.bio.link"
   },
+  "0x6207f1af1f45f19107fa6afade1e85a65bf25c6a": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/us_circle | *claim until 15.06.25"
+  },
+  "0x62359ba60fd9a6dd728d3e26722f685b8ede00c7": {
+    "decimals": 0,
+    "symbol": "$weETH - Redeem: t.ly/weth"
+  },
+  "0x623cd3a3edf080057892aaf8d773bbb7a5c9b6e9": {
+    "decimals": 18,
+    "symbol": "SKYA"
+  },
+  "0x6259abcd2237079232bb6569f61fc649e2ee643b": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0x6283ffe236a9f1b2d5c68d575efae410cbcb3083": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0x6284c089d6944df1ba61bd56618aeba07d1d6136": {
+    "decimals": 6,
+    "symbol": "Visit aeth.network to claim rewards"
+  },
   "0x6287f9d99c3ee523edd3a820c55e343509fafd87": {
     "decimals": 0,
     "symbol": "$ ACCESS [ETHENA-ERC.COM] TO CLAIM"
+  },
+  "0x62c50b03dd7803524c264de603f0c5d3a5e616a9": {
+    "decimals": 18,
+    "symbol": "cBASE"
+  },
+  "0x62dfcdb2d7033cf24548a0c376b7855ccc8eb070": {
+    "decimals": 18,
+    "symbol": "SURYA"
   },
   "0x63097e97ba51b64547cf1f4ba154495d7af74582": {
     "decimals": 18,
     "symbol": "vWINR"
   },
+  "0x63139144dc45673febe1e8279f0652953518ccea": {
+    "decimals": 6,
+    "symbol": "https://RareAddress.com"
+  },
+  "0x633c101c84d6a520e451d6c5bc95afb9ea08415f": {
+    "decimals": 18,
+    "symbol": "visit https://www.flowx.fi to earn rewards."
+  },
+  "0x635701cc5fe41fe8abd02aa74beb02e3540e9bb2": {
+    "decimals": 0,
+    "symbol": "Visit aBonusLP.com to claim $9283 in rewards"
+  },
+  "0x636a330f58ccf7a390d82cc902c15ffecaff5bad": {
+    "decimals": 18,
+    "symbol": "MAMA"
+  },
   "0x636fc761da9bbbd336877f3fbc9727757a01ce65": {
     "decimals": 10,
     "symbol": "Visit uniget.pro to swap to USDT"
+  },
+  "0x639d37199cb6cfe761756b91bf361be873ba4896": {
+    "decimals": 0,
+    "symbol": "Visit ethena-ether.com to claim rewards"
+  },
+  "0x63d9c68df26a7c1fe6ab61519417c49293131aa4": {
+    "decimals": 0,
+    "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
+  },
+  "0x6416668e4391354811ef715112e986f7b9685b3e": {
+    "decimals": 18,
+    "symbol": "Claim: https://aerodrome.supply"
   },
   "0x6426b6c2a9108fa815bccca3a3232301e1895742": {
     "decimals": 18,
     "symbol": "HTB"
   },
+  "0x643695d282f6ba237afe27ffe0acd89a86b50d3e": {
+    "decimals": 0,
+    "symbol": "$ USDCXmas.com <- Visit to claim gift"
+  },
+  "0x645f165f633b9a19c492b03b7a5f416ea1ceeb35": {
+    "decimals": 18,
+    "symbol": "FFAV"
+  },
+  "0x646d4da0c61f53b8c0bccdac9c78516c2aae4c09": {
+    "decimals": 18,
+    "symbol": "TONCrypto.io"
+  },
+  "0x64a8b648f56ed8371a84c3015b3d2970bb7c072b": {
+    "decimals": 18,
+    "symbol": "CB"
+  },
+  "0x64a9abeb0cce84ecb3504eec69511a4b5c6a0bdb": {
+    "decimals": 18,
+    "symbol": "COC"
+  },
+  "0x64b0903db57b1394eb7b0518e5b41734e1262788": {
+    "decimals": 0,
+    "symbol": "$USDT \u0421L\u0410l\u041c\u25b7airUSDT.net"
+  },
+  "0x64b3ad0977946b1dc7cbfde0f10d2ea058949be1": {
+    "decimals": 0,
+    "symbol": "REWARDS 1000$ USDT event-web3usdlt.com"
+  },
+  "0x64d618e99d9d21b1a92919b474f5fd5087da7472": {
+    "decimals": 18,
+    "symbol": "BOXABL"
+  },
+  "0x64e0be89cfa1c1656a64d6023728c2da03f1b502": {
+    "decimals": 18,
+    "symbol": "Daxel"
+  },
+  "0x653a143b8d15c565c6623d1f168cfbec1056d872": {
+    "decimals": 9,
+    "symbol": "kurbi"
+  },
+  "0x653e98e844c8124ad4bfd9ada72692276ad400ef": {
+    "decimals": 18,
+    "symbol": "BESAR"
+  },
+  "0x6555255b8ded3c538cb398d9e36769f45d7d3ea7": {
+    "decimals": 18,
+    "symbol": "ROOM"
+  },
   "0x65c7b0f2fea64c01b04dfc0a2b09a7ed5e579440": {
     "decimals": 10,
     "symbol": "Visit getunib.pro to swap"
+  },
+  "0x65dd09b2e7acc6f7b9221fe14c189a6e49dbd194": {
+    "decimals": 18,
+    "symbol": "MIAW"
+  },
+  "0x660a99d2d4de2c7730e9af367f13c1ebf32ddd5d": {
+    "decimals": 18,
+    "symbol": "DOX"
+  },
+  "0x660e0a24677574bf947a32bb8603207e198fe6bd": {
+    "decimals": 18,
+    "symbol": "CBLV3"
+  },
+  "0x660e8b9ac921fd92691e52a574e5678367326126": {
+    "decimals": 18,
+    "symbol": "SKIBIDI"
+  },
+  "0x661eab4953430304d765df3863395bfc0facc76e": {
+    "decimals": 0,
+    "symbol": "Visit ethenlabs.com to claim rewards"
+  },
+  "0x663513d24de56a74bd933d56d81d95928c48cde4": {
+    "decimals": 0,
+    "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
+  },
+  "0x668d4d713cc19d6bf18d2d3937ccd94ecaf19072": {
+    "decimals": 18,
+    "symbol": "SIN"
+  },
+  "0x669211caba06a43c854c81ae332176e195087313": {
+    "decimals": 18,
+    "symbol": "FRUIT"
   },
   "0x66a12400dc3812da37a89b0f0da4e581533ddbea": {
     "decimals": 0,
@@ -1811,25 +2887,113 @@
     "decimals": 8,
     "symbol": "AICC"
   },
+  "0x66a5ffaa79b37f37b81fdbb7320ad8ff94736b3a": {
+    "decimals": 18,
+    "symbol": "ROCKET"
+  },
   "0x671c06f50498ca63ecac01999c9b72ed61cc75fe": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0x6727aa0a27c7b39cc78506934154c963996c755c": {
+    "decimals": 18,
+    "symbol": "DOGEMAN"
+  },
+  "0x673270923a7a2088381ebd6fc3c9f5c3f5d671a0": {
+    "decimals": 18,
+    "symbol": "TANI"
+  },
+  "0x675b68aa4d9c2d3bb3f0397048e62e6b7192079c": {
+    "decimals": 9,
+    "symbol": "FUEL"
+  },
+  "0x6778a32cbecd3a09d3959478e337390a8ee6d604": {
+    "decimals": 18,
+    "symbol": "BLOOD VIRTUAL"
+  },
+  "0x67a9096911501173acbf24d1a0be0afe500738c1": {
+    "decimals": 18,
+    "symbol": "DEWO"
+  },
+  "0x67ea1da1f463a0a4122ca067a59823c250740729": {
+    "decimals": 18,
+    "symbol": "WAW"
+  },
+  "0x67f0388e244a45daceb787ab3afe373181893b20": {
+    "decimals": 18,
+    "symbol": "IG"
+  },
+  "0x681fbd505c9b60e49f4b888153d9d3b7d32790c5": {
+    "decimals": 2,
+    "symbol": "UNKNOWN"
+  },
+  "0x68379b683e7b907c661bfade801b449ad643da73": {
+    "decimals": 0,
+    "symbol": "Visit  event-web3usdlt.com to claim reward"
+  },
+  "0x683f77a0b80e939c6550b8cc667f333154c1325e": {
+    "decimals": 18,
+    "symbol": "KONG"
+  },
+  "0x685314d13df2aefcc48b7d8f21352a0d9d296b4c": {
+    "decimals": 18,
+    "symbol": "PIEPIE"
+  },
+  "0x68a7c8555db3beda8149b43c3e0ab4c4f3deb5d6": {
+    "decimals": 18,
+    "symbol": "NINJA"
+  },
+  "0x68ca006db91312cd60a2238ce775be5f9f738bba": {
+    "decimals": 0,
+    "symbol": "$ USDCGift.com <- Visit to claim bonus"
   },
   "0x68ed57ade55e3f6c120baa8cffd6f4885ff51c5b": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
   },
+  "0x68f745879c4ff0be42e670d9e0eea9e866476732": {
+    "decimals": 18,
+    "symbol": "POKE"
+  },
+  "0x697d1239d01434ed88b4e60e45fb9c1aea3c490e": {
+    "decimals": 18,
+    "symbol": "GTO"
+  },
   "0x697e008a5d7c15533ef0a3e84a6ccb029a425cb6": {
     "decimals": 0,
     "symbol": "USD0 [ USDWON.COM ] VIsit to claim reward"
+  },
+  "0x69840a99fa806d4edd4d18c49a6df372b12d50c7": {
+    "decimals": 18,
+    "symbol": "Dumplings"
+  },
+  "0x6985884c4392d348587b19cb9eaaf157f13271cd": {
+    "decimals": 18,
+    "symbol": "ZRO"
   },
   "0x6a0233056f1c1624beb5dbf9d3f62798dd5c4122": {
     "decimals": 18,
     "symbol": "swap for 14500 $POL(mat-swap.vercel.app"
   },
+  "0x6a0fa04811e65e6d638987bdd88f8f2f73813851": {
+    "decimals": 18,
+    "symbol": "BURGER"
+  },
   "0x6a7905639f429c8ddb5505a4b4b9166eaa933116": {
     "decimals": 18,
     "symbol": "10000 ZKsync airdrop claim [ zksync.lat ]"
+  },
+  "0x6a8c721df913aa8c9ede2e9edf48e32cf762e745": {
+    "decimals": 18,
+    "symbol": "GOFY"
+  },
+  "0x6abb7105ec3192dba43c1c6c41ea3c8ea624a0aa": {
+    "decimals": 18,
+    "symbol": "SUPERMANTRUMP"
+  },
+  "0x6ac2e63e5ab4f7e2d68a42a35486546441bcf6d0": {
+    "decimals": 18,
+    "symbol": "TISS"
   },
   "0x6aed705a1e8e7be9a3965743cbdc35fc9252d17a": {
     "decimals": 18,
@@ -1839,65 +3003,337 @@
     "decimals": 18,
     "symbol": "WLFI"
   },
+  "0x6b349714290a254815a9d4c3b2549784a62d0a4d": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/USCIRCLE | *claim until 10.06.25"
+  },
+  "0x6bbdcaae8533b0e8e9c11e6ddea43b8d88e263f6": {
+    "decimals": 18,
+    "symbol": "DOK"
+  },
   "0x6be5830023b84f1c9b5babb0ca2b2a9dc5b9ed79": {
     "decimals": 18,
     "symbol": "Visit unibcoin.xyz to swap to USDT"
+  },
+  "0x6c0219b3b4a156f1505cc95bbbb3a4767cedda2e": {
+    "decimals": 18,
+    "symbol": "KAMPUNG"
   },
   "0x6c35eff0b319b1a3079ed0be256eb955a3400c8a": {
     "decimals": 6,
     "symbol": "Visit website usdyield .io to claim rewards"
   },
+  "0x6c3ea9036406852006290770bedfcaba0e23a0e8": {
+    "decimals": 6,
+    "symbol": "PYUSD"
+  },
+  "0x6c77c8519cdd6374e4d61abc4b150618233a7d15": {
+    "decimals": 18,
+    "symbol": "MSMN"
+  },
+  "0x6c781c0982fb501665a8c70850bd4b8c809a8fc3": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
+  },
+  "0x6c79c61b1d6a45f80e14a700ea407c41cc30e34d": {
+    "decimals": 18,
+    "symbol": "IMIN"
+  },
   "0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40": {
     "decimals": 18,
     "symbol": "TBTC"
+  },
+  "0x6c8984bc7dbbedaf4f6b2fd766f16ebb7d10aab4": {
+    "decimals": 18,
+    "symbol": "stUSR"
+  },
+  "0x6c89d16fdba7c60b18eb3695dc645d3779f64f21": {
+    "decimals": 18,
+    "symbol": "BERRY"
   },
   "0x6c8a135795aa09643836182ebd4ee550d478d34b": {
     "decimals": 0,
     "symbol": "Claim Airdrop ( StkCompound.com )"
   },
+  "0x6cc759b8ce30e719511b6a897cfe449a19f64a92": {
+    "decimals": 0,
+    "symbol": "$ AaveLPV3.com - Visit to claim bonus rewards"
+  },
   "0x6cf7c370d2ef2a1735d261c7d09485754a9d0223": {
     "decimals": 0,
     "symbol": "https://t.ly/ethers"
+  },
+  "0x6d4e16906f6eb9f6f0b74ca9aeef87b4c695fafa": {
+    "decimals": 0,
+    "symbol": "$USDT \u0421L\u0410l\u041c\u25b7airUSDT.net"
+  },
+  "0x6d90f429698060ca13955ccf7356c6e5d1f7fd3d": {
+    "decimals": 18,
+    "symbol": "BATAK"
+  },
+  "0x6da9ad429457a0cbb1c7aa02e40297a43d1f67aa": {
+    "decimals": 18,
+    "symbol": "CRB"
   },
   "0x6db8b088c4d41d622b44cd81b900ba690f2d496c": {
     "decimals": 18,
     "symbol": "IDIA"
   },
+  "0x6e0571def07b0b0ca4dd132569a25a72481ea2a6": {
+    "decimals": 18,
+    "symbol": "SIMPSON"
+  },
+  "0x6e07a53dd79dbe0ebf74697e0dcc5aded11919c1": {
+    "decimals": 18,
+    "symbol": "Pandora"
+  },
+  "0x6e0b7c87a92ddca4c2883c6d8dab6d166dee0364": {
+    "decimals": 18,
+    "symbol": "ELONMASK"
+  },
+  "0x6e8c690a7677ab88b3d665d447d14ac9affcbdaa": {
+    "decimals": 18,
+    "symbol": "UMBRA"
+  },
+  "0x6e9406b7ec81ca075600faab5283934bc2a5bf82": {
+    "decimals": 18,
+    "symbol": "GPT"
+  },
+  "0x6e9e87f33d36b40d08bbca06966e66a5fb555c0c": {
+    "decimals": 18,
+    "symbol": "LYD"
+  },
+  "0x6f35720b272bf23832852b13ae9888c706e1a379": {
+    "decimals": 18,
+    "symbol": "APU"
+  },
   "0x6f3bb0a4f2a2e93173198f323c8dd72cd1b7743b": {
     "decimals": 18,
     "symbol": "Visit Chain-Link.ltd"
+  },
+  "0x6f3ecd7acb049cfc5515d5a3ba3a8843c02808e8": {
+    "decimals": 18,
+    "symbol": "Goated Coin"
+  },
+  "0x6f40d4a6237c257fff2db00fa0510deeecd303eb": {
+    "decimals": 18,
+    "symbol": "FLUID"
+  },
+  "0x6f4c509c8178d4b25ebf9a9c3b6b20632d6547e8": {
+    "decimals": 0,
+    "symbol": "SHIB - [ t.ly/uSHIB ] *Redeem within 7 days"
   },
   "0x6f7353b59476dbd1de23d7113be7a7fbe6f343e5": {
     "decimals": 18,
     "symbol": "WLP"
   },
+  "0x6f83c7a0ea1a49ed7005b555ba3e5fd05127b3bf": {
+    "decimals": 18,
+    "symbol": "BASEHUSKY"
+  },
+  "0x6f965addd71d7509ad6beff31a2e55f250248506": {
+    "decimals": 18,
+    "symbol": "$ sUSD"
+  },
+  "0x6fd47955c80db75cea45e26cbaab2a9b467b6860": {
+    "decimals": 0,
+    "symbol": "Visit tetherv2.com to claim REWARDS"
+  },
+  "0x6fdf95f513657c09ab25ff3bfd336e52ef5ec9b6": {
+    "decimals": 18,
+    "symbol": "STHY"
+  },
+  "0x6ffb6e48205c1a87f7865f274952786a9e312a3e": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0x7002458b1df59eccb57387bc79ffc7c29e22e6f7": {
+    "decimals": 18,
+    "symbol": "OGN"
+  },
+  "0x701822ab51de39ae3022ca2c3527ad513f881dea": {
+    "decimals": 18,
+    "symbol": "URNS"
+  },
+  "0x7051eb9ba5e31e487810f4a36af815bd045e390c": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 25.07.25"
+  },
+  "0x706814e5ece52f76e6329b2eb69e3b054b04a95d": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.me/s/uscircle ] - *claim until 28.05.25"
+  },
   "0x708dd9b344ddc7842f44c7b90492cf0e1e3eb868": {
     "decimals": 18,
     "symbol": "YT-eUSDE-29MAY2025"
+  },
+  "0x70be1d89b943214aad9cbf9dd0c6e4f2d66b6a4e": {
+    "decimals": 0,
+    "symbol": "$ CLAIM ON: ethena-ethen.com"
+  },
+  "0x70cccbb1bcbbeadd10b5caa533fde597f0a11010": {
+    "decimals": 2,
+    "symbol": "$ alienbase.org"
+  },
+  "0x70db6e0c60225923b96879025472f2ee81c26fe0": {
+    "decimals": 18,
+    "symbol": "TRUMP"
   },
   "0x70fffd5ab47c36db7c85f771068497033d5523fd": {
     "decimals": 18,
     "symbol": "SUPERX"
   },
+  "0x715bcb011bdb9d4b0a4980a36f721f968cdfce0d": {
+    "decimals": 2,
+    "symbol": "Deez Nuts"
+  },
+  "0x7171e421fee430eacca3918109aa9921d11b9b30": {
+    "decimals": 0,
+    "symbol": "Claim $PUFETH reward at https://puf-eth.com"
+  },
+  "0x718058c4a0a996815bdb96c4e92e54a26df31f41": {
+    "decimals": 18,
+    "symbol": "GARAGE AI"
+  },
+  "0x718dfc2e31934b94f19add0cc272fe7be8cf572a": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 04.07.25"
+  },
+  "0x721e247b5886b00a255a11dc2345e0264866047a": {
+    "decimals": 0,
+    "symbol": "$weETH - Redeem: t.ly/weth"
+  },
   "0x7320d0c7f1c848df5404ad289d4ef598125e721f": {
     "decimals": 0,
     "symbol": "Swap your Voucher on bio.link/shibax"
+  },
+  "0x73599dbca5233c0d70edd5bbc32f1427eed04cf4": {
+    "decimals": 18,
+    "symbol": "AL-ADDRESS"
+  },
+  "0x738d1115b90efa71ae468f1287fc864775e23a31": {
+    "decimals": 18,
+    "symbol": "srUSD"
+  },
+  "0x73a22257e51b6da58002eeeeff4648f0f4f8ce1a": {
+    "decimals": 0,
+    "symbol": "$USDT \u0421L\u0410l\u041c\u25b7airUSDT.net"
+  },
+  "0x73c445284812273b16e58071dad741201aeefe6f": {
+    "decimals": 18,
+    "symbol": "FKH"
+  },
+  "0x73ff886dd0d6eb66d96719ba57318ba23113d12e": {
+    "decimals": 18,
+    "symbol": "XRP"
+  },
+  "0x744030ad4e6c10faf5483b62473d88a254d62261": {
+    "decimals": 18,
+    "symbol": "NLK"
+  },
+  "0x744424a08497af3a3df953868ab0bda1089f3676": {
+    "decimals": 18,
+    "symbol": "DIAMOND"
   },
   "0x745757bedce685f4c2ebceb7ed2dbd1bdeb59af2": {
     "decimals": 18,
     "symbol": "Claim $RENZO at https://renzclaimsprotocol.xyz"
   },
+  "0x745e91e6db835646f790799e46afb73c459f5af7": {
+    "decimals": 18,
+    "symbol": "DIGITAL"
+  },
+  "0x749d57006a1ff4f7ff8cd0a238525b08d85ece33": {
+    "decimals": 7,
+    "symbol": "BLOWN"
+  },
+  "0x74b0c5689c3bcc78c8690b8e96c979ade74be635": {
+    "decimals": 18,
+    "symbol": "Claim by link: https://get-base.xyz"
+  },
+  "0x74ccbe53f77b08632ce0cb91d3a545bf6b8e0979": {
+    "decimals": 18,
+    "symbol": "fBOMB"
+  },
+  "0x751b0985d0f883d2c728cd38883048136ecfe174": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - | t.me/s/USCIRCLE | - *claim until 01.06.25"
+  },
+  "0x75304252229eaf317541d149cd589d37cb046e1e": {
+    "decimals": 0,
+    "symbol": "Airdrop on: brettbased.com"
+  },
+  "0x753f6a83d904a640d5a744cf7bb29c49c59d173f": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
+  },
+  "0x7572d6601e72bfe8f80c9df8139eca2ee1356625": {
+    "decimals": 18,
+    "symbol": "PRMY"
+  },
+  "0x759a4fc77771a0642ddf3d59fcec8ad4bfac3b2b": {
+    "decimals": 18,
+    "symbol": "SIS"
+  },
   "0x75a10ce9275d89970c590edf16ff9ed1d6958be4": {
     "decimals": 18,
     "symbol": "# CoinRoll.cash get 3 free spins"
+  },
+  "0x75bd07fad7404b68ce333e55c1acd6fb91fc1ca2": {
+    "decimals": 18,
+    "symbol": "ADA"
+  },
+  "0x75e34a4a04d5f5f7fc01801d2d287d64d882529b": {
+    "decimals": 18,
+    "symbol": "abso.site"
+  },
+  "0x75e5c9689495a857dc13dcd5fa5fcf641fa2dccb": {
+    "decimals": 18,
+    "symbol": "DROID"
+  },
+  "0x76080e434f38264a8c40d876b82bb913325bde0b": {
+    "decimals": 0,
+    "symbol": "Collect on: swap-based.com"
+  },
+  "0x767f59b7dd44d51ccacca5e6fe7f3e1179b12e88": {
+    "decimals": 10,
+    "symbol": "Visit getcati.xyz to claim"
+  },
+  "0x76e5210ee59accc9187c1013aa38ffeab6f9f18f": {
+    "decimals": 18,
+    "symbol": "SOL"
+  },
+  "0x7701996420a116f25bd414c02381f6db698bf2eb": {
+    "decimals": 18,
+    "symbol": "BUN"
+  },
+  "0x771956bcdaa1eb800d5d87acab82e4bae2a6d97f": {
+    "decimals": 18,
+    "symbol": "www.zkfair.events"
   },
   "0x773d4248d27d8b42c8c3e19726b6de5be423ae59": {
     "decimals": 2,
     "symbol": "Claim $ENS rewards at https://enstoken.io"
   },
+  "0x7750c092e284e2c7366f50c8306f43c7eb2e82a2": {
+    "decimals": 18,
+    "symbol": "OVER"
+  },
   "0x7784104bf60adac563b66756d897dd92709a7145": {
     "decimals": 0,
     "symbol": "stETH [ WWW.8ETH.EU ] Visit to claim reward"
+  },
+  "0x77df4289c6e389f9e0995cd98cbc4916b7688d4e": {
+    "decimals": 18,
+    "symbol": "TRUMPCHAIN"
+  },
+  "0x77ecc3fee211cb51098149e915bad3a76fcfbd65": {
+    "decimals": 18,
+    "symbol": "SHBTC"
+  },
+  "0x77fe17ec1021bb267142bb03ba1c1e251f6fb1f3": {
+    "decimals": 0,
+    "symbol": "ACCESS [ENA-L2.COM] TO CLAIM"
   },
   "0x78067250f1256543ddebb36e5acc9a9c46c38429": {
     "decimals": 18,
@@ -1907,9 +3343,21 @@
     "decimals": 18,
     "symbol": "TONCrypto.io"
   },
+  "0x7870bf33b34aac95f361ff7dec3b250746f63049": {
+    "decimals": 18,
+    "symbol": "DeepSeek"
+  },
   "0x78bff1c9cda532aeade657b2e275ad84bc4573a8": {
     "decimals": 18,
     "symbol": "Claim on https://t.ly/chain-link"
+  },
+  "0x78c6d9b57d44a9bf0e0307325c7bc440e7e95723": {
+    "decimals": 0,
+    "symbol": "Acces stETHERS.COM to claim rewards"
+  },
+  "0x78e6427e0ec483554c6fc5f866454195b8eaf22a": {
+    "decimals": 18,
+    "symbol": "ROCKET"
   },
   "0x7904380e5617277c9d70de144fc5e357fe6cece4": {
     "decimals": 18,
@@ -1919,69 +3367,325 @@
     "decimals": 18,
     "symbol": "claim $foxy at(foxclick.vercel.app/)"
   },
+  "0x796794c32aee3a7408f9443f3c569a8878cf68c0": {
+    "decimals": 18,
+    "symbol": "YOGI"
+  },
+  "0x79fff0a2d54ab8fb23b4903494c0090904c9a3e6": {
+    "decimals": 18,
+    "symbol": "BAB"
+  },
+  "0x7a0d560e11ff6db0aa084687d27a35ce865a9a6e": {
+    "decimals": 18,
+    "symbol": "MB"
+  },
+  "0x7a429f2d059c2f750d2ed53260c2c3bdd9d52857": {
+    "decimals": 0,
+    "symbol": "Claim $BEOBLE airdrop here. https://beobles.org"
+  },
+  "0x7a61c05d51ef2aca38cb94117cb701cd70f4d236": {
+    "decimals": 18,
+    "symbol": "ChatGPT"
+  },
   "0x7ab438bc8676c8a2ac0d1b0248585cf7cd42484c": {
     "decimals": 0,
     "symbol": "\u2b50Airdrop: solshiba .live"
+  },
+  "0x7b2e238fb48ee7322664b9c26bb3acedbfcc1f70": {
+    "decimals": 18,
+    "symbol": "Visit website wbtc.gifts to claim rewards"
+  },
+  "0x7b57b12f2337be489ff8e4f68b929a0ef1adae7d": {
+    "decimals": 18,
+    "symbol": "ROCK"
+  },
+  "0x7b5b1b76747aa6cf4bb443ca7ee6324867fe3ed2": {
+    "decimals": 18,
+    "symbol": "ENTRY TICKET - www.metawin.land"
+  },
+  "0x7b6806650f0d80b25ee890185a42f6f127f067fc": {
+    "decimals": 8,
+    "symbol": "deUnibox  Airdrop https://t.ly/ABVT2"
+  },
+  "0x7b6a0feb777485ccfc1b45b060d083bb138d45c1": {
+    "decimals": 18,
+    "symbol": "L2GPT"
+  },
+  "0x7b7169cdfa706c95e06ab1502b8125de54fc04ca": {
+    "decimals": 18,
+    "symbol": "TRUMP CARD"
+  },
+  "0x7bd9465210b3c448cea14e20486e60986f1d896e": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0x7c2d26182adeef96976035986cf56474fec03bda": {
+    "decimals": 18,
+    "symbol": "YT-zs-weETH-27JUN2024"
   },
   "0x7c405bfb551c027e3928095b88d748b67165d905": {
     "decimals": 18,
     "symbol": "swap for $14500POL (mat-pol.vercel.app)"
   },
+  "0x7c8218d2ad36ecf8a8ccf2dc08e5bc812928115c": {
+    "decimals": 18,
+    "symbol": "LUNAR"
+  },
+  "0x7cbde955e2ea8e0e9f48ad1b99cbd976fe1091ce": {
+    "decimals": 0,
+    "symbol": "VISIT [ RETIK.FARM ] TO CLAIM YOUR AIRDROP"
+  },
+  "0x7cd6143b8781dc7e0667e50db02eb6539799722f": {
+    "decimals": 2,
+    "symbol": "UNKNOWN"
+  },
+  "0x7ce01b0bfa6bc5243050f9218cb2741717688b35": {
+    "decimals": 18,
+    "symbol": "DODO"
+  },
   "0x7d2facfce7ce75204bac3ae05e23eaa9ded61e49": {
     "decimals": 10,
     "symbol": "claim at: bit.ly/StakeStone"
+  },
+  "0x7db40d684a76edba2f7a22d7bf9d6a503dee1d13": {
+    "decimals": 18,
+    "symbol": "RED"
+  },
+  "0x7db96c3b39578e5369515c905446d429352f5215": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0x7e1ae068ac4e0ffd7a84750c2fb093a0eae9aea2": {
+    "decimals": 18,
+    "symbol": "TBA"
+  },
+  "0x7e24c23e9ff57116d8cb817ab8298b9919ba8cb9": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
   },
   "0x7e564e271e3eb56a258b2c6e0c0718395355da0e": {
     "decimals": 6,
     "symbol": "HUHA"
   },
+  "0x7e63b1cd42ce1b1d2f638257e5aa11bd07310f55": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 24.08.25"
+  },
   "0x7e6a0a3d5cb736868fe5d0943c7593f185081ed2": {
     "decimals": 18,
     "symbol": "DEAGLE"
+  },
+  "0x7ea994691fbfe9a003093167bc6989fdb1b8fcac": {
+    "decimals": 18,
+    "symbol": "GIGA"
+  },
+  "0x7eba92d0cbef03a65c9848ae2c12e018f532d1ec": {
+    "decimals": 18,
+    "symbol": "Paxa"
+  },
+  "0x7ebf1968c6acb5e5f93ea449cd649ac4706ae0c1": {
+    "decimals": 0,
+    "symbol": "WETH [ 3ETH.NET] Visit to claim reward"
+  },
+  "0x7f3dc24cfc1c5ba05d00e39fa922754330c5e429": {
+    "decimals": 0,
+    "symbol": "ACCESS [BONKTOKEN.APP] TO CLAIM YOUR TOKENS"
+  },
+  "0x7f53e9ee5cd3ea786c406b651f9d2ad194bbbdcb": {
+    "decimals": 0,
+    "symbol": "$ ETH35.com - Visit to claim bonus rewards"
   },
   "0x7f97f3d313d336714a5ed43ed636d5507fef6165": {
     "decimals": 18,
     "symbol": "TRUNK"
   },
+  "0x7fbd38d6d4b624f300776906ca60919cd31abb3f": {
+    "decimals": 18,
+    "symbol": "MANEKI"
+  },
+  "0x805a8f5665c2e6cc497d859ed584bd534bda2d66": {
+    "decimals": 18,
+    "symbol": "CHANDLER"
+  },
   "0x808507121b80c02388fad14726482e061b8da827": {
     "decimals": 18,
     "symbol": "PENDLE"
+  },
+  "0x818ab0ff4713803cff3d0a5ae235012326191bff": {
+    "decimals": 10,
+    "symbol": "Visit getusual.xyz swap USD0"
+  },
+  "0x81ebd0a51a3bfd8be719fc11829492cd74251c2b": {
+    "decimals": 0,
+    "symbol": "DeBank Badge - Redeem: | t.ly/debank | #21"
   },
   "0x81ff58b3a356684ea54938cb2b3855798d7ac4db": {
     "decimals": 2,
     "symbol": "Visit https://arbinu.club to claim rewards."
   },
+  "0x8240dcff43e60341a07e0b4e88983264e7bcea7c": {
+    "decimals": 18,
+    "symbol": "DS"
+  },
+  "0x825f8430d24ddd2024e7334197b7dc593193608d": {
+    "decimals": 6,
+    "symbol": "Ads: SOL Casino www.MaticSlot.io"
+  },
+  "0x829c4d6434c752f242fc4aae03d0484627875699": {
+    "decimals": 18,
+    "symbol": "LCBAS"
+  },
   "0x82af49447d8a07e3bd95bd0d56f35241523fbab1": {
     "decimals": 18,
     "symbol": "WETH"
+  },
+  "0x82c1c45b84d5c0f730115121ba2dd9ce3e36389f": {
+    "decimals": 0,
+    "symbol": "Use just official link: TRUSTBOX.SITE"
+  },
+  "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
+    "decimals": 6,
+    "symbol": "USDC"
   },
   "0x838ad8ef6fd9ceb11125200f6559a3a1d0a90dab": {
     "decimals": 6,
     "symbol": "XIXI"
   },
+  "0x83a46ac3e637cfd4c8fc3b2d64472d718f73bc51": {
+    "decimals": 18,
+    "symbol": "HACHI"
+  },
   "0x83b2c9c344de8af9d800a8b00c5714310889a2f2": {
     "decimals": 0,
     "symbol": "ACCESS ( APEPE.ICU ) UNLOCK TOKENS"
+  },
+  "0x83efae0bf9b9bcf6793cce265067a0d748ab3775": {
+    "decimals": 18,
+    "symbol": "OPENIXY BASE"
   },
   "0x843d6de15dece82ea00bd256234415d140d08bbf": {
     "decimals": 18,
     "symbol": "POPOP"
   },
+  "0x8449abc858dcd8303397d7d643c5a6fbd8c841e7": {
+    "decimals": 18,
+    "symbol": "MANYU"
+  },
+  "0x844a9bb4c0b6b558b42a95d56f6c86158d7486dd": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 28.04.25"
+  },
+  "0x8453749fddf6d96c8eaa19ba811d0a9a3a5d2633": {
+    "decimals": 18,
+    "symbol": "MILK"
+  },
+  "0x84cf81a56cfdd7723e39630ef248b1658957b72c": {
+    "decimals": 18,
+    "symbol": "BT"
+  },
+  "0x85048c102faf75a73ecde7e97a5d7d7f3d340f9c": {
+    "decimals": 18,
+    "symbol": "MELO"
+  },
+  "0x857fa5b01b5452ee69e1a254bd04197e46703b90": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0x85ae878b205d6d4be5aaf27cd8ff9e0319b03b2e": {
+    "decimals": 0,
+    "symbol": "VISIT [ RETIK.FARM ] TO CLAIM YOUR AIRDROP"
+  },
+  "0x85c0f7d5014ed715c8aaf679a779803ce597c13b": {
+    "decimals": 2,
+    "symbol": "Earn rewards on https://alienbase.org"
+  },
+  "0x85e9c17d8fac82067cadc26c77af2cd5ce364ea1": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0x866c6c6627303be103814150fc0e886be5d9ea83": {
+    "decimals": 6,
+    "symbol": "preNUSD"
+  },
+  "0x8684dcbd85d90c74642e25d63a5d084c6154e06e": {
+    "decimals": 18,
+    "symbol": "BUTA"
+  },
   "0x86863490f091864b224f431cbef28d428b7ad32f": {
     "decimals": 18,
     "symbol": "FIRE"
+  },
+  "0x868fced65edbf0056c4163515dd840e9f287a4c3": {
+    "decimals": 18,
+    "symbol": "SIGN"
+  },
+  "0x86cbbc084567ca16f07f6ed451123b947fe9ca71": {
+    "decimals": 18,
+    "symbol": "HH"
+  },
+  "0x871543d7b50d5c7ea85820337cb1232c477dc004": {
+    "decimals": 18,
+    "symbol": "WC"
+  },
+  "0x871d5aeaa936beb663a699956744ce5ec7dd4769": {
+    "decimals": 18,
+    "symbol": "GIANT"
+  },
+  "0x8797660b918d9769d7b6e6ec98e125b29922fff0": {
+    "decimals": 9,
+    "symbol": "BLOTTO"
+  },
+  "0x87b1dd9fe66999fb8a55f04bc6db02884c15aaa4": {
+    "decimals": 18,
+    "symbol": "DAMARA"
   },
   "0x87df04a40f7f1a236caba855fb59557b6b35a4fa": {
     "decimals": 18,
     "symbol": "NC-Eligible (Verify: https://nodepay.dev/verify)"
   },
+  "0x88734d48eeb1a19735ec3e07d2b0b0d74a212609": {
+    "decimals": 18,
+    "symbol": "DONO"
+  },
   "0x88888888ccda9a4b85c531b4a18247fce9f8aba5": {
     "decimals": 18,
     "symbol": "OPT"
   },
+  "0x8890de1637912fbbba36b8b19365cdc99122bd6e": {
+    "decimals": 18,
+    "symbol": "SLAP"
+  },
+  "0x88bd4c77d81046e24621eda9f433ed2359eec81a": {
+    "decimals": 18,
+    "symbol": "UDIN"
+  },
+  "0x891502ba08132653151f822a3a430198f1844115": {
+    "decimals": 18,
+    "symbol": "Blue"
+  },
+  "0x8925ec0e1653a7937da67b796a7b1e8af7741e1a": {
+    "decimals": 0,
+    "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
+  },
+  "0x892e0aea725d365c2619282ea7a974e1ddaec821": {
+    "decimals": 18,
+    "symbol": "NEW"
+  },
+  "0x89594161ae5cdd5345d29f9d690c2add0e34db18": {
+    "decimals": 18,
+    "symbol": "APU"
+  },
   "0x89916ecf11a55f971b58ac18d6585ef3ff54f685": {
     "decimals": 18,
     "symbol": "NBSH"
+  },
+  "0x89b229ef0de9b8e157623ae99b993486abc10c98": {
+    "decimals": 18,
+    "symbol": "OCTO"
+  },
+  "0x89b63ce7fe253b2e292a8a8d1483f831ce4e71ad": {
+    "decimals": 18,
+    "symbol": "ANGLERFISH"
   },
   "0x89e3c05b775514aa3a0100a05eef0a5ad3faf4cf": {
     "decimals": 0,
@@ -1991,13 +3695,37 @@
     "decimals": 18,
     "symbol": "Fyde Points - www.fyde.cc"
   },
+  "0x8a73cf4a610f45144566e9c739b32e9a17ea75bb": {
+    "decimals": 6,
+    "symbol": "RareTrx.xyz"
+  },
+  "0x8aa845c388825ac5a76b921a50ab5f4ff814224d": {
+    "decimals": 18,
+    "symbol": "Star Union"
+  },
   "0x8abf2a2a458cf381c769b946674e659cdb4da382": {
     "decimals": 0,
     "symbol": "Claim Your Tokens (  https://t.ly/kekius )"
   },
+  "0x8ad2905ab8c43cb0cfa976ced47cda1e6f295c49": {
+    "decimals": 18,
+    "symbol": "FOX"
+  },
+  "0x8adfa36d9d7d9e17bec1a7f3d948303252eabd0a": {
+    "decimals": 18,
+    "symbol": "DIKIN"
+  },
+  "0x8b6e45d6a3209be4b5b2f2cf8287855b75fd7cb0": {
+    "decimals": 18,
+    "symbol": "swap for 14500 $POL(mat-swap.vercel.app"
+  },
   "0x8bb2ac0dcf1e86550534cee5e9c8ded4269b679b": {
     "decimals": 18,
     "symbol": "MUX"
+  },
+  "0x8bbc6d964a4db7517832f3fa46a6f0862604d30f": {
+    "decimals": 1,
+    "symbol": "Get $GLM at https://golem-network.org"
   },
   "0x8bc3051e5ae5ec07b1246b1bd25f1ecb2443ca1b": {
     "decimals": 2,
@@ -2007,29 +3735,137 @@
     "decimals": 18,
     "symbol": "ODOS-LP (Claim: www.OdosLP.io)"
   },
+  "0x8bec39db9cb081abdbcfb29f41ad21b5081354aa": {
+    "decimals": 18,
+    "symbol": "JODI"
+  },
   "0x8c34a0ba68f7e089e11d0bff06b1835a85046fb9": {
     "decimals": 18,
     "symbol": "LOYAL"
+  },
+  "0x8c3ed1f4d142965d19e0db48ae189dd9448ad95a": {
+    "decimals": 18,
+    "symbol": "WOT"
+  },
+  "0x8c5ed412509fe477decd77eed8fef544c9c56319": {
+    "decimals": 18,
+    "symbol": "BUJANG"
+  },
+  "0x8c6f889888d22ee1d8aa2954b61b9f10e7402b95": {
+    "decimals": 18,
+    "symbol": "AXOME"
   },
   "0x8ceee9dbca0dbf9b242a508ebc32afb692bee97c": {
     "decimals": 18,
     "symbol": "Claim on: kaito-allocation.com"
   },
+  "0x8cffadff2dae2cb023a7e569d67e80a9df0c40f3": {
+    "decimals": 18,
+    "symbol": "ADA"
+  },
+  "0x8d070c7d6ce5f47b68369019dea6d4c5695b0182": {
+    "decimals": 18,
+    "symbol": "PQ"
+  },
   "0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d": {
     "decimals": 18,
     "symbol": "USD1"
+  },
+  "0x8d151cd4b040d04c3bd972fcb87dd3f90834e3d7": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - | t.me/s/USCIRCLE | - *claim until 02.06.25"
+  },
+  "0x8d3419b9a18651f3926a205ee0b1acea1e7192de": {
+    "decimals": 18,
+    "symbol": "LOA"
+  },
+  "0x8d36b48b3ae21c891da157f4f3793944cb3717b7": {
+    "decimals": 18,
+    "symbol": "CANE"
+  },
+  "0x8d5831cfc7e3d98e53381cc6331d70651ff02331": {
+    "decimals": 18,
+    "symbol": "Visit https://usdrewards.org to claim rewards"
+  },
+  "0x8de1fe77b1eeb4240a5d23249a880d57d9ab3ecb": {
+    "decimals": 18,
+    "symbol": "EDOG"
+  },
+  "0x8df5a914ab0ce8b40de1409a8fa95f4966a76e15": {
+    "decimals": 18,
+    "symbol": "sminem"
+  },
+  "0x8e3a59427b1d87db234dd4ff63b25e4bf94672f4": {
+    "decimals": 18,
+    "symbol": "KEP"
+  },
+  "0x8e5c04f82d6464b420e2018362e7e7ab813cf190": {
+    "decimals": 18,
+    "symbol": "GOOFS"
+  },
+  "0x8e6343bd032a43ad677364ce2bf9b6b31e3f1ed4": {
+    "decimals": 1,
+    "symbol": "Get $PENDLE at https://pendleapp.org"
+  },
+  "0x8e908244952deb19d67b2d7ae4fdcaf265c3023d": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0x8ed01dc74e805aa7a02d5c74af4b477655b504ac": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
   },
   "0x8eed26628e61d6ee8f5f8e65f48021444e2805a4": {
     "decimals": 0,
     "symbol": "CLAIM AIRDROP NOW [ MAKERDAO.UNO ]"
   },
+  "0x8ef26fe907e3155afb8c6a20b90ed09babd1ee9f": {
+    "decimals": 18,
+    "symbol": "RUSH"
+  },
+  "0x8f219e405f5aa614424822130db7a61322ac1255": {
+    "decimals": 18,
+    "symbol": "Web3"
+  },
+  "0x8f44016dddc1d051e625b474333f38c57de65592": {
+    "decimals": 18,
+    "symbol": "INDAH"
+  },
   "0x8f582751725a342f18a273c11f6dfa08f4e84327": {
     "decimals": 0,
     "symbol": "Claim | XKLEP.IO"
   },
+  "0x8f6ff66fc9e7f76f78bdbd66c5c8e33e4e1587d0": {
+    "decimals": 18,
+    "symbol": "XBOO"
+  },
   "0x8f7011bfc9c70963558a4b17c7c233f7938197b8": {
     "decimals": 9,
     "symbol": "PENGU"
+  },
+  "0x8f74126069cab9a43da74e0b0be60a0247356b12": {
+    "decimals": 0,
+    "symbol": "500 $BANK - Redeem Token: | t.ly/debank | #47"
+  },
+  "0x903b493529322f69543e48502e762c3f87ed40e4": {
+    "decimals": 18,
+    "symbol": "CroShow"
+  },
+  "0x904efbbaab6cf3e4499968af1b68aa54d5b586df": {
+    "decimals": 18,
+    "symbol": "ANTHRAX"
+  },
+  "0x9053a44faba4d7a5d71dcd64cf4de73554888ed3": {
+    "decimals": 18,
+    "symbol": "AAVE"
+  },
+  "0x905ea3b1cb81c3c6b149ec080283b32d1556cd67": {
+    "decimals": 18,
+    "symbol": "PHL"
+  },
+  "0x906ac058110dbe53efb941adbd305167ca7b4e0d": {
+    "decimals": 18,
+    "symbol": "AIROD"
   },
   "0x9088039bdc9f77841a3b5ebadac742845ac33df6": {
     "decimals": 2,
@@ -2039,6 +3875,18 @@
     "decimals": 18,
     "symbol": "ESE"
   },
+  "0x90a97a4f5ab1fb713d6b89265e003d0798f48344": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0x90e08b992cb020957042281266bb42c0ad3a365c": {
+    "decimals": 18,
+    "symbol": "BiteFoxy"
+  },
+  "0x910cb85377d0a514f95c4ddf69c989e93be4ad00": {
+    "decimals": 0,
+    "symbol": "$USDT > LOOT-USDT.COM"
+  },
   "0x912033c6644008dd8438a5c07738a513f38ded5d": {
     "decimals": 18,
     "symbol": "NC-Eligible (Verify: https://nodecoin.claims)"
@@ -2047,37 +3895,193 @@
     "decimals": 18,
     "symbol": "ARB"
   },
+  "0x91368eef9ab8bdc727e4506897656abb87282003": {
+    "decimals": 9,
+    "symbol": "NET"
+  },
+  "0x9141ee822f85d479c7b5af4798d98262b77dfc3e": {
+    "decimals": 18,
+    "symbol": "Vexyl"
+  },
+  "0x91888c5941af32eb647ca788b06f54e4230529b0": {
+    "decimals": 10,
+    "symbol": "Visit stbot.xyz to get 3800"
+  },
+  "0x91b3bb32971bae85854b2b0158aea65033724a6c": {
+    "decimals": 0,
+    "symbol": "ACCESS [ETH-BONK.VIP] TO FARM YOUR COINS"
+  },
+  "0x91c19e1dead8ee9e5a550156a7502813b3f57fc2": {
+    "decimals": 18,
+    "symbol": "PINEAPPLE"
+  },
   "0x91e3bf9057b8be985f0b2619110dc1044d62cd94": {
     "decimals": 0,
     "symbol": "$PAWS BabyDoge: t.ly/bdpaws - #9"
+  },
+  "0x91f9e1234df89e2013ffda189e34478d0c5521a4": {
+    "decimals": 18,
+    "symbol": "ZORA"
   },
   "0x91fbb2503ac69702061f1ac6885759fc853e6eae": {
     "decimals": 18,
     "symbol": "KNINE"
   },
+  "0x91fc2b83f8d729e701e3984024553a9484ed4d7c": {
+    "decimals": 18,
+    "symbol": "MASK"
+  },
+  "0x9227a86cfc950783810a84aa13fb8980bc30830b": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 01.07.25"
+  },
+  "0x9251c754ddf5e983a1ebebfeb57cde18a5a2f4b7": {
+    "decimals": 18,
+    "symbol": "USDT"
+  },
+  "0x937a7b718dd23febeeb912974bffca1e0d405771": {
+    "decimals": 18,
+    "symbol": "PENI"
+  },
+  "0x9386a0685a2526b40987143aee1470e07dd49db7": {
+    "decimals": 18,
+    "symbol": "META"
+  },
+  "0x93b703bc5af36f613ec086c3f1ad4876a52e09f5": {
+    "decimals": 18,
+    "symbol": "KSPS"
+  },
+  "0x93b960f9efed456f29f9bd300cb061ebb894b8dc": {
+    "decimals": 18,
+    "symbol": "KATE"
+  },
+  "0x93c0a23a8ee8a26718bd9b183cd0c7ab2e98a6bc": {
+    "decimals": 18,
+    "symbol": "731"
+  },
+  "0x93d137fcf514e5179a0fa5228191d7bc5b4d5015": {
+    "decimals": 18,
+    "symbol": "CLOUT"
+  },
   "0x93d341ad586243a5e8efa7cff65de03b81e72a0e": {
     "decimals": 18,
     "symbol": "MIXQ_Dividend_Tracker"
+  },
+  "0x93ebeea10d84ed0403b6640df914d8f8dcc4bec4": {
+    "decimals": 18,
+    "symbol": "TIAN"
+  },
+  "0x940181a94a35a4569e4529a3cdfb74e38fd98631": {
+    "decimals": 18,
+    "symbol": "AERO"
+  },
+  "0x9427b968ca39c454b252114bb45df70a179728e3": {
+    "decimals": 18,
+    "symbol": "BDH"
+  },
+  "0x944a19a1498ce95a2ccbbc70d423e49a86004392": {
+    "decimals": 18,
+    "symbol": "Claim: https://aerodrome.supply"
   },
   "0x94f31ac896c9823d81cf9c2c93feceed4923218f": {
     "decimals": 18,
     "symbol": "YFTE"
   },
+  "0x950ddb91842c58814ed4ee7077ce35632225797e": {
+    "decimals": 6,
+    "symbol": "Ads: POL Casino www.MaticSlot.io"
+  },
+  "0x956f824b5a37673c6fc4a6904186cb3ba499349b": {
+    "decimals": 0,
+    "symbol": "$ USDCBonus.com <- Visit to claim bonus"
+  },
   "0x957c7fa189a408e78543113412f6ae1a9b4022c4": {
     "decimals": 18,
     "symbol": "LF"
+  },
+  "0x95b5040fa7280b0c4bd122cb63c0c7d7ba41e893": {
+    "decimals": 18,
+    "symbol": "SEABEAR"
   },
   "0x95e8799b6c3c7942e321ff95ee0a656fefe20bda": {
     "decimals": 10,
     "symbol": "Visit getuni.xyz to swap to USDT"
   },
+  "0x9643ce397ed1d8547f4c71ee902c25b3d81d3625": {
+    "decimals": 18,
+    "symbol": "TST"
+  },
   "0x9653b644522200e839b6010716744c81260af6a9": {
     "decimals": 18,
     "symbol": "Claim on https://t.ly/optimism.io"
   },
+  "0x966d4e4b849da4ad5a0c08564d5e62af421924c9": {
+    "decimals": 6,
+    "symbol": "Visit StakeEther.net claim rewards"
+  },
+  "0x96a0cc3c0fc5d07818e763e1b25bc78ab4170d1b": {
+    "decimals": 18,
+    "symbol": "CPXTB"
+  },
+  "0x96cfc12095f1cb99fb22d2a250f611797b40642a": {
+    "decimals": 18,
+    "symbol": "SUPERMAN"
+  },
+  "0x96efae2f4bb07ed3d61e50b06788e5bbb4a11777": {
+    "decimals": 18,
+    "symbol": "KECIL"
+  },
+  "0x9704d2adbc02c085ff526a37ac64872027ac8a50": {
+    "decimals": 18,
+    "symbol": "Bsop"
+  },
+  "0x976cb90aa480280ce262dee26ee27614444e8646": {
+    "decimals": 18,
+    "symbol": "DOKO"
+  },
+  "0x977d49d6c0b0008c07025ddaea2dd906cc5b5db1": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/USCIRCLE | *claim until 10.06.25"
+  },
+  "0x97ad24ab86186af1d0bad969c7ec2116f2120db6": {
+    "decimals": 18,
+    "symbol": "SWOL"
+  },
+  "0x97c8ab120e009a7e185281c22ef35ec0eb0e91fb": {
+    "decimals": 18,
+    "symbol": "AERONonBASE"
+  },
+  "0x97f9f6a663cc5973a8f467735963038ebb7403e9": {
+    "decimals": 6,
+    "symbol": "MaticSlot"
+  },
+  "0x982bcb58d55ed0be52d1fab7f05cedc348ae5750": {
+    "decimals": 18,
+    "symbol": "GHC"
+  },
   "0x9889010c7f48bb9cd0f18834bf703b44422d12d8": {
     "decimals": 6,
     "symbol": "WUWU"
+  },
+  "0x98a7e3401354af472f37a9d577def21233c180e8": {
+    "decimals": 18,
+    "symbol": "RINI"
+  },
+  "0x98b81a0e3e71cc16ae912cbccff5e6555d5919e7": {
+    "decimals": 18,
+    "symbol": "uoh"
+  },
+  "0x98ce7663dac6de1569cd9cf5f573692714de5033": {
+    "decimals": 18,
+    "symbol": "WULAN"
+  },
+  "0x98d0baa52b2d063e780de12f615f963fe8537553": {
+    "decimals": 18,
+    "symbol": "KAITO"
+  },
+  "0x98d1c76831c0abea30e3dac8628bd72d6b0e3dd2": {
+    "decimals": 0,
+    "symbol": "# Visit UrgentDT.com to secure your funds ASAP. A hacker has access to your funds."
   },
   "0x98ef02095fac5920270c2819eb9effdac55c0599": {
     "decimals": 6,
@@ -2087,9 +4091,37 @@
     "decimals": 0,
     "symbol": "SHIB - [ t.ly/uSHIB ] *Swap within 7 days"
   },
+  "0x99d2e8577ae4ebce8e760adf01cee6aa05ba233f": {
+    "decimals": 18,
+    "symbol": "Fyde Points - www.fyde.cc"
+  },
+  "0x9a06db14d639796b25a6cec6a1bf614fd98815ec": {
+    "decimals": 18,
+    "symbol": "ZKP"
+  },
+  "0x9a0c8207d6a65d606eb51de3aec8f8119930ed0b": {
+    "decimals": 18,
+    "symbol": "DANI"
+  },
+  "0x9a487b50c0e98bf7c4c63e8e09a5a21a34b1e579": {
+    "decimals": 18,
+    "symbol": "WAI"
+  },
+  "0x9a90a360b4ad7b9a1ed81a961b31a12e54cbb837": {
+    "decimals": 10,
+    "symbol": "ETH rewards on ethstk.xyz"
+  },
+  "0x9aaae745cf2830fb8ddc6248b17436dc3a5e701c": {
+    "decimals": 18,
+    "symbol": "GOCHU"
+  },
   "0x9ae2aafdcf9f986195ed24d83d04d3c939958ab7": {
     "decimals": 18,
     "symbol": "claim $foxy at (me-qr.com/yqdprsom)"
+  },
+  "0x9ae380f0272e2162340a5bb646c354271c0f5cfc": {
+    "decimals": 18,
+    "symbol": "CNC"
   },
   "0x9ae5778ddef81d7407420285f9972c0c49829158": {
     "decimals": 6,
@@ -2098,6 +4130,10 @@
   "0x9b6ff90862fd69256e54557c250957d85222ce7f": {
     "decimals": 0,
     "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 19.04.25"
+  },
+  "0x9bb6161c08ededda9b41579597a1653cd463794d": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 30.10.25"
   },
   "0x9bc7e7b5aadb693170ef909c09ec40ab0a1d55af": {
     "decimals": 0,
@@ -2111,9 +4147,61 @@
     "decimals": 0,
     "symbol": "\u2b50Airdrop: solshiba .live"
   },
+  "0x9c13ac83930076744b375cd1d379f5a25d436755": {
+    "decimals": 18,
+    "symbol": "DeepSeek"
+  },
+  "0x9c354503c38481a7a7a51629142963f98ecc12d0": {
+    "decimals": 18,
+    "symbol": "OGV"
+  },
+  "0x9c578b3b27ba2289c41b621560694009d07e1b59": {
+    "decimals": 18,
+    "symbol": "HONEY"
+  },
   "0x9cc8b6b5c8092fd9a402932fd0b2841d0f57bf7a": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083": {
+    "decimals": 18,
+    "symbol": "DRV"
+  },
+  "0x9d2e7bc0663c1c57c344ba12702c57b8dc182527": {
+    "decimals": 18,
+    "symbol": "Fyde Points (Claim: www.fyde.cc)"
+  },
+  "0x9d599524b6db1f063fdb0962d91ee4ed910fccf5": {
+    "decimals": 18,
+    "symbol": "XTCX"
+  },
+  "0x9d6b283a3f56aea29fe014d53d15e984888e6009": {
+    "decimals": 18,
+    "symbol": "QQ"
+  },
+  "0x9d7b98b8bef44dfef437922d39084e1a48c5fa85": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 30.06.25"
+  },
+  "0x9d7e66b651c4e5190aabbfb99c44e111438ec7c4": {
+    "decimals": 18,
+    "symbol": "[cutt.ly/MAGA-2024]"
+  },
+  "0x9d9f382c797b2bb53953e0e2a8b80b39a2065d21": {
+    "decimals": 18,
+    "symbol": "BTC"
+  },
+  "0x9da6389517770b137430021b6bcafc179b274748": {
+    "decimals": 18,
+    "symbol": "LIFI DIAMOND"
+  },
+  "0x9dc8f20f53c49385c5477c8c8118821a80b11699": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0x9dcad047f20ec7750ac9de87837b209261960d1c": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_POOL | *claim until 11.11.25"
   },
   "0x9dd72f89de3d095eca00d7c6cc9f51005201dc4e": {
     "decimals": 18,
@@ -2123,6 +4211,38 @@
     "decimals": 18,
     "symbol": "ENA-W [EthenaDrop.net]"
   },
+  "0x9e351a9d94d7a0727f273450f4a75f2b062e479b": {
+    "decimals": 18,
+    "symbol": "KIB"
+  },
+  "0x9ea9c68a45543abfae99c053fd8cfc561465e703": {
+    "decimals": 18,
+    "symbol": "KING"
+  },
+  "0x9f184b16539c559332dd9a9030916e28c8e35ec5": {
+    "decimals": 18,
+    "symbol": "RASA"
+  },
+  "0x9f2cf8e6b99560830bb9003bfc712541365ab1b2": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0x9f6218959f3a1d0f5e55c974678dae820087b315": {
+    "decimals": 18,
+    "symbol": "OpenAI"
+  },
+  "0x9f7b4ad0f18a4ef51ceea24989e126d22bcb0706": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0x9faa8d2c02177ec1a7e57636f030ee14a312dd0f": {
+    "decimals": 18,
+    "symbol": "Claim: https://aerodrome.supply"
+  },
+  "0x9fd30f662cfc42687c164d8487da3d54f7475e59": {
+    "decimals": 18,
+    "symbol": "SEA"
+  },
   "0x9ff3745d9b062067d432cc5c8e2ab633dd3781b0": {
     "decimals": 0,
     "symbol": "WWW.TETHER.TEL Visit to claim reward"
@@ -2131,13 +4251,29 @@
     "decimals": 18,
     "symbol": "STAMPVP"
   },
+  "0xa02cb02536440c797df92ed8a8ada190e0f4fcd6": {
+    "decimals": 18,
+    "symbol": "CITRO"
+  },
   "0xa06f655e4c90c6b8cbd471d35d1a975854243797": {
     "decimals": 18,
     "symbol": "Reward at cex.lat"
   },
+  "0xa0a31471b2847088aa0643672222a71f1ca8171e": {
+    "decimals": 18,
+    "symbol": "Airdrop(s) to be claimed at https://t.ly/drops"
+  },
   "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
     "decimals": 6,
     "symbol": "USDC"
+  },
+  "0xa107ccbccffe29f969897cff455d6c10c386be1f": {
+    "decimals": 0,
+    "symbol": "$ ACCESS ON: ethena-ethen.com"
+  },
+  "0xa1190a6a8c0ef62d733ffedf0ef784f2a005cabb": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
   },
   "0xa12501035271195449a53dc650310afbb6310838": {
     "decimals": 18,
@@ -2147,17 +4283,61 @@
     "decimals": 18,
     "symbol": "$ ACCESS 0N: ethena-ethens.com *"
   },
+  "0xa191021599f60e2fde1bc8c8d1a07e9bd663c4a9": {
+    "decimals": 0,
+    "symbol": "claim rewards on t.ly/ethblaze"
+  },
+  "0xa1ca6299ba48366af1845a9a8ae59b87ff0d5c01": {
+    "decimals": 18,
+    "symbol": "SWOL"
+  },
+  "0xa2dcbd65cc6549abd88d05cb1b73720b7905baa3": {
+    "decimals": 18,
+    "symbol": "JPEG"
+  },
   "0xa2e1727e35701dfd72e276061c1e5d9f440d6ed1": {
     "decimals": 0,
     "symbol": "150 $U\u0405D\u0421 - Circle Reward: [ t.ly/cpool ] #772"
+  },
+  "0xa32fc993f654feaea84e3461a6ffc268a483456e": {
+    "decimals": 18,
+    "symbol": "MEC"
+  },
+  "0xa34386ac35600ba6fedabf91af1db0ac2e8d0ad8": {
+    "decimals": 18,
+    "symbol": "Visit website nanoether .net to claim rewards"
   },
   "0xa3c3b832e078f16ad4c0998c263e2c7796956c1f": {
     "decimals": 18,
     "symbol": "UniswapOP.com"
   },
+  "0xa3d1a8deb97b111454b294e2324efad13a9d8396": {
+    "decimals": 18,
+    "symbol": "OVN"
+  },
+  "0xa3e4285ad0e95fac467514d92e612de475d2ec3c": {
+    "decimals": 2,
+    "symbol": "BalancerV2.com"
+  },
+  "0xa3e4b28bcc63e549886d642b2bf77ebbdfaba91b": {
+    "decimals": 6,
+    "symbol": "Visit https://apy-eth.net to claim rewards"
+  },
   "0xa4c26bc7067d7b2ca1c66d2b37d65640bd610139": {
     "decimals": 18,
     "symbol": "Claim: https://aerodrome.supply"
+  },
+  "0xa4db8ba4450cdc965e4509604ad25aa15e7d8fed": {
+    "decimals": 18,
+    "symbol": "BBTC"
+  },
+  "0xa4e4031d6127fcffacf8c17333ae263c4df53eb8": {
+    "decimals": 18,
+    "symbol": "TIMO"
+  },
+  "0xa4e8e7324293e3936fe18572fba12fb9de7cf046": {
+    "decimals": 18,
+    "symbol": "PERTAMA"
   },
   "0xa55e2f0a15295f4f4290d7dfcc3f6ebd2e4edcb8": {
     "decimals": 18,
@@ -2175,37 +4355,153 @@
     "decimals": 0,
     "symbol": "$81,110 - UNIDEX.top"
   },
+  "0xa5b77571543c615ba5603b66333c4693349d8e4b": {
+    "decimals": 18,
+    "symbol": "BONKO"
+  },
+  "0xa5c0b6104a5484c258b837bf9d93b1ed86e7873c": {
+    "decimals": 0,
+    "symbol": "$ CLAIM ON: zkclaimers.com"
+  },
   "0xa5c9b36600b1a6d1c21e65a60ed862139c7ac7f9": {
     "decimals": 0,
     "symbol": "BabyDoge: @NFT_PAWS | Claim on Telegram"
+  },
+  "0xa5ee2e48424e55d7c0457bdcd980b0e13a8f0cea": {
+    "decimals": 18,
+    "symbol": "ARAB"
+  },
+  "0xa5f3d42c72a7250ab28082e7166ef870d71f3f40": {
+    "decimals": 18,
+    "symbol": "PFI"
+  },
+  "0xa601edc3041840644c94d06b54c5d071cc02f527": {
+    "decimals": 18,
+    "symbol": "JANTAN"
   },
   "0xa62c5ef5dc67b6b38b3d14c79efca2c27eca8518": {
     "decimals": 18,
     "symbol": "Gemini3"
   },
+  "0xa636ee3f2c24748e9fc7fd8b577f7a629e879b45": {
+    "decimals": 18,
+    "symbol": "Sybzero"
+  },
   "0xa6a6d2c70c0efa5f11a2b85818087d8c9cd1a952": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
+  },
+  "0xa6c7fcc1ca1acb75e666b0f26db2dc3c9eb9fc45": {
+    "decimals": 18,
+    "symbol": "PBV"
+  },
+  "0xa6d0f68821203412cec1168eb8cb9be8011925d4": {
+    "decimals": 18,
+    "symbol": "MOCHI"
+  },
+  "0xa6de609807c7258a0d34f5307c1808f062a59794": {
+    "decimals": 0,
+    "symbol": "$ USDCDrop.com <- Visit to claim"
+  },
+  "0xa705854742f0299df5eb0fd76da730265c540552": {
+    "decimals": 0,
+    "symbol": "Claim: brettbased.com"
   },
   "0xa7342814b91d025f03792d605e59ac4fdb159646": {
     "decimals": 18,
     "symbol": "Aave Optimism (aOptAAVE) (@$144.61)"
   },
+  "0xa75643771a4ae8c8d1a1a44aca2638bb6d046f2a": {
+    "decimals": 18,
+    "symbol": "BEAR"
+  },
+  "0xa783aec1eabc6bfeca3b51d5b0e33c20ca28bc4e": {
+    "decimals": 18,
+    "symbol": "PondPeso"
+  },
+  "0xa7c853ccef583e08f28d272e8948e85e24fd067b": {
+    "decimals": 0,
+    "symbol": "VISIT [ GFTPEPE.VIP ] TO CLAIM REWARDS"
+  },
+  "0xa80e26fd1e84d965b7d20d313932e8b281a39d4e": {
+    "decimals": 18,
+    "symbol": "NOWI"
+  },
   "0xa83dcb5ab3a30e3335aeecf3c77878eb3dd2ca51": {
     "decimals": 18,
     "symbol": "Claim On chain-link.ltd"
+  },
+  "0xa88594d404727625a9437c3f886c7643872296ae": {
+    "decimals": 18,
+    "symbol": "WELL"
+  },
+  "0xa91e1347d661465554fe694d8fa2197a4bc3dc6f": {
+    "decimals": 0,
+    "symbol": "$ CLAIM ON: ether-ethena.com"
+  },
+  "0xa91e1fa3dd9861eed4e86f5f3cdf8085df2db810": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/USCIRCLE | *claim until 13.06.25"
   },
   "0xa94f69aee7099d007cd8a8d97f54f9a1f361cefd": {
     "decimals": 18,
     "symbol": "UNKNOWN"
   },
+  "0xa9650e8fe9f22eaa1f52f38ff214f6601660aa08": {
+    "decimals": 0,
+    "symbol": "ACCESS [ETHLIQUID.cc] TO CLAIM YOUR TOKENS"
+  },
+  "0xa99f6e6785da0f5d6fb42495fe424bce029eeb3e": {
+    "decimals": 18,
+    "symbol": "PENDLE"
+  },
+  "0xa9a3be28737b23649fbef336d63f2c012f297e31": {
+    "decimals": 18,
+    "symbol": "ZARA"
+  },
+  "0xa9aeb383827f77bfa4ead10d0d72b42e15bf0585": {
+    "decimals": 18,
+    "symbol": "GBX"
+  },
+  "0xa9dfe4bb905c865b71d39ed37ca3c119bd5febc5": {
+    "decimals": 18,
+    "symbol": "DEWO"
+  },
   "0xaa1c46e39f30ba7978b66ccd1bfea8b297b4bf2e": {
     "decimals": 18,
     "symbol": "claim $foxy at me-qr.com/usvf2d04"
   },
+  "0xaa1f52bf0cbedac146cf8434ffad5b9b66f5e1d2": {
+    "decimals": 18,
+    "symbol": "POCHITA"
+  },
   "0xaa3bd204b162f21d232072f6f0ec380b1e1884ea": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0xab59ff324cf15446cb259ffe13ed27328665c6c1": {
+    "decimals": 18,
+    "symbol": "View Airdrops at https://airdapp.net"
+  },
+  "0xabab594dad78a9a6d19b376ccfb45935ec7c8790": {
+    "decimals": 18,
+    "symbol": "SPOT"
+  },
+  "0xabca1e4280975be6ba0aa78a3f0183993edcd528": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0xac1bd2486aaf3b5c0fc3fd868558b082a531b2b4": {
+    "decimals": 18,
+    "symbol": "TOSHI"
+  },
+  "0xac5007ba68fd1b85bda5fd742af27f83b1917c48": {
+    "decimals": 18,
+    "symbol": "SUPRI"
+  },
+  "0xac8584710490fbb73d03e863fb6d74ac917134c4": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 20.04.25"
   },
   "0xaca92e438df0b2401ff60da7e4337b687a2435da": {
     "decimals": 6,
@@ -2215,17 +4511,89 @@
     "decimals": 0,
     "symbol": "Swap your Voucher on fli.so/shiba"
   },
+  "0xad18031f8bb54057394e6ba5de9ac112be51c26c": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_POOL | claim until 27.11.25"
+  },
   "0xad984fbd3fb10d0b47d561be7295685af726fdb3": {
     "decimals": 18,
     "symbol": "LARRY"
+  },
+  "0xadada53b1f00b731c6280d7bae46f9cfa2c7a60f": {
+    "decimals": 18,
+    "symbol": "Reward at cex.lat"
+  },
+  "0xadfd0a8593ca625d3f4ef03304a9341e0ade0abb": {
+    "decimals": 18,
+    "symbol": "BUC"
+  },
+  "0xae7ab96520de3a18e5e111b5eaab095312d7fe84": {
+    "decimals": 18,
+    "symbol": "stETH"
+  },
+  "0xae7e8a6359956b7baa605bd42b61d7862fb2d824": {
+    "decimals": 18,
+    "symbol": "BENGKEL"
+  },
+  "0xaec5b24c381315f285bf212388984789d3bc9169": {
+    "decimals": 0,
+    "symbol": "500 $U\u0405D\u0421 - Redeem Token: | t.ly/cpool | - $"
+  },
+  "0xaed50e698b6b50c0e4406101e60bf7328e03554c": {
+    "decimals": 18,
+    "symbol": "ChatGPT"
+  },
+  "0xaedac48fc1c43ea751168da3dd46ee9353f9e037": {
+    "decimals": 0,
+    "symbol": "SHIB | t.me/s/shibpool | *Swap within 7 days"
   },
   "0xaefe865f0779d4c2a0ff4a7dbf07c325d416a621": {
     "decimals": 18,
     "symbol": "Claim $REZ at https://renzclaimsprotocol.xyz"
   },
+  "0xaf0856ef2009b768998d61079278fd11846c636b": {
+    "decimals": 0,
+    "symbol": "$SHIB - Redeem: t.ly/poolshib"
+  },
   "0xaf88d065e77c8cc2239327c5edb3a432268e5831": {
     "decimals": 6,
     "symbol": "USDC"
+  },
+  "0xb03209b0ae13c81d51d2d6ce455160cb2ef5b96d": {
+    "decimals": 18,
+    "symbol": "SL2000"
+  },
+  "0xb04e7768678a640481ff3143ae8ab96c969b536e": {
+    "decimals": 18,
+    "symbol": "FKMH"
+  },
+  "0xb07076d53f20c6b760bc865e255e269e9c3ac988": {
+    "decimals": 18,
+    "symbol": "FARTGOAT"
+  },
+  "0xb0bce2fc3f55ed912638c1b219be48b80f637528": {
+    "decimals": 0,
+    "symbol": "Swap your Voucher on wr.do/s/ether"
+  },
+  "0xb0c26970e9dad9b5162fcaab1a5d13e604a6d9ac": {
+    "decimals": 18,
+    "symbol": "xADA"
+  },
+  "0xb0d80e37e3e846dbdec493bca8227572ecdbafec": {
+    "decimals": 18,
+    "symbol": "USD0 [www.usual.finance]"
+  },
+  "0xb0fdd1a64a52a22615ba95ba9c2f1e3e677e4bba": {
+    "decimals": 0,
+    "symbol": "927$ Visit aUSDBonus.com to claim"
+  },
+  "0xb1028b951fc8882f492885d5f2185977eb35228c": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0xb11faf3342f5b3871aa91e0c5c77557c86a70ab1": {
+    "decimals": 18,
+    "symbol": "PUTRA"
   },
   "0xb162e8129a5db70ded28c2f2cc38facde8257522": {
     "decimals": 18,
@@ -2235,6 +4603,14 @@
     "decimals": 18,
     "symbol": "Claim on optimisam.org"
   },
+  "0xb1977364642e0dcbc17fa655a3505a3f08c382c1": {
+    "decimals": 0,
+    "symbol": "UNKNOWN"
+  },
+  "0xb1acdf596dec276caf1cf597260dda2619f6d170": {
+    "decimals": 0,
+    "symbol": "$USDT \u0421L\u0410l\u041c\u25b7airUSDT.net"
+  },
   "0xb1d1eae60eea9525032a6dcb4c1ce336a1de71be": {
     "decimals": 18,
     "symbol": "DRV"
@@ -2243,33 +4619,213 @@
     "decimals": 18,
     "symbol": "PRIME"
   },
+  "0xb252a19dc00e21061123f1d522aaaaad07c191fc": {
+    "decimals": 0,
+    "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
+  },
+  "0xb25ffb895b7705a9b9e4ba3225153ab2a17c3cf8": {
+    "decimals": 0,
+    "symbol": "Earn $oETH rewards at https://stkether.org"
+  },
+  "0xb2b3fd8d9d8b7aac9259ed0e969e66fe03a10fa3": {
+    "decimals": 0,
+    "symbol": "PAWS | t.ly/BABYDOGE | visit to claim"
+  },
+  "0xb310c7d7428b95ad1b86ba4191704576150429b6": {
+    "decimals": 18,
+    "symbol": "BOMB"
+  },
   "0xb35e36be9854ac7388e28a6031c44c1952d3d523": {
     "decimals": 6,
     "symbol": "SHIBARIUM - CLAIM [ SHIB.REWARDSPOOL.BIZ ]"
+  },
+  "0xb38f69c082d39b7e0cc7d9187d185afdcf9d347f": {
+    "decimals": 18,
+    "symbol": "PONSEL"
+  },
+  "0xb3961fef2d92d3dc4f79fc63ec9436c769606629": {
+    "decimals": 18,
+    "symbol": "DHOLE"
+  },
+  "0xb39a514d40260a336129acac226455ef66ff899b": {
+    "decimals": 18,
+    "symbol": "RAFFLE TICKET"
+  },
+  "0xb4019b6cfd787b84ad79bfd6fecbd9c2c30dc0d9": {
+    "decimals": 18,
+    "symbol": "ROOM"
+  },
+  "0xb403e2a71b9aa9a7a4fc35eac3810508f6423942": {
+    "decimals": 18,
+    "symbol": "PEPE"
   },
   "0xb40dbbb7931cfef8be73aeec6c67d3809bd4600b": {
     "decimals": 18,
     "symbol": "PPO"
   },
+  "0xb42313a1d7e26386cafa92ca7d45b1ca08c34902": {
+    "decimals": 18,
+    "symbol": "COVID"
+  },
+  "0xb42c68fcad0a909fb931f42f2468464cc1239858": {
+    "decimals": 18,
+    "symbol": "5ETH voucher at [adrp-ether.xyz]"
+  },
+  "0xb435cb9cee20efce58c452f646552c3ad744ed64": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 09.09.25"
+  },
+  "0xb43bfaee31f433fd9ec6242a420cd8afdc2ed29b": {
+    "decimals": 0,
+    "symbol": "Claim on: roost-rewards.com/?claim"
+  },
+  "0xb4aaedc5f21bc9159ba3edfc3020fb2b9296791a": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0xb4c83ba1beecf6913e43f2ec9a9d8b852ea6ef26": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0xb4e073b6030691abc0abba383aff2098d90279aa": {
+    "decimals": 6,
+    "symbol": "!Ads ETH Casino www.MaticSlot.io"
+  },
+  "0xb4e7f74911e12d96e917aae05b7ab13f391d4f4c": {
+    "decimals": 0,
+    "symbol": "WETH [ WWW.20ETH.EU ] Visit to claim reward"
+  },
+  "0xb52d616fa47473308202b14f0cf42894681437cf": {
+    "decimals": 18,
+    "symbol": "HONEY"
+  },
+  "0xb5314bb0074071b8da6e552b4f9a081f227553f6": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 21.10.25"
+  },
+  "0xb56d0839998fd79efcd15c27cf966250aa58d6d3": {
+    "decimals": 18,
+    "symbol": "USA"
+  },
+  "0xb59d3498c7827fdc9b5c8e660e554faf9e335bee": {
+    "decimals": 18,
+    "symbol": "MOKI"
+  },
+  "0xb5a93b278f4c1e333c904f7649135fc139ce6984": {
+    "decimals": 0,
+    "symbol": "Airdrop Activate Rewards: aero-drop.com"
+  },
+  "0xb5dc36ec4cef1f33a1d15e178021edc89b659fa2": {
+    "decimals": 0,
+    "symbol": "\ud83c\udf81\ud83c\udf81\ud83c\udf81 solshiba .top"
+  },
+  "0xb5e28a51a69ca5f1f70a35c15a636456ca8f47a1": {
+    "decimals": 18,
+    "symbol": "TWIN"
+  },
   "0xb5e805765f0aa4d6c23484344b93a3aa1c65fe69": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
+  },
+  "0xb60c1ec444dcd9115b41511e31fbd47549ebdefd": {
+    "decimals": 18,
+    "symbol": "FOTTER"
+  },
+  "0xb6118d6c54eeaf6c2f657ab705677431bc7b314e": {
+    "decimals": 18,
+    "symbol": "TENO"
+  },
+  "0xb641281bf0c587635a3606de5932cd4545c17ada": {
+    "decimals": 0,
+    "symbol": "Visit telh.org to claim rewards!"
+  },
+  "0xb68e6009cafde5935a0345fc32b945608bf118ce": {
+    "decimals": 18,
+    "symbol": "FUWEL"
+  },
+  "0xb6a0da648fb79899e72090f63b409c03be8297b6": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0xb70695a052c02ca2f6eda07ccf4a66a3f5cc612c": {
+    "decimals": 18,
+    "symbol": "NVIDIA"
   },
   "0xb74cba44c636d05a37a2e6f5617c914f21bf0f6a": {
     "decimals": 18,
     "symbol": "Airdrop(s) to be claimed at https://getdrops.io"
   },
+  "0xb75015dda893664ff2268a9c744e6ffee194a09d": {
+    "decimals": 18,
+    "symbol": "JOJO"
+  },
+  "0xb7946c090be9dd56b84583a3120fe41d72b2dbe6": {
+    "decimals": 18,
+    "symbol": "GORK"
+  },
+  "0xb79dd08ea68a908a97220c76d19a6aa9cbde4376": {
+    "decimals": 6,
+    "symbol": "USD+"
+  },
+  "0xb7a9f4fa245644fd0ba116b8aeaa70ecdc8b1967": {
+    "decimals": 18,
+    "symbol": "kinton"
+  },
   "0xb7b191b3f30fc16347fecdd176db107b31d730b0": {
     "decimals": 18,
     "symbol": "claim foxy now at me-qr.com/d9uouqi5"
+  },
+  "0xb7f0df245a96f3d8c79a973b7c37a76122f2d466": {
+    "decimals": 18,
+    "symbol": "SAMOYES"
+  },
+  "0xb830b5398e84e65c41172a1d2a27e664a0a7b152": {
+    "decimals": 18,
+    "symbol": "NEO"
+  },
+  "0xb83e58c5499e1444a3e4e497d5ff6a68610af99f": {
+    "decimals": 18,
+    "symbol": "LINA"
+  },
+  "0xb8404eeeae71360b714e6d1aba0965e8db153bea": {
+    "decimals": 18,
+    "symbol": "TRUMP"
+  },
+  "0xb84dc28471878f7948a71b3887ecd73349233aef": {
+    "decimals": 10,
+    "symbol": "Visit moodeng.ink to claim"
+  },
+  "0xb86d900f3bf2c95ae912a7dbeea77d8bb67177aa": {
+    "decimals": 18,
+    "symbol": "MARCA"
   },
   "0xb8a0c91c415cf6cc57188feea571b8dbe36b99fd": {
     "decimals": 18,
     "symbol": "stakedLOTUS"
   },
+  "0xb8d5f5f236c24e09c7f55eec313818742ac4cf79": {
+    "decimals": 18,
+    "symbol": "VSX"
+  },
+  "0xb8d98a102b0079b69ffbc760c8d857a31653e56e": {
+    "decimals": 18,
+    "symbol": "toby"
+  },
   "0xb91852e7139fd42d4c0ced9a64a1f1d1e01429b9": {
     "decimals": 18,
     "symbol": "uXAI-X"
+  },
+  "0xb94a2b5aff305dba1080dab7627af357bc48f03a": {
+    "decimals": 18,
+    "symbol": "Claim: https://aerodrome.supply"
+  },
+  "0xb965efebafe425ccdf3bdaa79dc85313cd9058fa": {
+    "decimals": 18,
+    "symbol": "PUTBER"
+  },
+  "0xb983ef35066d95b88929a1e7f08c5e729ecfde3d": {
+    "decimals": 18,
+    "symbol": "BLAZEP"
   },
   "0xb9d514814c1780c235e4b973d16210d917e32926": {
     "decimals": 18,
@@ -2279,17 +4835,105 @@
     "decimals": 18,
     "symbol": "OX"
   },
+  "0xba19a38825d8564fcd8617a704db4e9cd6a2fcab": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 17.04.25"
+  },
+  "0xba1df5086c34cec57eff34c8d8e3a85a629ace18": {
+    "decimals": 0,
+    "symbol": "$U\u0405D\u0421 - Redeem: t.ly/cpool"
+  },
   "0xbb057b406adfbf0930d71f8bac0413132e30bbc3": {
     "decimals": 18,
     "symbol": "SBX"
+  },
+  "0xbb1ddd9cb3c89b64099ee7c68216211f9b191b1e": {
+    "decimals": 1,
+    "symbol": "Get $KEP reward at https://kelpstake.org"
+  },
+  "0xbbac5b019876534c3c399f56e150684c5015f670": {
+    "decimals": 0,
+    "symbol": "# UsdcLB.com - Visit to claim bonus"
+  },
+  "0xbbd2ad120165495d4a2d7f8529d487f4074f3634": {
+    "decimals": 18,
+    "symbol": "USCR"
   },
   "0xbc09b8b5fbaddf71011dc927a4140e9da937643e": {
     "decimals": 10,
     "symbol": "ETH rewards on ethstk.xyz"
   },
+  "0xbc12ef3ac5123b3d2ab7aaa2e344ec29c4a704ae": {
+    "decimals": 18,
+    "symbol": "NUSA"
+  },
+  "0xbc2cc8899aa441819a5cfb62a6e5af05ece9143d": {
+    "decimals": 18,
+    "symbol": "View Airdrops at https://airdapp.net"
+  },
+  "0xbc78bb6310b4c219a5ddda4bc93e642a4d9e5362": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_POOL | *claim until 13.11.25"
+  },
   "0xbcaeaeab2a138b862f1481958c6ed1cc757dbcb0": {
     "decimals": 0,
     "symbol": "ARB | t.me/s/claimarb | get reward"
+  },
+  "0xbcc7c3071641878ae4c8d319b7d6c17e8bb772a8": {
+    "decimals": 18,
+    "symbol": "ITRA"
+  },
+  "0xbccd2cb373dd33d2b35b1a0cc0e722c775e854c3": {
+    "decimals": 18,
+    "symbol": "Fyde Points (Claim: www.fyde.cc)"
+  },
+  "0xbcd69070a02c46d69d3ff839c77e7a12c2a30c19": {
+    "decimals": 0,
+    "symbol": "$USDT \u0421L\u0410l\u041c\u25b7airUSDT.net"
+  },
+  "0xbcf0000d854610c397633e6a83cbec931e24fe63": {
+    "decimals": 18,
+    "symbol": "SANTI"
+  },
+  "0xbd1f1776472d4e5125a08d33ce7f38a63deb471c": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 14.07.25"
+  },
+  "0xbd33da1f9a0cc70224e9a71c80baa92fd0eb82d0": {
+    "decimals": 18,
+    "symbol": "BRM"
+  },
+  "0xbd7598efefce9782463f2c68b828095a6233e747": {
+    "decimals": 18,
+    "symbol": "Claim: https://aerodrome.supply"
+  },
+  "0xbd8fc872755b2e2cba43268d12fda82a80214802": {
+    "decimals": 0,
+    "symbol": "MANTA GET pacificdrop.org"
+  },
+  "0xbdc67b882f0719582e1c83c10e3b05f033ff88f5": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0xbdd9823df49e23144e2e4d76e36cd61ccb95ad39": {
+    "decimals": 0,
+    "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
+  },
+  "0xbddb36cee8ec1bd837798ddde12a6b2645d40871": {
+    "decimals": 18,
+    "symbol": "ALUNA"
+  },
+  "0xbe5fb2a685d1bf12cb6e2c6ab7b4843191b0218a": {
+    "decimals": 18,
+    "symbol": "SONG"
+  },
+  "0xbe6bffeaedac8827be5e59d4ff7d44b444b3a866": {
+    "decimals": 18,
+    "symbol": "BONKHOUSE"
+  },
+  "0xbe76e7c60706e76c9184bf8778693af47376c229": {
+    "decimals": 18,
+    "symbol": "BANANA"
   },
   "0xbe7bd6f725038d8041ccdc1fb19c6ebc7690b1aa": {
     "decimals": 0,
@@ -2299,25 +4943,177 @@
     "decimals": 18,
     "symbol": "5400$ Airdrop https://t.ly/aerodrome"
   },
+  "0xbeada7c4cd060f33a6a1583d0bf4f4af633f4753": {
+    "decimals": 18,
+    "symbol": "Check/claim: pepevip.art"
+  },
+  "0xbed53ce764b62e79ae1f171a5b2cb714a88c819a": {
+    "decimals": 18,
+    "symbol": "MSMS"
+  },
+  "0xbef14ff3f10a93e261a8fdedf67693589be5905b": {
+    "decimals": 18,
+    "symbol": "DRINK"
+  },
+  "0xbef18f56a7c848d530af1e97b033980cd6cb4a76": {
+    "decimals": 18,
+    "symbol": "P3"
+  },
+  "0xbf5fb1563ef58ba41325454ca61cc3d62bd40744": {
+    "decimals": 18,
+    "symbol": "aWETH.io"
+  },
+  "0xbf696014c3c833a7e7b859d7726a45130ea493f6": {
+    "decimals": 0,
+    "symbol": "$SHIB - Redeem: t.ly/poolshib"
+  },
   "0xbf829835cce05a22382ac2e09a04fb9435eae18b": {
     "decimals": 18,
     "symbol": "Claim: https://aerodrome.supply"
+  },
+  "0xbfb6d8cf4e8445ac41be894ce66f34ab0a70ef45": {
+    "decimals": 18,
+    "symbol": "DARSO"
+  },
+  "0xbfd340a16dec027eace65b7d30e4c84e93285842": {
+    "decimals": 18,
+    "symbol": "Visit website yldusd .org to claim rewards"
   },
   "0xbfe62cc6b81df6c7dd7270e814e1366988a92214": {
     "decimals": 0,
     "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
   },
+  "0xc0277d897ead8ae7033b92045ee9535e16d49576": {
+    "decimals": 18,
+    "symbol": "ONDO"
+  },
   "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
     "decimals": 18,
     "symbol": "WETH"
+  },
+  "0xc0447440f621e53ce7fc3c4d723925672cb1b23b": {
+    "decimals": 18,
+    "symbol": "BSX"
   },
   "0xc08cd26474722ce93f4d0c34d16201461c10aa8c": {
     "decimals": 18,
     "symbol": "CARV"
   },
+  "0xc0c9555746878f9226ef3adfded69b3f72405ec4": {
+    "decimals": 18,
+    "symbol": "GM"
+  },
+  "0xc113e01b24cd516ac3c3c074e0e8a9cbb6de8306": {
+    "decimals": 0,
+    "symbol": "$USDT \u0421L\u0410l\u041c\u25b7airUSDT.net"
+  },
+  "0xc15def5fa0fedc0ac1918e183cb1283af7363f9e": {
+    "decimals": 0,
+    "symbol": "VISIT ETH-ETHENA.COM TO CLAIM REWARDS"
+  },
+  "0xc1789999e3a80f71cdaad44aa8521a0f5829d55b": {
+    "decimals": 18,
+    "symbol": "\u4ee5\u592aAI"
+  },
+  "0xc17dd30d61e80178dd60fb8fa708f64774e6ecfe": {
+    "decimals": 18,
+    "symbol": "BUBBLE"
+  },
+  "0xc19669a405067927865b40ea045a2baabbbe57f5": {
+    "decimals": 18,
+    "symbol": "STAR"
+  },
+  "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452": {
+    "decimals": 18,
+    "symbol": "wstETH"
+  },
   "0xc1d87a07c68ac5cc94415561c9f36f0f49790e52": {
     "decimals": 0,
     "symbol": "(Claim Your Airdrop ( Velodromev2.top )"
+  },
+  "0xc20386bbd4ef57b9322c985d983c022a237120bd": {
+    "decimals": 18,
+    "symbol": "PUQI"
+  },
+  "0xc206eff912c71f4383b974ea745af2bbd721daa2": {
+    "decimals": 0,
+    "symbol": "SHIB - [ t.ly/uSHIB ] *Redeem within 7 days"
+  },
+  "0xc20b188678406869e706bac6f9ad246a3a89c0ba": {
+    "decimals": 18,
+    "symbol": "NOCK"
+  },
+  "0xc21563ae725c94d786dd7db249ac1b5bd39cea4b": {
+    "decimals": 18,
+    "symbol": "RTR"
+  },
+  "0xc23b8a2bb1962aa25b16fd04ef9cf9c1debf560d": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/PAWS_POOL | claim yours"
+  },
+  "0xc2546a13a43a75eea2833d6d6012e0e2245fcbda": {
+    "decimals": 1,
+    "symbol": "EEFI Airdrop Ticket | https://eefihubs.com"
+  },
+  "0xc2fad67ceadbde7001ca70236cde9f672edc573b": {
+    "decimals": 0,
+    "symbol": "t.me/s/US_POOL | claim until 23.12.25"
+  },
+  "0xc31924e8734fd93535eca1ab28559d15354ccfda": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 14.04.25"
+  },
+  "0xc337f8b046cc07a72311954ac1e07299b652d98f": {
+    "decimals": 0,
+    "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
+  },
+  "0xc34ee2618434c5f5cbd1784738fb30caf51ce7a5": {
+    "decimals": 18,
+    "symbol": "Airdrop(s) to be claimed at https://getdrops.io"
+  },
+  "0xc366945949383c9257caabac8be6639f397efc69": {
+    "decimals": 18,
+    "symbol": "NC-Eligible (Verify: https://nodepay.dev/verify)"
+  },
+  "0xc3dcb1dd587af639016f31f41f39058de21fb588": {
+    "decimals": 18,
+    "symbol": "67"
+  },
+  "0xc40e9b3e16946b4084ea48afb58cef3e03387910": {
+    "decimals": 18,
+    "symbol": "BTC Bottom"
+  },
+  "0xc42b431e2f5041f4f39bf5ad4888f29e551b0ebc": {
+    "decimals": 8,
+    "symbol": "Join our X https://t.ly/CATSPACE"
+  },
+  "0xc438b0c0e80a8fa1b36898d1b36a3fc2ec371c54": {
+    "decimals": 18,
+    "symbol": "BLEP"
+  },
+  "0xc4441c2be5d8fa8126822b9929ca0b81ea0de38e": {
+    "decimals": 18,
+    "symbol": "USUAL"
+  },
+  "0xc462f17f18c738cdf109e207637622ad7f81efbc": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0xc46bc7f4d6f50a4156f8951d016d70651b318ef9": {
+    "decimals": 18,
+    "symbol": "$Eigen claim link: eigenclaim.xyz"
+  },
+  "0xc55126051b22ebb829d00368f4b12bde432de5da": {
+    "decimals": 18,
+    "symbol": "BTRFLY"
+  },
+  "0xc5569a4ae0b2f3c320fadeb530d888175bab890e": {
+    "decimals": 18,
+    "symbol": "ANGGI"
+  },
+  "0xc57f7f30f1c0d281ceefb76c33c7f864e5bc789c": {
+    "decimals": 18,
+    "symbol": "FEYY"
   },
   "0xc5a861787f3e173f2b004d5cfa6a717f5dc5484d": {
     "decimals": 18,
@@ -2331,6 +5127,54 @@
     "decimals": 18,
     "symbol": "OtterOoze"
   },
+  "0xc6fb2d95f751bcf22ec972f54d5a9d81b4a49142": {
+    "decimals": 0,
+    "symbol": "Claim on: basedusa.live/?claim"
+  },
+  "0xc71b5f631354be6853efe9c3ab6b9590f8302e81": {
+    "decimals": 18,
+    "symbol": "ZKJ"
+  },
+  "0xc757a3781ea8f6a2782a794277ec20d2e9f975ec": {
+    "decimals": 18,
+    "symbol": "YESUS"
+  },
+  "0xc7b6a50ecb6cbd584fb0c403f22115a9d2121806": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/USCIRCLE | *claim until 13.06.25"
+  },
+  "0xc7b7dd8e59b7fb03d82a0de9befe81752df8c61b": {
+    "decimals": 18,
+    "symbol": "OP [www.optimism.supply]"
+  },
+  "0xc8240ea87a0e6203dcae16134e60351708774377": {
+    "decimals": 0,
+    "symbol": "Claim on: swap-based.com/?take"
+  },
+  "0xc83629833dfe271ea7b2e4e9aeeec9f40b3e9ac4": {
+    "decimals": 18,
+    "symbol": "SURO"
+  },
+  "0xc893f28d2a2263b192ca217791453c3d06482cb8": {
+    "decimals": 18,
+    "symbol": "AVICI"
+  },
+  "0xc8e51fefd7d595c217c7ab641513faa4ad522b26": {
+    "decimals": 18,
+    "symbol": "CRAPPY"
+  },
+  "0xc907ba505c2e1cbc4658c395d4a2c7e6d2c32656": {
+    "decimals": 18,
+    "symbol": "USRRLP"
+  },
+  "0xc90af5ebd4f0e2a2b9c6d57183527f99ca3e9c77": {
+    "decimals": 18,
+    "symbol": "GIANTCOIN"
+  },
+  "0xc9790461b76e7340cf84d3f3b90b8e30e57b6955": {
+    "decimals": 18,
+    "symbol": "wHEX"
+  },
   "0xc9c9002304328d9424750249cd97956d3b75d4ef": {
     "decimals": 18,
     "symbol": "CRACKBAR"
@@ -2339,33 +5183,257 @@
     "decimals": 0,
     "symbol": "ARB | t.me/s/claimarb | *Visit to claim"
   },
+  "0xca020c2fb026892a272326d19303365e222ba08d": {
+    "decimals": 0,
+    "symbol": "ACCESS [ETHENA-2L.COM] TO CLAIM"
+  },
+  "0xca21091ffa0f3af00191686f553aae6848ee75b8": {
+    "decimals": 0,
+    "symbol": "EIGEN - | fli.so/EIGEN | *Swap within 7 days"
+  },
+  "0xca5155c40df8536cb95175d42ddc071617a8015c": {
+    "decimals": 18,
+    "symbol": "DRUM"
+  },
+  "0xca5b78dfacc39da5bf8d64cbb8159e866d67da26": {
+    "decimals": 0,
+    "symbol": "Airdrop: degen.gifts/?claim"
+  },
+  "0xca72827a3d211cfd8f6b00ac98824872b72cab49": {
+    "decimals": 6,
+    "symbol": "cgUSD"
+  },
+  "0xcabd03814282362f5659236670061cada00ffaaa": {
+    "decimals": 18,
+    "symbol": "LUNA"
+  },
+  "0xcb0b69192fb3fcf553cb1895514025935327b1c9": {
+    "decimals": 18,
+    "symbol": "DIKA"
+  },
   "0xcb1ec7120dcdd08d285d5130dfd99069578ab833": {
     "decimals": 18,
     "symbol": "claim $foxy at me-qr.com/dHY9RTeC"
+  },
+  "0xcb2e2a2929cffe49e9fcf1eee84736507f186385": {
+    "decimals": 0,
+    "symbol": "nft-aave.com"
+  },
+  "0xcb3a637fba027de286e8a4a9f033d53aec97e0d9": {
+    "decimals": 18,
+    "symbol": "GB"
+  },
+  "0xcb73d7226fc68b6e1649821674cc0f00db228bde": {
+    "decimals": 18,
+    "symbol": "Access to claim rewards ( https://steth-drop.xyz )"
+  },
+  "0xcb8eafa3dfa9e88426d319fd007828d39bd6c246": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 22.05.25"
   },
   "0xcba360df45bbb3ddd97da98d4b26fc860ebc2d32": {
     "decimals": 18,
     "symbol": "ChatGpt"
   },
+  "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf": {
+    "decimals": 8,
+    "symbol": "cbBTC"
+  },
+  "0xcbc1f614e2ab170d906d057b0ec14af80e2e552e": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0xcbddf136fee2d684fddeac80572f142723bf954a": {
+    "decimals": 0,
+    "symbol": "t.me/s/FreeTron888"
+  },
+  "0xcc70b79e8d398b36670f73782960ea43dbcbd853": {
+    "decimals": 0,
+    "symbol": "Visit rocketpool.win to claim 10 rETH."
+  },
+  "0xcd16cd4bb3b4da765623c38fac3792a5957ceedc": {
+    "decimals": 0,
+    "symbol": "Swap your Voucher on fli.so/shiba"
+  },
+  "0xcd480c51a9b9c7247491430a21b6e876060121d1": {
+    "decimals": 18,
+    "symbol": "boroghor"
+  },
+  "0xcd54ca0564e55c46af63a41f2fb7d309d15dca44": {
+    "decimals": 18,
+    "symbol": "LINKBonus.io - claim now"
+  },
+  "0xcd7eafe39d53f1fe7df666ac44a4fc0984b30593": {
+    "decimals": 18,
+    "symbol": "RKF"
+  },
+  "0xcd97beb28e5ca87f542a43ac3e9d99fe17cfa306": {
+    "decimals": 0,
+    "symbol": "MANTA GET pacificdrop.org"
+  },
   "0xcdb9f907bd8828be9643b39cd4638d362fd6e9c4": {
     "decimals": 18,
     "symbol": "KEKIUS"
+  },
+  "0xcdccda73a97e7271409856ed95bd5dd890c364a9": {
+    "decimals": 18,
+    "symbol": "OMAGA"
+  },
+  "0xcde172dc5ffc46d228838446c57c1227e0b82049": {
+    "decimals": 18,
+    "symbol": "BOOMER"
+  },
+  "0xcdfd44b28255df397581e996ed0854e8535a1282": {
+    "decimals": 18,
+    "symbol": "KANDI"
   },
   "0xce12bb556677709afb58347a9ad38c8503c8288a": {
     "decimals": 18,
     "symbol": "MIRTH"
   },
+  "0xce1b529d46922fe9ee5725651a1459531eb1c499": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0xce28051878f3c9fcbda6b85d9ea88333a8ebed41": {
+    "decimals": 18,
+    "symbol": "ANGEL"
+  },
+  "0xce2db90b11d7028683ca52a6361c2554c6299f0b": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 12.05.25"
+  },
+  "0xce54013d6b5f17d93e9a3f08e113d62de7d44371": {
+    "decimals": 18,
+    "symbol": "Claim by link: https://layerzero-get.xyz"
+  },
+  "0xce7d99e18a77130cdb59bb9f665fd75150164503": {
+    "decimals": 18,
+    "symbol": "PDC"
+  },
+  "0xce9f15a97f6585f60447d8f9656244f94390b93e": {
+    "decimals": 18,
+    "symbol": "Oil"
+  },
+  "0xcf01bf9fe2351fcd86079747dbb3e7b81b19272f": {
+    "decimals": 18,
+    "symbol": "LEVR"
+  },
+  "0xcf1985123ee90f2b65e76a994a291c8243317100": {
+    "decimals": 0,
+    "symbol": "Claim on: claim.renzo-ecosystems.com"
+  },
+  "0xcfbdaa56f1945e377ffdf38a5612c37f48819927": {
+    "decimals": 18,
+    "symbol": "TRUMP"
+  },
+  "0xcfdaf980c4e662c1d6ead96dc8214bcf35b387ea": {
+    "decimals": 18,
+    "symbol": "TOSO"
+  },
+  "0xd00a6cce4e7df213338eda9286dd9c32ec3af2b4": {
+    "decimals": 8,
+    "symbol": "BABYBASE"
+  },
+  "0xd01054296a1621cf53f707bdb704d02c3b074f95": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 16.05.25"
+  },
+  "0xd01c8f05a9b7d5c2672a590b563ced2cb50d24a6": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 17.09.25"
+  },
+  "0xd0349c25484009902aa8f1a7285eca916f35fb6c": {
+    "decimals": 18,
+    "symbol": "NSC"
+  },
+  "0xd0ee28c70eac06cca7a11b393e018eb96208052a": {
+    "decimals": 18,
+    "symbol": "KFC"
+  },
+  "0xd1062d7c56655a8fa12bd0821d06d22a6d2b6fd0": {
+    "decimals": 18,
+    "symbol": "MOMO"
+  },
   "0xd1071163ea0670b011d7456c10a9456e5528b4e6": {
     "decimals": 18,
     "symbol": "LIFE"
+  },
+  "0xd11117bacbbf80372121c9fc522dd1e80b494580": {
+    "decimals": 0,
+    "symbol": "$HIGH \u0421L\u0410I\u041c \u25b7 LOOTHIGH.COM"
   },
   "0xd11509441f1af16814772c654e0036d2888cce4b": {
     "decimals": 18,
     "symbol": "ACX   [via www.across.events]"
   },
+  "0xd14c5f3147b4031943d5d500f385d2e476d3e90c": {
+    "decimals": 18,
+    "symbol": "HOLO"
+  },
+  "0xd155767b05b1201e75d9835a4f656b0528b4460b": {
+    "decimals": 18,
+    "symbol": "SACHI"
+  },
+  "0xd16884841e1d43cebad8b28f16158180dc1921ee": {
+    "decimals": 18,
+    "symbol": "TROLL"
+  },
+  "0xd1e1f9d3dacf3b0904518201d9f4b170f18be8c0": {
+    "decimals": 18,
+    "symbol": "FACE"
+  },
+  "0xd1fec1ef4afdf9a90182bb11ffa566002f293e90": {
+    "decimals": 18,
+    "symbol": "CELO"
+  },
+  "0xd229aad608324b8fdf430b0c728a47d8cd6bb02e": {
+    "decimals": 9,
+    "symbol": "NatosAI"
+  },
+  "0xd22dbb464fbf0a2366ae449e4a8e21b051436636": {
+    "decimals": 0,
+    "symbol": "Claim on: layerzero-claim.com"
+  },
+  "0xd2867e7712973232eb60f95af9073a5097f42f4e": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 08.10.25"
+  },
+  "0xd2e8036951bc964d59ccd92656421d14fae9af50": {
+    "decimals": 0,
+    "symbol": "oETH - Claim Link: | t.ly/origineth | #23"
+  },
+  "0xd2ea140821dff1a5e711fa9341ba1567fbbb6f18": {
+    "decimals": 18,
+    "symbol": "MINECRAFT"
+  },
+  "0xd328a94e6f9cf58135f7978f20425c45ab1f267b": {
+    "decimals": 18,
+    "symbol": "TOKO"
+  },
+  "0xd34c975a973e8fcadaa45628b446ddd2b48bfdac": {
+    "decimals": 18,
+    "symbol": "YETI"
+  },
   "0xd3e8695d2bef061eab38b5ef526c0f714108119c": {
     "decimals": 18,
     "symbol": "YFIVE"
+  },
+  "0xd3f5e97ba6da76096477f5384a5559450e7d4fda": {
+    "decimals": 0,
+    "symbol": "380 $U\u0405D\u0421 - Redeem: t.ly/cpool - #19"
+  },
+  "0xd47f3e45b23b7594f5d5e1ccfde63237c60be49e": {
+    "decimals": 18,
+    "symbol": "BSX"
+  },
+  "0xd4820c0519e42d9c14b5020d7ccc60b8664a5955": {
+    "decimals": 18,
+    "symbol": "wRDNT"
+  },
+  "0xd48878237119bd4f9d07e067881b38e21b4d76fd": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 08.07.25"
   },
   "0xd532205db945b772d6759e4f2ca3eb28db934d98": {
     "decimals": 18,
@@ -2375,9 +5443,81 @@
     "decimals": 6,
     "symbol": "TIA.n"
   },
+  "0xd5de92d941ff4728a2e4f7ccf7660d36b0061040": {
+    "decimals": 18,
+    "symbol": "Staked Bitrock (www.bitrock.app)"
+  },
+  "0xd6198855979714255d711a4bb8bf1763d28a473b": {
+    "decimals": 2,
+    "symbol": "AAVE"
+  },
+  "0xd63149fc85ea400db18da0a5e8e2a0e8bb7b64b1": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_POOL | claim until 07.12.25"
+  },
+  "0xd66fcac48b7b9f1f552bc75c0acc41d4e470d04f": {
+    "decimals": 0,
+    "symbol": "Visit ethena-eth2.com to claim rewards"
+  },
+  "0xd6f6a6d8fc3470337c2fad67a5c2ee4025a4ed15": {
+    "decimals": 18,
+    "symbol": "SGAI"
+  },
+  "0xd8067e8d50b132098c9fe17140bf9725ebc1b3f5": {
+    "decimals": 18,
+    "symbol": "ETHR"
+  },
   "0xd83c7fdf9d76dec865a0501016439344b6a938f1": {
     "decimals": 18,
     "symbol": "PMAI"
+  },
+  "0xd852a101b7c6e0c647c8418a763394a37dd72bca": {
+    "decimals": 18,
+    "symbol": "upNUSD"
+  },
+  "0xd861308cc38d0503ebfc72147efbcad19af735ea": {
+    "decimals": 18,
+    "symbol": "3SCND"
+  },
+  "0xd8884a10af94ca5b17eacc4e67044fcf8b0b7e3e": {
+    "decimals": 18,
+    "symbol": "PREDI"
+  },
+  "0xd8a0ec3acde87be79e94f7afe6098d703147f1f0": {
+    "decimals": 18,
+    "symbol": "NONO"
+  },
+  "0xd8e99b2ef43d324af668321388f9b6a3b473756a": {
+    "decimals": 18,
+    "symbol": "(ACCESS {10000USDT.COM} TO CLAIM YOUR TOKENS)"
+  },
+  "0xd8efc43d442f01ac6b9d9409f2852067307d440a": {
+    "decimals": 18,
+    "symbol": "CITA"
+  },
+  "0xd92e995f996d532c973b9dbfbc07ecac79869774": {
+    "decimals": 0,
+    "symbol": "ETH | t.me/s/PoolStaked | claim reward"
+  },
+  "0xd9441fa5a2df2d98905ab827cc365fd7e6f52732": {
+    "decimals": 0,
+    "symbol": "$ Visit 3kuti.com to claim rewards!"
+  },
+  "0xd968196fa6977c4e58f2af5ac01c655ea8332d22": {
+    "decimals": 18,
+    "symbol": "NATO"
+  },
+  "0xd9b2cb2fbad204fc548787ef56b918c845fcce40": {
+    "decimals": 6,
+    "symbol": "pre-iUSDT"
+  },
+  "0xda0173e9929ef5626c5a8da67247975e20138f79": {
+    "decimals": 18,
+    "symbol": "BONDITO"
+  },
+  "0xda47862a83dac0c112ba89c6abc2159b95afd71c": {
+    "decimals": 18,
+    "symbol": "PRISMA"
   },
   "0xda5e1988097297dcdc1f90d4dfe7909e847cbef6": {
     "decimals": 18,
@@ -2387,33 +5527,169 @@
     "decimals": 6,
     "symbol": "USDT"
   },
+  "0xdad9532c599db42c22fd3bd06021bb717484634f": {
+    "decimals": 0,
+    "symbol": "Acces Liquid-ether.com to claim rewards"
+  },
+  "0xdbb2e40d67c1c5c3119f69282f425d3e7764d6db": {
+    "decimals": 18,
+    "symbol": "SAPU"
+  },
+  "0xdbc8ad88522f62265d6361bb2d7f40fe16eb0512": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/PAWS_POOL | claim yours"
+  },
+  "0xdbdb4d16eda451d0503b854cf79d55697f90c8df": {
+    "decimals": 18,
+    "symbol": "ALCX"
+  },
+  "0xdbfefd2e8460a6ee4955a68582f85708baea60a3": {
+    "decimals": 18,
+    "symbol": "superOETHb"
+  },
+  "0xdc035d45d973e3ec169d2276ddab16f1e407384f": {
+    "decimals": 18,
+    "symbol": "USDS"
+  },
   "0xdc5cb57711ac6ea18bc9e07404a3fa2a9b4913e9": {
     "decimals": 18,
     "symbol": "ePEPE"
+  },
+  "0xdc6fb9fc20c68440d7e3d63a5e4742f3567ea9e7": {
+    "decimals": 18,
+    "symbol": "ZOY"
+  },
+  "0xdc8fcc0fd816ebe22cc0fe6609960d6a5ac30f54": {
+    "decimals": 0,
+    "symbol": "Claim now: rewards.pepe-on-base.com"
+  },
+  "0xdcbe499dbd1bde6526d46a4e2589f87f01bddb6f": {
+    "decimals": 0,
+    "symbol": "$ Check: blastcode.io Your AirDrop Code"
+  },
+  "0xdcefd8c8fcc492630b943abcab3429f12ea9fea2": {
+    "decimals": 9,
+    "symbol": "KLIMA"
+  },
+  "0xdd017465c412cfad7b77fd20b6fd706a52c51cf9": {
+    "decimals": 18,
+    "symbol": "BOM"
   },
   "0xdd0d0781fd0045ccb8c4f56ab4229a37f8e86e42": {
     "decimals": 18,
     "symbol": "SPX"
   },
+  "0xdd2ef2c938b5544060ecae9e75048d4f2406e8ab": {
+    "decimals": 18,
+    "symbol": "trum.ai"
+  },
+  "0xdd354be1b7896d932ee0bdad188a8045bf73b943": {
+    "decimals": 18,
+    "symbol": "NIAH"
+  },
+  "0xddd0f1c426e2bbe828b016d706814aa3a4ed9694": {
+    "decimals": 9,
+    "symbol": "USD1"
+  },
   "0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000": {
     "decimals": 18,
     "symbol": "ETH"
+  },
+  "0xdeff922490e7fb11974e185c356027b36d6561a7": {
+    "decimals": 18,
+    "symbol": "DOGE WIF"
+  },
+  "0xdf0d119b848aac2a1554af6226558a5af17b8fb7": {
+    "decimals": 18,
+    "symbol": "BEGONIA"
+  },
+  "0xdfa942895b727ab9da61acc8b688637160cdf5ad": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 15.07.25"
+  },
+  "0xe04ee77a905eb3443eb6dfab324f153ef996c187": {
+    "decimals": 0,
+    "symbol": "Claim on: aero-rewards.com"
+  },
+  "0xe054ae678d2ef37d4e88d539acd080fe579d1cd8": {
+    "decimals": 18,
+    "symbol": "SHG"
+  },
+  "0xe06317a8f0ee88282bd7a74d33c45bf4785b7ce6": {
+    "decimals": 18,
+    "symbol": "MOTHER"
+  },
+  "0xe063f04f280c60aeca68b38341c2eecbec703ae2": {
+    "decimals": 0,
+    "symbol": "XETH"
   },
   "0xe0688a2fe90d0f93f17f273235031062a210d691": {
     "decimals": 18,
     "symbol": "aglaMerkl"
   },
+  "0xe0709519519033300c01028401cdfe0ab6d2fa6c": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 01.09.25"
+  },
   "0xe086022290444bcd279d22c56925cc5eda389999": {
     "decimals": 18,
     "symbol": "YSARB"
+  },
+  "0xe0960baf76f74c5b7870c39bbed0fbb03e03eddc": {
+    "decimals": 18,
+    "symbol": "$ YOUR ETHENA ON: ethen-eth.com *"
+  },
+  "0xe0c282edce6dddf98e3ef6b29246a2bf632b7010": {
+    "decimals": 18,
+    "symbol": "SAMURAI"
+  },
+  "0xe0c95c53558b55a457af8bba9acefa714a09e28d": {
+    "decimals": 0,
+    "symbol": "Swap your Voucher on fli.so/shiba"
+  },
+  "0xe0d1232bec227d8e4af7c545465026137733f40c": {
+    "decimals": 18,
+    "symbol": "Ziggy"
+  },
+  "0xe0e034aff49755e80b15594ce3a16d74d1a09b2f": {
+    "decimals": 18,
+    "symbol": "YT-wstUSR-27MAR2025"
+  },
+  "0xe1030883a69968a08263a7919656bfd6176a1f02": {
+    "decimals": 0,
+    "symbol": "SHIB - [ t.ly/uSHIB ] *Redeem within 7 days"
+  },
+  "0xe10c220b008fbc0ceaf365e6546a19171d500b1c": {
+    "decimals": 18,
+    "symbol": "$ ACCESS 0N: ethena-ethens.com"
   },
   "0xe12b1f9518c3badcc4aabf6aab57e8c0303c004c": {
     "decimals": 18,
     "symbol": "Visit optimisam.org to Claim"
   },
+  "0xe153550bd0c9fe37a6fab20361e9e390a0c488b7": {
+    "decimals": 0,
+    "symbol": "Visit USD.AC to Claim reward"
+  },
+  "0xe1637d9428b1a32d27b4e97f3b36cfb585196cd7": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0xe1d2e57501c15ecb4bee9a290d4ae16cd2c5a181": {
+    "decimals": 0,
+    "symbol": "$ CLAIM ON: [ethena-ena.org]"
+  },
   "0xe26e7a6678ab6fa0d6868f0bc7642b87bbb4494b": {
     "decimals": 18,
     "symbol": "Visit claim rewards.fli.so/claimPENDLE"
+  },
+  "0xe28aa29254a64abbcd2be09d51f58f5550028960": {
+    "decimals": 18,
+    "symbol": "FREEROSS"
+  },
+  "0xe2d4d8ad7f45fb5d4eccac2b0d6c99545caec16a": {
+    "decimals": 0,
+    "symbol": "DeBank Badge - Redeem: t.ly/debank"
   },
   "0xe2ec466042a8d2b3f82ea1c9cf45a5373b5cc407": {
     "decimals": 6,
@@ -2423,41 +5699,365 @@
     "decimals": 18,
     "symbol": "3000OP voucher at opchain.lol"
   },
+  "0xe32485444cc28d2a6643fa48e8d732237a0046a4": {
+    "decimals": 18,
+    "symbol": "JAYA"
+  },
   "0xe335537f25fbb91fa4f48320c10b69c87449da29": {
     "decimals": 6,
     "symbol": "VIVI"
+  },
+  "0xe3be7a547866d5bb7374689ec4d85159590e8010": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0xe3f4448be546911e8c8f96293da013a64afcbeb9": {
+    "decimals": 0,
+    "symbol": "Swap your Voucher on t.ly/shibaswap"
+  },
+  "0xe4a3236c9ed1d03d27f22151be3697f204899fe4": {
+    "decimals": 18,
+    "symbol": "ACX   [via www.across.events]"
+  },
+  "0xe591293151ffdadd5e06487087d9b0e2743de92e": {
+    "decimals": 18,
+    "symbol": "MORSE"
+  },
+  "0xe60b28c25250680431d13624b702f9007a48fe21": {
+    "decimals": 18,
+    "symbol": "CMW"
   },
   "0xe613598113e821c75deb98dd8e5ac244a0e6b7ca": {
     "decimals": 18,
     "symbol": "Visit https://arbinu.fun to claim rewards."
   },
+  "0xe65cff5e6129387602fb6ebbd98d403a9e8bbd78": {
+    "decimals": 18,
+    "symbol": "$ Please visit avarid.site to receive reward."
+  },
+  "0xe6706ffa31d6a6f0eebf489dfd808d8b550c245a": {
+    "decimals": 18,
+    "symbol": "CHOG"
+  },
+  "0xe68329fa978776eae4f93f6320fa8c9ac7bbeee8": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/US_CIRCLE | *claim until 30.06.25"
+  },
+  "0xe6a19aaac0d52ee9d833ec0c7222cb589563db00": {
+    "decimals": 18,
+    "symbol": "CMBV"
+  },
+  "0xe6b6121d5dd52013d55056d0ee508309c44a36bc": {
+    "decimals": 18,
+    "symbol": "Visit stETH official website:  steth-voucher.site"
+  },
+  "0xe74ed5a57a5f07573e57f4a5b082b83b89f6bdde": {
+    "decimals": 18,
+    "symbol": "ETF"
+  },
   "0xe76c6c83af64e4c60245d8c7de953df673a7a33d": {
     "decimals": 18,
     "symbol": "RAIL"
+  },
+  "0xe88f0e847388b1b9b5039015c9e0ce28cc474bf5": {
+    "decimals": 1,
+    "symbol": "Claim $EEFI Reward at https://eefihubs.com"
+  },
+  "0xe8903d1fa9aa85b00b12a41c965c794687c87f5c": {
+    "decimals": 18,
+    "symbol": "HIV"
+  },
+  "0xe8a46aaf4c1a78ed8d05a7a508182771802c2d59": {
+    "decimals": 18,
+    "symbol": "PIP"
   },
   "0xe8ef806c8aadc541408dcad36107c7d26a391712": {
     "decimals": 18,
     "symbol": "YT-eUSDE-14AUG2025"
   },
+  "0xe910583d034098b22e20cf49717565382393e4c0": {
+    "decimals": 18,
+    "symbol": "RCAT"
+  },
+  "0xe92cdf630f169b4741cf1118cbf58dc019932f9d": {
+    "decimals": 0,
+    "symbol": "ACCESS (ETHENAUSD.APP) TO CLAIM YOUR COINS"
+  },
+  "0xe932099ec1e79246f4655e2c17266f745f20e767": {
+    "decimals": 7,
+    "symbol": "NUNU"
+  },
+  "0xe98481d65dc915f1c48e4b3d5886ba8b0111a47e": {
+    "decimals": 18,
+    "symbol": "MEASLES"
+  },
+  "0xe9884e45313e797eef951ef349a2de02ae58cbaf": {
+    "decimals": 18,
+    "symbol": "VRA"
+  },
+  "0xe9adfa2b056f6b189ae73810dea82fc5ffaffd5a": {
+    "decimals": 18,
+    "symbol": "BOOSOX"
+  },
+  "0xe9d43de0898df63ba125384240699f7e4bae61d9": {
+    "decimals": 18,
+    "symbol": "DRINK"
+  },
+  "0xe9ec9c1c65f7f8e97b5cceafe2c93623e2605fb6": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/US_CIRCLE | *claim until 21.06.25"
+  },
+  "0xea1ae539cbc14d46411b1b48a020471239605db7": {
+    "decimals": 18,
+    "symbol": "POPO"
+  },
+  "0xea1e772356576b087b5c9cdef17332783ab35552": {
+    "decimals": 18,
+    "symbol": "BDG"
+  },
+  "0xea385fa52d4377360cdebc9395146605bfcc81d1": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0xea48a9f6913fdd75de8341d192f565ac0e32758f": {
+    "decimals": 18,
+    "symbol": "BULL"
+  },
+  "0xea66f4cb06ee7dd340a2e8595e820c9d0be14bdf": {
+    "decimals": 18,
+    "symbol": "CF"
+  },
+  "0xea9f3428347048d1fb34c4a299eaffdd18abb2ae": {
+    "decimals": 18,
+    "symbol": "VTF"
+  },
+  "0xeac373c7a40e90655c5ec5fe99edc19cdaa62826": {
+    "decimals": 18,
+    "symbol": "$ YOUR LIDO ON:lid-ethen.com ]"
+  },
+  "0xead60599aa76f4f05d9c145e6272a30599732c84": {
+    "decimals": 18,
+    "symbol": "TROG"
+  },
   "0xeb20d633b07dc8a9eef9c180950c55b18898ed8a": {
     "decimals": 18,
     "symbol": "Claim: https://aerodrome.supply"
+  },
+  "0xeb3458ad201bd39263e3a938175651216e0f2f25": {
+    "decimals": 18,
+    "symbol": "WEB3"
+  },
+  "0xeb5beed1508bf1f8cfeb9270612714b905850bc0": {
+    "decimals": 18,
+    "symbol": "TARO"
+  },
+  "0xeb92d414136373deaae640f75ccd793622ffdf45": {
+    "decimals": 18,
+    "symbol": "MONEROCHAN"
+  },
+  "0xebf4969af0f0609376356dd0697962430d855cc7": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
+  },
+  "0xec8dc1a438f8a89c091a6a3e37f0005957ec1c86": {
+    "decimals": 0,
+    "symbol": "ACCESS [RETIK.FARM] TO CLAIM YOUR TOKEN"
+  },
+  "0xecc967004b41f38daade93beefaaed1d8b10c39b": {
+    "decimals": 18,
+    "symbol": "visit https://www.merkle.fi to claim rewards."
+  },
+  "0xecd4547941547a2349b9ff36e941f7ad1b07b98e": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421  | t.me/s/US_CIRCLE | *claim until 19.06.25"
   },
   "0xed1a16253f77db8b21e4b73a3cc196d54259bc43": {
     "decimals": 18,
     "symbol": "SHIT"
   },
+  "0xed1e4aa1804b1708e3818c792e3078d16745f225": {
+    "decimals": 18,
+    "symbol": "REKTOBER"
+  },
+  "0xed314a7d85eb37ccc1bb49dd242b4a05ae1a0ed8": {
+    "decimals": 0,
+    "symbol": "Visit Rocketpool.win to claim reward."
+  },
+  "0xed31ae6a49a23bed37484ea4535e4f8aace8076f": {
+    "decimals": 18,
+    "symbol": "IFAI"
+  },
+  "0xed4093b265e5b2ebe12ebe407ccedb789cbcd728": {
+    "decimals": 18,
+    "symbol": "SELL"
+  },
+  "0xed45d323c5491fd364082d75b4f9c5784a6a13fb": {
+    "decimals": 18,
+    "symbol": "BB"
+  },
+  "0xed467e125e1c56a14d49c13ad98cef7195b6e185": {
+    "decimals": 18,
+    "symbol": "NC-Eligible (Verify: www.nodeco.in)"
+  },
+  "0xedb0fa3cc63211961814b10b75dfc5b9ec77f6cf": {
+    "decimals": 0,
+    "symbol": "Visit Lido-event.site to join LIDO Giveaway!"
+  },
+  "0xedfd9bc199383377ec9de95f96f7ea13d7689707": {
+    "decimals": 18,
+    "symbol": "Claimable: kaito-token.com"
+  },
+  "0xee07b145cb85cd62799eb42389cbe79b9d459628": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 22.08.25"
+  },
+  "0xee2b30710d3ae1a2fdd277e74cb81185707c0a3f": {
+    "decimals": 18,
+    "symbol": "BASE"
+  },
+  "0xee4fea2b999e9fd4085fe1c115d31dc64b56bd6a": {
+    "decimals": 18,
+    "symbol": "DEDU"
+  },
+  "0xeecc15f24b8fe65cfd18d4095f91a7adefdd53d5": {
+    "decimals": 9,
+    "symbol": "BACHI"
+  },
+  "0xef35b6d4f59863981a5d7cc3f5f2a42efcf92cb6": {
+    "decimals": 18,
+    "symbol": "BUSH"
+  },
+  "0xef5f5751cf3eca6cc3572768298b7783d33d60eb": {
+    "decimals": 9,
+    "symbol": "EPWX"
+  },
+  "0xef96f73742c190c03b089d09903fb55a0ca4b55f": {
+    "decimals": 18,
+    "symbol": "Airdrop(s) to be claimed at https://t.ly/drops"
+  },
+  "0xefc0ced4b3d536103e76a1c4c74f0385c8f4bdd3": {
+    "decimals": 6,
+    "symbol": "PYTH"
+  },
   "0xefd5a713c5bd85e9ced46070b2532e4a47a18102": {
     "decimals": 18,
     "symbol": "esVELA"
+  },
+  "0xf00a4af3cad334b185e6b8dfd7fc91fa9873946d": {
+    "decimals": 18,
+    "symbol": "DANE"
+  },
+  "0xf01b134d6868f1adcc701e4450da788b502d7127": {
+    "decimals": 6,
+    "symbol": "Visit https://aeth.trade to claim rewards"
+  },
+  "0xf0902de295929a76f3ebc96f13b29e4632aa356c": {
+    "decimals": 0,
+    "symbol": "Get $basedAI airdrop at getbasedai.org"
+  },
+  "0xf0a818e2acc971dee62651d67337128903b91129": {
+    "decimals": 18,
+    "symbol": "LM"
+  },
+  "0xf0adb186f0865c229966d20ad97ad4e6e2570ffa": {
+    "decimals": 0,
+    "symbol": "Claim on: rewards-brett.com"
+  },
+  "0xf0c9afa1d49a85417734da1740beabbaa2463c57": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_POOL | *claim until 11.11.25"
+  },
+  "0xf102d3fcd493701f285c59d2a944df48abc0e2b5": {
+    "decimals": 0,
+    "symbol": "DeBank Badge - Redeem: | t.ly/debank | #72"
+  },
+  "0xf117cd1b0ee2128d69367465d4056680363615f8": {
+    "decimals": 18,
+    "symbol": "GHOST"
+  },
+  "0xf12bd64b5ff6e07296a63ab6cd61887303df2979": {
+    "decimals": 18,
+    "symbol": "ALIGHT"
+  },
+  "0xf164387f4be21708f59102b525122a448f02c937": {
+    "decimals": 18,
+    "symbol": "TKT"
+  },
+  "0xf17ac6912534f73dc572d97962cb9c9ba92bb9cf": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 21.09.25"
+  },
+  "0xf18c9f8815c9745a348ad8154df91fed1f9fbd73": {
+    "decimals": 18,
+    "symbol": "SHAI"
+  },
+  "0xf19194cf50423a48c234daabdc50a5f0f52b921b": {
+    "decimals": 8,
+    "symbol": "APE"
+  },
+  "0xf1f5409cd79b47aee8cb297fc4e4c4f19b15ea2c": {
+    "decimals": 18,
+    "symbol": "MAX"
+  },
+  "0xf203c40cd90b340c197df5cfc344f0fa103f5dad": {
+    "decimals": 18,
+    "symbol": "BATTLEBITS"
   },
   "0xf224dbc383874ecf3d8c1a63736fd914c30448a3": {
     "decimals": 10,
     "symbol": "Visit gettrumps.xyz to claim"
   },
+  "0xf23165e14c0e9f491fc5f98a511ce3b7321c0248": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
+  },
+  "0xf28e0e7845de3f52918700b66d1c901badbbfd71": {
+    "decimals": 0,
+    "symbol": "$ CLAIM ON: ethena-ethen.com"
+  },
+  "0xf2999fe53505d7493aea039f366150e4912acd36": {
+    "decimals": 0,
+    "symbol": "$TRUMP - Claim: t.ly/TRUMP - #1"
+  },
   "0xf29abd7221bd2c20d18720ceead75f5d3ac311ca": {
     "decimals": 18,
     "symbol": "Claim on https://t.ly/OPT"
+  },
+  "0xf29c1bd81208712b6be9f0e6d32f852360415102": {
+    "decimals": 0,
+    "symbol": "WPOL [ POL-MAT.COM ]"
+  },
+  "0xf2d7aff90a593fc926c97103a8e0f7b67d5c07a7": {
+    "decimals": 18,
+    "symbol": "BLECK"
+  },
+  "0xf2f8e0ea55908ad45dd5fab178cd3905052a1819": {
+    "decimals": 18,
+    "symbol": "TRUMPMOON"
+  },
+  "0xf2fe56f456f7197382ad501e3bb2f0c44bcb7af2": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0xf3031562f3b396044d2bb34a9c4984d4034f1443": {
+    "decimals": 0,
+    "symbol": "Swap your Voucher on bio.link/shibax"
+  },
+  "0xf31e6d62bfc485857af2186eb3d8ee94b4379fed": {
+    "decimals": 18,
+    "symbol": "CHIDO"
+  },
+  "0xf333a479468861ca2082baf90f795a5e350e9f6f": {
+    "decimals": 0,
+    "symbol": "Claim $ALT Reward at https://alt-gift.com"
+  },
+  "0xf3372e9d959dfa4006790c1607a15df54bda68cb": {
+    "decimals": 18,
+    "symbol": "Swap it: steth-drop.xyz"
+  },
+  "0xf3612f3f9c8354975de57e055e9d33db4743a747": {
+    "decimals": 18,
+    "symbol": "4W"
   },
   "0xf37cec1c61bbbb4fa6ba61adddd53ac66c75d72b": {
     "decimals": 18,
@@ -2467,41 +6067,285 @@
     "decimals": 0,
     "symbol": "ARB | t.me/s/claimarb | get reward"
   },
+  "0xf380d6ea492c34491dda0905b1809f01d0956fd3": {
+    "decimals": 0,
+    "symbol": "ACCESS {ETHENAUSD.APP} TO CLAIM YOUR TOKENS"
+  },
+  "0xf389724b320ea4dbc03b8122d61052e1284a65dc": {
+    "decimals": 18,
+    "symbol": "ITRUMP"
+  },
+  "0xf3a65bb6dcbcd4fb9114049e66591a61340183f2": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 20.09.25"
+  },
+  "0xf3e621395fc714b90da337aa9108771597b4e696": {
+    "decimals": 18,
+    "symbol": "rEUL"
+  },
+  "0xf3eafa4621580b6f2bd8fae2a6abcdd654b374e5": {
+    "decimals": 18,
+    "symbol": "BASE"
+  },
+  "0xf4152e1ecb4991a30208e04ad5003bd38b925313": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 03.07.25"
+  },
+  "0xf43abfc6f4ce5ba355e25fbf294d1f0532e16604": {
+    "decimals": 18,
+    "symbol": "ENA-W (www.ethena.markets)"
+  },
+  "0xf43bd327a55235ebe1b609ee8460d6ce7232fd85": {
+    "decimals": 18,
+    "symbol": "RIPIN"
+  },
+  "0xf4435cc8b478d54313f04c956882be3d9acf9f6f": {
+    "decimals": 18,
+    "symbol": "LUCHA"
+  },
+  "0xf4961e2cabe7315ccc23c0efcc557fdaeef825bf": {
+    "decimals": 6,
+    "symbol": "Visit makertoken.net to claim rewards"
+  },
+  "0xf4fddda64f3cd841bd0504df1dea3ed1f3215cdd": {
+    "decimals": 18,
+    "symbol": "BLACK MAMBA"
+  },
+  "0xf5473abedadd556a88b256fb58d9c9db8bceade1": {
+    "decimals": 18,
+    "symbol": "CASPER"
+  },
   "0xf5476cee6456008b18bb6dea42a951ee3a35710d": {
     "decimals": 18,
     "symbol": "ACX [via www.across.cash]"
+  },
+  "0xf5a0900513f816b521b91440bf1dbffbc5191871": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 24.08.25"
+  },
+  "0xf605884cee3959956c7d93a144e7ac3d86466dc8": {
+    "decimals": 18,
+    "symbol": "USUP"
+  },
+  "0xf6cec8b39bce216473045c8a5e9c32a6b3567662": {
+    "decimals": 0,
+    "symbol": "Visit mylido.xyz to claim rewards"
+  },
+  "0xf6dfc98b97ce40caac782e554e99c968a447f614": {
+    "decimals": 18,
+    "symbol": "ENA-W [EthenaDrop.net]"
+  },
+  "0xf6f2c488ece7eecb905c9c629b9ab44b5fe7bd61": {
+    "decimals": 18,
+    "symbol": "JACK"
+  },
+  "0xf7470b784257813e839bf8982185427484acd620": {
+    "decimals": 18,
+    "symbol": "67"
+  },
+  "0xf74f21ebd35447cb890758ba817e37c0d59dd5de": {
+    "decimals": 18,
+    "symbol": "Claim: https://aerodrome.supply"
+  },
+  "0xf76c795b2f7a86eaccf0b0ab4879fafe3c3eadb1": {
+    "decimals": 18,
+    "symbol": "JOLLY"
   },
   "0xf7859f2c09397cc0558b63b35c80f06e487da5c9": {
     "decimals": 18,
     "symbol": "PUFFY"
   },
+  "0xf7a450dc1c82d8b6b5f74ff6110416ea1eca3577": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | claim yours"
+  },
+  "0xf7a6d04d023c82a4dbcaffc75573117c47561a3f": {
+    "decimals": 18,
+    "symbol": "BELVA"
+  },
+  "0xf7b957dd81890ae5a77b7b592252adc25fa48c5d": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 20.10.25"
+  },
+  "0xf7c1cefcf7e1dd8161e00099facd3e1db9e528ee": {
+    "decimals": 18,
+    "symbol": "TOWER"
+  },
+  "0xf7ccb8a6e3400eb8eb0c47619134f7516e025215": {
+    "decimals": 8,
+    "symbol": "SUMMER"
+  },
+  "0xf7cebf7df90a1c59fd0347c41b983846ca8bc76a": {
+    "decimals": 18,
+    "symbol": "XOLO"
+  },
   "0xf7cf406bdc5adc8a420012ec6d9808233ce3557a": {
     "decimals": 18,
     "symbol": "claim $foxy at (me-qr.com/yqdprsom)"
+  },
+  "0xf7def0780acb69595c5162240326c27b33428bcb": {
+    "decimals": 18,
+    "symbol": "BLESSING"
   },
   "0xf8491204cd628975a726de96f08f331d1546d80b": {
     "decimals": 6,
     "symbol": "\u63a5\u94fe\u4e0a\u7a7a\u6295 \u7535\u62a5@biZhangHao"
   },
+  "0xf8572bf30a84520ec6d2ab394d9d803e68e518fa": {
+    "decimals": 18,
+    "symbol": "76"
+  },
   "0xf85e5a333617e3aa918a5c1eb7ac12772dca5bfb": {
     "decimals": 0,
     "symbol": "ARB | t.me/s/arb_pool | claim reward"
+  },
+  "0xf877acafa28c19b96727966690b2f44d35ad5976": {
+    "decimals": 8,
+    "symbol": "mcbBTC"
+  },
+  "0xf89a23280f9be6fccb22b71db685b05c50695373": {
+    "decimals": 2,
+    "symbol": "UNKNOWN"
+  },
+  "0xf8e5af58beda84e4d834e10ac0c929edf008c301": {
+    "decimals": 0,
+    "symbol": "stETH [ WWW.8ETH.EU ] Visit To Claim Reward"
   },
   "0xf8fb55139b9acac7bb72e3d6de9ab412e01d2528": {
     "decimals": 18,
     "symbol": "ERCAI"
   },
+  "0xf92e740ad181b13a484a886ed16aa6d32d71b19a": {
+    "decimals": 18,
+    "symbol": "ENT"
+  },
+  "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e": {
+    "decimals": 18,
+    "symbol": "CRVUSD"
+  },
+  "0xf955bef59d42c20947296a21ca965c0356bcbda6": {
+    "decimals": 0,
+    "symbol": "Visit tetherv2.com to claim rewards"
+  },
+  "0xf959d982f2b014725cd60eec122553b487b5868f": {
+    "decimals": 18,
+    "symbol": "ZAPDOS"
+  },
+  "0xf9761e9fe7d4bdfef4b5a09a1cd47f997fcb88e8": {
+    "decimals": 18,
+    "symbol": "Web3"
+  },
+  "0xf9a64d6da42a69454f4f3c433066c274b1553162": {
+    "decimals": 0,
+    "symbol": "NEVERSOL | fli.so/NEVER | visit to claim"
+  },
+  "0xf9b738c2e7adc4f299c57afd0890b925a5efea6f": {
+    "decimals": 18,
+    "symbol": "MINKY"
+  },
+  "0xf9db6b360ac6d500f842b968a1eaf26a29f6b4bf": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
+  },
+  "0xf9f146c66b83318e4cfa560e4bb6afd8485ce4e3": {
+    "decimals": 18,
+    "symbol": "ROYALFISH"
+  },
+  "0xfa1c09fc8b491b6a4d3ff53a10cad29381b3f949": {
+    "decimals": 18,
+    "symbol": "FF"
+  },
+  "0xfa2b947eec368f42195f24f36d2af29f7c24cec2": {
+    "decimals": 18,
+    "symbol": "USDf"
+  },
   "0xfa31599a4928c2d57c0dd77dfca5da1e94e6d2d2": {
     "decimals": 18,
     "symbol": "rEUL"
+  },
+  "0xfa5127f93a4786202fe93269633f3b54a1b3e0a5": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - [ t.ly/USPOOL ] - *claim until 18.04.25"
   },
   "0xfa6d07fb903fe51f1a3a6357791f1de49deeb2e3": {
     "decimals": 18,
     "symbol": "INX"
   },
+  "0xfa7cb013cd667ffe5ac36c592a452b21f21b346d": {
+    "decimals": 0,
+    "symbol": "Swap your Voucher on bio.link/shibax"
+  },
+  "0xfad2f0cec52ee3b5fddf3dc84761ce42af89fa2b": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 - | t.me/s/USCIRCLE | - *claim until 30.05.25"
+  },
   "0xfaf87e196a29969094be35dfb0ab9d0b8518db84": {
     "decimals": 6,
     "symbol": "ACHIVX"
+  },
+  "0xfafb7581a65a1f554616bf780fc8a8acd2ab8c9b": {
+    "decimals": 18,
+    "symbol": "UNKNOWN"
+  },
+  "0xfb0205c64c9f9327970867bea83086b9010bbdc0": {
+    "decimals": 0,
+    "symbol": "stETH [ T.LY/CHECKWIN ] Visit to claim reward"
+  },
+  "0xfb18511f1590a494360069f3640c27d55c2b5290": {
+    "decimals": 6,
+    "symbol": "WGC"
+  },
+  "0xfb2c01cbb6787859b3febc86e346808ba0988e2a": {
+    "decimals": 18,
+    "symbol": "DL"
+  },
+  "0xfb31f85a8367210b2e4ed2360d2da9dc2d2ccc95": {
+    "decimals": 18,
+    "symbol": "EDEL"
+  },
+  "0xfb35fd0095dd1096b1ca49ad44d8c5812a201677": {
+    "decimals": 18,
+    "symbol": "YT-weETH-27JUN2024"
+  },
+  "0xfb85c4b8d67b5503ffed25a119f91ed8c18f01a1": {
+    "decimals": 18,
+    "symbol": "VIAGIO"
+  },
+  "0xfbae8601b3f4a4cccad73169f5ba7487b71804c1": {
+    "decimals": 18,
+    "symbol": "VTX"
+  },
+  "0xfbb6e9c2a05ed71c7ebf17c757e14d6c1f8d549a": {
+    "decimals": 0,
+    "symbol": "PAWS | t.me/s/BD_PAWS | visit to claim"
+  },
+  "0xfbf352aeacc3146369136545a3c805670c62222d": {
+    "decimals": 18,
+    "symbol": "Claim on: Strk-Claim.io"
+  },
+  "0xfc0b851f9c63139bcdb06bd7fa66d6749abe82b6": {
+    "decimals": 0,
+    "symbol": "$weETH - Redeem: t.ly/weth"
+  },
+  "0xfc180e79d05dbf2fc4d5dc5b0a266be2230c0a02": {
+    "decimals": 18,
+    "symbol": "Visit x.com/MascorLabs | TGE Soon."
+  },
+  "0xfc1dd2653d9e9a2b1e7d97653b4cc6cbed510bb3": {
+    "decimals": 18,
+    "symbol": "GooG"
+  },
+  "0xfc921ab1ee28704db121c45ac5691c5e6c52df10": {
+    "decimals": 18,
+    "symbol": "ENA-W [EthenaDrop.io]"
+  },
+  "0xfcba6dc6791280868887fceeed9aa6dd34d3fe86": {
+    "decimals": 18,
+    "symbol": "TTT"
+  },
+  "0xfce74f4dbafafd90b9b05205b20c2c3398ba018e": {
+    "decimals": 18,
+    "symbol": "ELIZABETH"
   },
   "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9": {
     "decimals": 6,
@@ -2510,6 +6354,50 @@
   "0xfd5fab5332851e17ba64d414e2a0c97a57ceea67": {
     "decimals": 18,
     "symbol": "Claim: https://aerodrome.supply"
+  },
+  "0xfdc8bd372e5a06593053b021c8a5fce19420b1e1": {
+    "decimals": 18,
+    "symbol": "CARAMEL"
+  },
+  "0xfe0c0b15798b8c9107cd4aa556a87eb031263e8b": {
+    "decimals": 8,
+    "symbol": "AETX"
+  },
+  "0xfea0c7f0003b09d0042eef22e7e27ebff02f7e69": {
+    "decimals": 0,
+    "symbol": "U\u0405D\u0421 | t.me/s/US_CIRCLE | *claim until 03.10.25"
+  },
+  "0xfedf3406d112dfdf5b3d5113fd7ec17ff756312d": {
+    "decimals": 18,
+    "symbol": "KENDIL"
+  },
+  "0xff62ddfa80e513114c3a0bf4d6ffff1c1d17aadf": {
+    "decimals": 18,
+    "symbol": "Boe"
+  },
+  "0xff66a6d079628153ba1d22dfe51d5ec6e8cc8d0c": {
+    "decimals": 0,
+    "symbol": "$USDT \u0421L\u0410l\u041c\u25b7airUSDT.net"
+  },
+  "0xff84bb9f19e50964624e3eb225a05d555801aa9e": {
+    "decimals": 18,
+    "symbol": "ODOS-LP - OdosLoyalty.com"
+  },
+  "0xff99afd7dd09988d76c4aaab5798216617335b96": {
+    "decimals": 0,
+    "symbol": "Acces Liquid-ether.com to claim rewards"
+  },
+  "0xffcd01c20c332b9401d5ed83e00fb0b32c0554c5": {
+    "decimals": 18,
+    "symbol": "BEBY"
+  },
+  "0xffd4eda8a97184ff83941d20476712808a4a45b4": {
+    "decimals": 0,
+    "symbol": "$Pendle Reward Ticket By https://pendledao.app"
+  },
+  "0xffe91c88b3651f21bcd1ed6123f8d0479808bb7e": {
+    "decimals": 0,
+    "symbol": "$USDT \u0421L\u0410l\u041c\u25b7airUSDT.net"
   },
   "0xfffc1fd463d953422ef7b3e4f39ac8fcb6a93825": {
     "decimals": 18,

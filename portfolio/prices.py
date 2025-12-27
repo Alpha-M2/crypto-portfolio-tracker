@@ -26,7 +26,7 @@ def fetch_native_prices(symbols: List[str]) -> Dict[str, Dict[str, float]]:
     Backward-compatible wrapper.
 
     OLD behavior:
-        symbols = ["ETH", "MATIC"]
+        symbols = ["ETH", "POL"]
 
     NEW behavior:
         We infer chains from symbols where possible.
@@ -35,7 +35,7 @@ def fetch_native_prices(symbols: List[str]) -> Dict[str, Dict[str, float]]:
     # Minimal compatibility mapping
     symbol_to_chain = {
         "ETH": "ethereum",
-        "MATIC": "polygon",
+        "POL": "polygon",
         "BNB": "bsc",
         "AVAX": "avalanche",
     }

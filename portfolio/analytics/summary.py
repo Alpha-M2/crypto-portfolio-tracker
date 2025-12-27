@@ -1,24 +1,19 @@
 from typing import Dict, List
 
-from portfolio.analytics.allocation import (
-    allocation_by_asset,
-    allocation_by_chain,
-)
-from portfolio.analytics.exposure import asset_class_exposure
-from portfolio.analytics.provenance import infer_provenance
+
+def calculate_total_value(positions: List[dict]) -> float:
+    return sum(p.get("current_value", 0.0) for p in positions)
+
+
+def calculate_total_pnl(positions: List[dict]) -> float:
+    return sum(p.get("pnl", 0.0) for p in positions)
 
 
 def build_portfolio_summary(positions: List[dict]) -> Dict:
+    total_value = calculate_total_value(positions)
+    total_pnl = calculate_total_pnl(positions)
+
     return {
-        "allocation": {
-            "by_asset": allocation_by_asset(positions),
-            "by_chain": allocation_by_chain(positions),
-        },
-        "exposure": asset_class_exposure(positions),
-        "provenance": {
-            f"{p.get('chain', 'unknown')}:{p.get('symbol', 'unknown')}": infer_provenance(
-                p
-            )
-            for p in positions
-        },
+        "total_value": round(total_value, 2),
+        "total_pnl": round(total_pnl, 2),
     }

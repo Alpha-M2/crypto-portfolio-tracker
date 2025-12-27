@@ -14,12 +14,12 @@ CHAIN_TO_PLATFORM = {
     "base": "base",
 }
 
-NATIVE_SYMBOL_BY_CHAIN = {
-    "ethereum": "ETH",
-    "arbitrum": "ETH",
-    "optimism": "ETH",
-    "polygon": "MATIC",
-    "base": "ETH",
+NATIVE_COINGECKO_ID = {
+    "ethereum": "ethereum",
+    "arbitrum": "ethereum",
+    "optimism": "ethereum",
+    "base": "ethereum",
+    "polygon": "polygon",
 }
 
 
