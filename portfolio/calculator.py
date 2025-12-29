@@ -3,7 +3,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 MAX_REASONABLE_VALUE = 100_000_000  # $100M cap
-MIN_DISPLAY_VALUE = 1.0  # Hide holdings worth <$1
+# Remove MIN_DISPLAY_VALUE - show all holdings, even $0
 
 
 def calculate_position(holding, current_price: float) -> dict | None:
@@ -14,7 +14,7 @@ def calculate_position(holding, current_price: float) -> dict | None:
 
     raw_value = holding.amount * current_price
 
-    # Cap insane values from bad price data
+    # Cap insane values
     if raw_value > MAX_REASONABLE_VALUE:
         logger.warning(
             "Capped value for %s: $%.2f → $%.2f",
@@ -28,10 +28,9 @@ def calculate_position(holding, current_price: float) -> dict | None:
         current_value = raw_value
         note = None
 
-    # Hide tiny dust (<$1)
-    if current_value < MIN_DISPLAY_VALUE:
-        logger.debug("Hid dust holding %s: $%.2f", holding.symbol, current_value)
-        return None
+    # Always show native tokens, even if price unavailable
+    if current_value == 0 and not holding.is_erc20:
+        note = "Price unavailable (using $0)"
 
     pnl = current_value - invested
     pnl_pct = (pnl / invested * 100) if invested > 0 else 0.0
@@ -48,7 +47,6 @@ def calculate_position(holding, current_price: float) -> dict | None:
     }
 
     if note:
-        result["symbol"] += " ⚠️"
         result["note"] = note
 
     return result

@@ -6,6 +6,7 @@ from typing import Dict, List
 log = logging.getLogger(__name__)
 
 GECKOTERMINAL_BASE = "https://api.geckoterminal.com/api/v2"
+COINGECKO_SIMPLE = "https://api.coingecko.com/api/v3/simple/price"
 
 NETWORK_SLUGS = {
     "ethereum": "eth",
@@ -16,7 +17,7 @@ NETWORK_SLUGS = {
     "bsc": "bsc",
 }
 
-# Chains that use ETH as native
+# All chains that use ETH as native
 ETH_CHAINS = {"ethereum", "arbitrum", "optimism", "base"}
 
 NATIVE_SYMBOLS = {
@@ -42,38 +43,34 @@ STABLECOIN_SYMBOLS = {
     "EURS",
 }
 
-# Single source of truth for ETH price
-_eth_price: float | None = None
+# Cached ETH price from CoinGecko (reliable for all ETH chains)
+_cached_eth_price: float | None = None
 
 
-def _fetch_eth_price() -> float | None:
-    """Fetch ETH price from mainnet - used for ALL ETH chains"""
-    global _eth_price
-    if _eth_price is not None:
-        return _eth_price
+def _fetch_eth_price_coingecko() -> float | None:
+    """Fetch ETH price from CoinGecko - reliable for all EVM chains"""
+    global _cached_eth_price
+    if _cached_eth_price is not None:
+        return _cached_eth_price
 
     try:
-        url = f"{GECKOTERMINAL_BASE}/simple/networks/eth/token_price/ETH"
-        r = requests.get(url, timeout=15)
+        r = requests.get(
+            COINGECKO_SIMPLE,
+            params={"ids": "ethereum", "vs_currencies": "usd"},
+            timeout=10,
+        )
         r.raise_for_status()
         data = r.json()
-        usd_str = (
-            data.get("data", {})
-            .get("attributes", {})
-            .get("token_prices", {})
-            .get("ETH")
-        )
-        if usd_str:
-            price = float(usd_str)
-            if 2000 < price < 10000:  # Realistic range
-                _eth_price = price
-                log.info(
-                    "Fetched ETH price (mainnet): $%.2f - applied to all ETH chains",
-                    price,
-                )
-                return price
+        price = data.get("ethereum", {}).get("usd")
+        if price and 1000 < price < 10000:
+            _cached_eth_price = float(price)
+            log.info(
+                "Fetched ETH price from CoinGecko: $%.2f (used for all ETH chains)",
+                price,
+            )
+            return _cached_eth_price
     except Exception as e:
-        log.error("ETH price fetch failed: %s", e)
+        log.error("CoinGecko ETH price fetch failed: %s", e)
 
     return None
 
@@ -81,17 +78,17 @@ def _fetch_eth_price() -> float | None:
 def get_native_prices(chains: List[str]) -> Dict[str, float]:
     prices = {}
 
-    # Get ETH price for all ETH chains
-    eth_price = _fetch_eth_price()
+    # Use CoinGecko for all ETH chains (mainnet + L2s)
+    eth_price = _fetch_eth_price_coingecko()
     if eth_price:
         for chain in chains:
             if chain in ETH_CHAINS:
                 prices[chain] = eth_price
 
-    # Fetch non-ETH natives individually
+    # Fetch POL and BNB from GeckoTerminal
     for chain in chains:
         if chain in ETH_CHAINS:
-            continue  # Already handled
+            continue
 
         slug = NETWORK_SLUGS.get(chain)
         symbol = NATIVE_SYMBOLS.get(chain)
