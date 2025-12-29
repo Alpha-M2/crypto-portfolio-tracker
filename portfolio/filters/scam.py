@@ -14,12 +14,16 @@ SCAM_KEYWORDS = {
 }
 
 
-def is_scam_token(token: Holding) -> tuple[bool, str]:
+def is_scam_token(token: Holding) -> Tuple[bool, str]:
     symbol = getattr(token, "symbol", None)
     if not symbol:
         return True, "missing_symbol"
 
     sym = symbol.lower()
+
+    # Extra protection against known ETH dust scams
+    if sym in {"xeth", "ethg", "ethe", "etth", "ethx"}:
+        return True, "known_scam_symbol"
 
     for k in SCAM_KEYWORDS:
         if k in sym:
@@ -27,5 +31,9 @@ def is_scam_token(token: Holding) -> tuple[bool, str]:
 
     if not symbol.isalnum():
         return True, "non_alphanumeric"
+
+    # Never mark native tokens as scam
+    if not token.is_erc20:
+        return False, ""
 
     return False, ""

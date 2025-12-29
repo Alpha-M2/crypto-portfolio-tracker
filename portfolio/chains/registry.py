@@ -1,13 +1,14 @@
-from typing import List
 import os
+from typing import List
 from portfolio.chains.evm import EVMChain
 
 CHAINS: List[EVMChain] = [
-    EVMChain("Ethereum", "ethereum", "ETH_RPC_URL", "ETH", 1),
-    EVMChain("Arbitrum", "arbitrum", "ARB_RPC_URL", "ETH", 42161),
-    EVMChain("Polygon", "polygon", "POLYGON_RPC_URL", "POL", 137),
-    EVMChain("Optimism", "optimism", "OPTIMISM_RPC_URL", "ETH", 10),
-    EVMChain("Base", "base", "BASE_RPC_URL", "ETH", 8453),
+    EVMChain("Ethereum", "ethereum", "ETH_RPC_URL", 1),
+    EVMChain("Arbitrum", "arbitrum", "ARB_RPC_URL", 42161),
+    EVMChain("Polygon", "polygon", "POLYGON_RPC_URL", 137),
+    EVMChain("Optimism", "optimism", "OPTIMISM_RPC_URL", 10),
+    EVMChain("Base", "base", "BASE_RPC_URL", 8453),
+    EVMChain("BSC", "bsc", "BSC_RPC_URL", 56),
 ]
 
 

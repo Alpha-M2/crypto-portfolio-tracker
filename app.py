@@ -10,6 +10,8 @@ from flask import (
 import os
 from dotenv import load_dotenv
 import logging
+import io
+import csv
 
 from portfolio.multi_chain import fetch_multi_chain_portfolio
 from portfolio.storage import save_snapshot
@@ -34,14 +36,12 @@ def dashboard():
         if not wallet_address:
             return render_template("wallet_input.html")
 
-        # Fetch portfolio ONLY when user provides wallet
         result = fetch_multi_chain_portfolio(wallet_address)
 
         portfolio = result["portfolio"]
         total_value = result["total_value"]
         total_pnl = result["total_pnl"]
 
-        # Save snapshot only on POST
         if request.method == "POST":
             save_snapshot(wallet_address, portfolio)
 
@@ -70,16 +70,60 @@ def dashboard():
         return "Internal Server Error", 500
 
 
-@app.route("/change-wallet")
-def change_wallet():
-    response = redirect("/")
-    response.delete_cookie("wallet")
+@app.route("/export-csv")
+def export_csv():
+    wallet = request.args.get("wallet")
+    if not wallet:
+        return "No wallet specified", 400
+
+    result = fetch_multi_chain_portfolio(wallet)
+    portfolio = result["portfolio"]
+
+    output = io.StringIO()
+    writer = csv.writer(output)
+
+    writer.writerow(
+        [
+            "Asset",
+            "Chain",
+            "Quantity",
+            "Value (USD)",
+            "Invested (USD)",
+            "P/L (USD)",
+            "P/L (%)",
+        ]
+    )
+
+    for item in portfolio:
+        writer.writerow(
+            [
+                item["symbol"],
+                item["chain"].capitalize(),
+                f"{item['amount']:.8g}",
+                f"{item['current_value']:.2f}",
+                f"{item['invested']:.2f}",
+                f"{item['pnl']:.2f}",
+                f"{item['pnl_pct']:.2f}",
+            ]
+        )
+
+    writer.writerow([])
+    writer.writerow(["Total Portfolio Value", f"{result['total_value']:.2f}"])
+
+    output.seek(0)
+
+    response = make_response(output.getvalue())
+    response.headers["Content-Type"] = "text/csv"
+    response.headers["Content-Disposition"] = (
+        f"attachment; filename=portfolio_{wallet[:10]}.csv"
+    )
+
     return response
 
 
-@app.route("/reset-wallet")
-def reset_wallet():
-    response = make_response(redirect(url_for("dashboard")))
+@app.route("/change-wallet")
+def change_wallet():
+    response = redirect("/")
     response.delete_cookie("wallet")
     return response
 

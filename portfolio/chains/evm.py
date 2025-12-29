@@ -17,6 +17,7 @@ FALLBACK_RPCS = {
     "polygon": "https://rpc.ankr.com/polygon",
     "optimism": "https://rpc.ankr.com/optimism",
     "base": "https://rpc.ankr.com/base",
+    "bsc": "https://rpc.ankr.com/bsc",
 }
 
 ALCHEMY_BASE = {
@@ -25,16 +26,26 @@ ALCHEMY_BASE = {
     "polygon": "https://polygon-mainnet.g.alchemy.com/v2/",
     "optimism": "https://opt-mainnet.g.alchemy.com/v2/",
     "base": "https://base-mainnet.g.alchemy.com/v2/",
+    # No Alchemy for BSC alchemy_getTokenBalances
+}
+
+NATIVE_SYMBOLS = {
+    "ethereum": "ETH",
+    "arbitrum": "ETH",
+    "optimism": "ETH",
+    "base": "ETH",
+    "polygon": "POL",
+    "bsc": "BNB",
 }
 
 
 class EVMChain:
-    def __init__(self, name, symbol, rpc_env_key, native_symbol, chain_id):
+    def __init__(self, name, symbol, rpc_env_key, chain_id):
         self.name = name
         self.symbol = symbol
         self.rpc_env_key = rpc_env_key
-        self.native_symbol = native_symbol
         self.chain_id = chain_id
+        self.native_symbol = NATIVE_SYMBOLS.get(symbol, "ETH")
         init_db()
 
     def is_enabled(self) -> bool:
@@ -97,13 +108,18 @@ class EVMChain:
         except Exception:
             logger.exception("Native balance fetch failed for %s", self.symbol)
 
-        # ERC-20 tokens
-        try:
-            erc20s = fetch_erc20_holdings(wallet_address, self.symbol)
-            logger.info("Fetched %d ERC20 holdings on %s", len(erc20s), self.symbol)
-            holdings.extend(erc20s)
-        except Exception:
-            logger.exception("ERC20 fetch failed for %s", self.symbol)
+        # ERC-20 tokens - skip Alchemy for BSC (no support for alchemy_getTokenBalances)
+        if self.symbol != "bsc":
+            try:
+                erc20s = fetch_erc20_holdings(wallet_address, self.symbol)
+                logger.info("Fetched %d ERC20 holdings on %s", len(erc20s), self.symbol)
+                holdings.extend(erc20s)
+            except Exception:
+                logger.exception("ERC20 fetch failed for %s", self.symbol)
+        else:
+            logger.info(
+                "Skipping Alchemy ERC20 fetch on BSC (not supported) - only native BNB shown"
+            )
 
         set_cached_holdings(wallet_address, self.symbol, holdings)
         logger.info(

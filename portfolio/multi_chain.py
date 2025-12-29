@@ -3,7 +3,11 @@ from typing import Dict
 
 from portfolio.chains.registry import get_enabled_chains
 from portfolio.filters.scam import is_scam_token
-from portfolio.pricing import get_native_prices, get_erc20_prices
+from portfolio.pricing import (
+    get_native_prices,
+    get_erc20_prices,
+    get_price_with_stable_fallback,
+)
 from portfolio.wallets.normalize import normalize_evm_address
 from portfolio.merge.deduplicate import deduplicate_positions
 from portfolio.calculator import calculate_position
@@ -31,65 +35,56 @@ def fetch_multi_chain_portfolio(wallet_address: str) -> dict:
             logger.exception("Failed fetching holdings for chain %s", chain.name)
 
     if not all_holdings:
-        return {
-            "portfolio": [],
-            "total_value": 0.0,
-            "total_pnl": 0.0,
-        }
+        return {"portfolio": [], "total_value": 0.0, "total_pnl": 0.0}
 
-    # Filter only obvious scam tokens
+    # Filter scam tokens using your original function (returns tuple)
     filtered = []
     native_chains = set()
     erc20_by_chain: dict[str, set[str]] = {}
 
     for h in all_holdings:
-        is_scam, reason = is_scam_token(h)
+        is_scam, _ = is_scam_token(h)
         if is_scam:
-            logger.info("Skipped scam-like token: %s (%s)", h.symbol, reason)
+            logger.info("Skipped scam token %s on %s", h.symbol, h.chain)
             continue
 
         filtered.append(h)
 
-        if h.is_erc20 and h.contract_address:
-            erc20_by_chain.setdefault(h.chain, set()).add(h.contract_address.lower())
+        if h.is_erc20:
+            if h.contract_address:
+                erc20_by_chain.setdefault(h.chain, set()).add(
+                    h.contract_address.lower()
+                )
         else:
             native_chains.add(h.chain)
 
     logger.info("Holdings after scam filter: %d → %d", len(all_holdings), len(filtered))
 
-    # Fetch prices
     native_prices = get_native_prices(list(native_chains))
-    erc20_prices: Dict[str, Dict[str, float]] = {
-        chain: get_erc20_prices(chain, list(contracts))
-        for chain, contracts in erc20_by_chain.items()
-    }
 
-    # Calculate positions — ALWAYS include, even if price is None
+    erc20_prices: Dict[str, Dict[str, float]] = {}
+    for chain, contracts in erc20_by_chain.items():
+        erc20_prices[chain] = get_erc20_prices(chain, list(contracts))
+
     positions = []
-    priced_count = 0
-
     for h in filtered:
         try:
-            price = None
-            if h.is_erc20:
-                price = erc20_prices.get(h.chain, {}).get(
-                    h.contract_address.lower() if h.contract_address else ""
-                )
-            else:
-                price = native_prices.get(h.chain)
+            price = (
+                erc20_prices.get(h.chain, {}).get(h.contract_address.lower())
+                if h.is_erc20
+                else native_prices.get(h.chain)
+            )
 
-            pos = calculate_position(h, price)
+            final_price = get_price_with_stable_fallback(h.symbol, price)
+
+            pos = calculate_position(h, final_price)
             if pos:
                 pos["chain"] = h.chain
                 positions.append(pos)
-                if pos.get("price_available", False):
-                    priced_count += 1
         except Exception:
-            logger.exception("Error processing %s on %s", h.symbol, h.chain)
+            logger.exception("Failed calculating position for %s", h.symbol)
 
-    logger.info(
-        "Positions created: %d total, %d with known price", len(positions), priced_count
-    )
+    logger.info("Created %d positions", len(positions))
 
     merged = deduplicate_positions(positions)
 
@@ -98,7 +93,7 @@ def fetch_multi_chain_portfolio(wallet_address: str) -> dict:
     try:
         persist_portfolio_snapshot(wallet_address, summary, merged)
     except Exception:
-        logger.exception("Snapshot save failed")
+        logger.exception("Snapshot persistence failed")
 
     return {
         "portfolio": merged,
