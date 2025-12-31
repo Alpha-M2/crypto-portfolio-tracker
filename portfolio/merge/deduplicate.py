@@ -1,22 +1,18 @@
 from collections import defaultdict
-from portfolio.merge.keys import asset_key
 
 
 def deduplicate_positions(positions: list[dict]) -> list[dict]:
     """
-    Aggregate only truly identical positions:
-    - Same symbol
-    - Same chain
-    - Same contract (or both native)
+    Aggregate only identical positions: same symbol + same chain + same contract (for ERC20)
+    Never merge across chains.
     """
     merged = defaultdict(
         lambda: {
             "symbol": "",
             "chain": "",
             "amount": 0.0,
-            "invested": 0.0,
             "current_value": 0.0,
-            "contract_address": "",  # preserved for debugging
+            "invested": 0.0,
         }
     )
 
@@ -24,40 +20,31 @@ def deduplicate_positions(positions: list[dict]) -> list[dict]:
         if not pos:
             continue
 
-        key = asset_key(pos)
-        bucket = merged[key]
+        if pos.get("is_erc20", True):
+            key = (pos["symbol"], pos["chain"], "erc20")
+        else:
+            key = (pos["symbol"], pos["chain"], "native")
 
-        # First position sets metadata
+        bucket = merged[key]
         if not bucket["symbol"]:
             bucket["symbol"] = pos["symbol"]
             bucket["chain"] = pos["chain"]
-            if pos.get("contract_address"):
-                bucket["contract_address"] = pos["contract_address"]
 
-        bucket["amount"] += pos.get("amount", 0.0)
+        bucket["amount"] += pos["amount"]
+        bucket["current_value"] += pos["current_value"]
         bucket["invested"] += pos.get("invested", 0.0)
-        bucket["current_value"] += pos.get("current_value", 0.0)
 
-    # Build final list
     result = []
     for bucket in merged.values():
-        invested = bucket["invested"]
-        value = bucket["current_value"]
-        pnl = value - invested
-        pnl_pct = (pnl / invested * 100) if invested > 0 else 0.0
-
         result.append(
             {
                 "symbol": bucket["symbol"],
                 "chain": bucket["chain"],
-                "amount": round(bucket["amount"], 8),
-                "invested": round(invested, 2),
-                "current_value": round(value, 2),
-                "pnl": round(pnl, 2),
-                "pnl_pct": round(pnl_pct, 2),
+                "amount": bucket["amount"],
+                "current_value": round(bucket["current_value"], 2),
+                "invested": round(bucket["invested"], 2),
             }
         )
 
-    # Sort by value descending
     result.sort(key=lambda x: x["current_value"], reverse=True)
     return result

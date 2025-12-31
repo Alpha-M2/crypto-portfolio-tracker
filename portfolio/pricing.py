@@ -17,7 +17,6 @@ NETWORK_SLUGS = {
     "bsc": "bsc",
 }
 
-# All chains that use ETH as native
 ETH_CHAINS = {"ethereum", "arbitrum", "optimism", "base"}
 
 NATIVE_SYMBOLS = {
@@ -43,60 +42,75 @@ STABLECOIN_SYMBOLS = {
     "EURS",
 }
 
-# Cached ETH price from CoinGecko (reliable for all ETH chains)
+# Cached prices from CoinGecko
 _cached_eth_price: float | None = None
+_cached_bnb_price: float | None = None
 
 
-def _fetch_eth_price_coingecko() -> float | None:
-    """Fetch ETH price from CoinGecko - reliable for all EVM chains"""
-    global _cached_eth_price
-    if _cached_eth_price is not None:
-        return _cached_eth_price
-
+def _fetch_coingecko_price(coin_id: str) -> float | None:
     try:
         r = requests.get(
             COINGECKO_SIMPLE,
-            params={"ids": "ethereum", "vs_currencies": "usd"},
+            params={"ids": coin_id, "vs_currencies": "usd"},
             timeout=10,
         )
         r.raise_for_status()
         data = r.json()
-        price = data.get("ethereum", {}).get("usd")
-        if price and 1000 < price < 10000:
-            _cached_eth_price = float(price)
-            log.info(
-                "Fetched ETH price from CoinGecko: $%.2f (used for all ETH chains)",
-                price,
-            )
-            return _cached_eth_price
+        price = data.get(coin_id, {}).get("usd")
+        if price and price > 0:
+            return float(price)
     except Exception as e:
-        log.error("CoinGecko ETH price fetch failed: %s", e)
-
+        log.error("CoinGecko %s price fetch failed: %s", coin_id, e)
     return None
+
+
+def _fetch_eth_price() -> float | None:
+    global _cached_eth_price
+    if _cached_eth_price is not None:
+        return _cached_eth_price
+
+    price = _fetch_coingecko_price("ethereum")
+    if price:
+        _cached_eth_price = price
+        log.info("CoinGecko ETH price: $%.2f", price)
+    return price
+
+
+def _fetch_bnb_price() -> float | None:
+    global _cached_bnb_price
+    if _cached_bnb_price is not None:
+        return _cached_bnb_price
+
+    price = _fetch_coingecko_price("binancecoin")
+    if price:
+        _cached_bnb_price = price
+        log.info("CoinGecko BNB price: $%.2f", price)
+    return price
 
 
 def get_native_prices(chains: List[str]) -> Dict[str, float]:
     prices = {}
 
-    # Use CoinGecko for all ETH chains (mainnet + L2s)
-    eth_price = _fetch_eth_price_coingecko()
+    # ETH chains (mainnet + L2s)
+    eth_price = _fetch_eth_price()
     if eth_price:
         for chain in chains:
             if chain in ETH_CHAINS:
                 prices[chain] = eth_price
 
-    # Fetch POL and BNB from GeckoTerminal
-    for chain in chains:
-        if chain in ETH_CHAINS:
-            continue
+    # BNB
+    if "bsc" in chains:
+        bnb_price = _fetch_bnb_price()
+        if bnb_price:
+            prices["bsc"] = bnb_price
+        else:
+            log.warning("BNB price fetch failed - using $0")
 
-        slug = NETWORK_SLUGS.get(chain)
-        symbol = NATIVE_SYMBOLS.get(chain)
-        if not slug or not symbol:
-            continue
-
+    # POL
+    if "polygon" in chains:
+        slug = NETWORK_SLUGS["polygon"]
         try:
-            url = f"{GECKOTERMINAL_BASE}/simple/networks/{slug}/token_price/{symbol}"
+            url = f"{GECKOTERMINAL_BASE}/simple/networks/{slug}/token_price/POL"
             r = requests.get(url, timeout=15)
             r.raise_for_status()
             data = r.json()
@@ -104,15 +118,14 @@ def get_native_prices(chains: List[str]) -> Dict[str, float]:
                 data.get("data", {})
                 .get("attributes", {})
                 .get("token_prices", {})
-                .get(symbol.upper())
+                .get("POL")
             )
             if usd_str:
                 price = float(usd_str)
                 if price > 0:
-                    prices[chain] = price
-                    log.info("Native %s on %s: $%.2f", symbol, chain, price)
+                    prices["polygon"] = price
         except Exception as e:
-            log.warning("Failed native price for %s: %s", chain, e)
+            log.warning("POL price fetch failed: %s", e)
 
         time.sleep(1)
 
